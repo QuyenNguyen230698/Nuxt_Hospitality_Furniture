@@ -31,7 +31,7 @@
 .bg-image-member {
     background-image: url('/image/logo/TDF-bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
 }
 </style>
