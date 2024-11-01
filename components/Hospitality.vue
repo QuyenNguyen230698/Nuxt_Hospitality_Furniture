@@ -71,7 +71,10 @@
       </div>
     </header>
     <!-- main -->
-     <div></div>
+     <div>
+        <!-- members -->
+         <MembersOurMembers />
+     </div>
      <footer>
         <div class="flex flex-col justify-between md:flex-row bg-black px-5">
             <div class="w-full md:w-1/2 flex justify-center items-center color-text text-xs p-2">
