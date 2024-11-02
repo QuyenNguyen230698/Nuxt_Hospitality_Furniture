@@ -1,11 +1,12 @@
 <template>
     <div class="bg-image-member w-full h-full pb-5 pt-10 px-14">
-        <div class="container mx-auto text-center font-bold  flex flex-col w-full h-full text-xl md:text-2xl lg:text-3xl text-white py-6">
-            <h2 class="p-4">Our members</h2>
+        <div class="container mx-auto text-center flex flex-col w-full h-full text-white py-6">
+            <h2 class="p-6 font-black text-5xl">Our members</h2>
+            <div class="pb-10"><div class="w-8 md:w-14 lg:w-20  bg-orange-500 text-center mx-auto" style="height: 1px;"></div></div>
             <div class="flex flex-col md:flex-row gap-16 mb:gap-10">
                <div class="flex flex-col items-center justify-center w-full min-h-52 bg-member gap-4 text-gray-300">
                 <a href="/">
-                    <img src="/public/image/logo/TranDuc-homes.png" alt="" class="h-20">
+                    <img src="/public/image/logo/TranDuc-homes.png" alt="" class="h-16 lg:h-20">
                 </a>
                 <p>Total Solution for Green Projects</p>
                </div>
