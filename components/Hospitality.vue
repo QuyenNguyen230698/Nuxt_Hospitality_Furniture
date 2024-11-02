@@ -90,6 +90,14 @@
             </div>
             <div class="py-4"><div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px;"></div></div>
            </div>
+           <!-- Communicate -->
+            <div class="flex flex-col bg-word">
+              <div >
+                <div class="flex flex-wrap md:flex-row justify-center items-center md:container mx-auto w-full">
+                  <img v-for="(item, index) in communicate1" :src="item.src" :key="index" :alt="`client-${index}`" class="w-1/3 md:w-1/6">
+                </div>
+              </div>
+            </div>
         <!-- members -->
          <MembersOurMembers />
      </div>
@@ -117,6 +125,14 @@ const menu = ref(false);
 function toggleMenu() {
   menu.value = !menu.value;
 }
+
+const communicate1 = [
+  {src: '/image/communicate/1-Four-Season.png'},
+  {src: '/image/communicate/2-Hyatt.png'},
+  {src: '/image/communicate/3-Marriott_Logo.png'},
+  {src: '/image/communicate/4-Sheraton-hotels-resorts-2-logo.png'},
+  {src: '/image/communicate/5-ConradHotelsLogo.png'},
+]
 
 </script>
 
