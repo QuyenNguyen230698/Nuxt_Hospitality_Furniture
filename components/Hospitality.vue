@@ -75,22 +75,21 @@
     <!-- main -->
      <div class="flex flex-col w-full">
         <!-- SlideShow -->
-         <div class="py-10 md:py-14 border-y border-y-orange-500 bg-slice relative">
-            <div class="absolute inset-0 bg-slice-2"></div>
-            <div class="flex flex-col w-full h-full relative z-20">
-              <div class="flex flex-col justify-center items-center text-white container m-8 mx-auto">
-                <h2 class=" font-black text-center leading-snug tracking-widest uppercase" style="line-height: 3.5;">
-                  <span class="text-5xl">Top Hospitality Furniture Manufacturer </span>
-                  <br>
-                  <span class="text-5xl">in Vietnam</span>
-                </h2>
-              </div>
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <button class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 px-12 lg:px-14 py-3 lg:py-4 text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">Factory Tour</button>
-                <button class="transition-colors duration-300 border-2 px-7 lg:px-8 py-3 lg:py-4 text-md leading-none btn-hover2 rounded-md uppercase">Capability Profile</button>
-              </div>
+         <SliceShow/>
+         <!-- Section -->
+          <Section/>
+          <!-- Clients -->
+           <div class="flex flex-col items-center justify-center bg-black">
+            <div class="py-2 px-10 md:px-0">
+              <h2 class="text-center text-5xl font-bold pb-4 text-white">Clients</h2>
+            <p class="text-sm text-center color-section">
+              With over 20 years of experience, having completed more than 400 projects, and achieving an export milestone of over 200 containers each month.
+              <br>
+              Tran Duc Furnishings proudly stands as one of the leading providers of bespoke furniture solutions for the Hospitality and Resort industry, particularly in the U.S market
+            </p>
             </div>
-         </div>
+            <div class="py-4"><div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px;"></div></div>
+           </div>
         <!-- members -->
          <MembersOurMembers />
      </div>
@@ -122,17 +121,6 @@ function toggleMenu() {
 </script>
 
 <style scoped>
-.bg-slice {
-  background-image:  url('/public/image/project/project1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.bg-slice-2 {
-  background-color: #1b1b24;
-  opacity: 0.76;
-  transition: background 0.3s, border-radius 0s, opacity 0.3s;
-}
 .bg-word {
   background-image: url('/public/image/logo/The-World-Map-scaled.jpg');
   background-size: cover;
@@ -141,6 +129,9 @@ function toggleMenu() {
 }
 .color-text {
   color: #ABABAB;
+}
+.color-section {
+  color: #bfbfbf;
 }
 .bg-menu {
   background-color: #444444;
@@ -164,17 +155,13 @@ function toggleMenu() {
 .menu :where(li ul):before {
   display: none;
 }
-.btn-hover:hover {
-  background-color: #7A7A7A;
+.bg-image-member {
+    background-image: url('/image/logo/TDF-bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-.btn-hover2 {
-  background-color: #7B7051;
-  border-color: #B9A97A;
-  color: white
-}
-.btn-hover2:hover {
-  background-color: rgba(255,255,255,0);
-  color:#B9A97A;
-  border-color: #B9A97A;
+.icon-section {
+  color: #F5833E;
 }
 </style>
