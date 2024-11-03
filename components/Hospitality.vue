@@ -91,15 +91,17 @@
             <div class="py-4"><div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px;"></div></div>
            </div>
            <!-- Communicate -->
-            <div class="flex flex-col bg-word">
-              <div >
-                <div class="flex flex-wrap md:flex-row justify-center items-center md:container mx-auto w-full">
-                  <img v-for="(item, index) in communicate1" :src="item.src" :key="index" :alt="`client-${index}`" class="w-1/3 md:w-1/6">
+            <div class="bg-fixed bg-word">
+              <div class="flex flex-col md:flex-row justify-center items-center w-full gap-10" style="padding: 6% 10% 6% 10%;">
+                <div class="lg:container mx-auto w-full my-3 grid grid-cols-3 md:grid-cols-5 gap-5">
+                  <div v-for="(item, index) in communicate" :key="index" class="flex items-center justify-center">
+                    <img :src="item.src" :alt="`client-${index}`" class="w-2/3 max-h-20 min-h-20 md:w-1/2 h-auto col-span-1 object-contain hover:scale-110 transition-all duration-300">
+                  </div>
                 </div>
               </div>
             </div>
         <!-- members -->
-         <MembersOurMembers />
+         <OurMembers />
      </div>
      <footer>
         <div class="flex flex-col justify-between md:flex-row bg-black px-5">
@@ -126,12 +128,27 @@ function toggleMenu() {
   menu.value = !menu.value;
 }
 
-const communicate1 = [
+const communicate = [
   {src: '/image/communicate/1-Four-Season.png'},
   {src: '/image/communicate/2-Hyatt.png'},
   {src: '/image/communicate/3-Marriott_Logo.png'},
   {src: '/image/communicate/4-Sheraton-hotels-resorts-2-logo.png'},
   {src: '/image/communicate/5-ConradHotelsLogo.png'},
+  {src: '/image/communicate/6-Fairmont_Logo.png'},
+  {src: '/image/communicate/7-Ritz-carlton-1-logo-png-transparent.png'},
+  {src: '/image/communicate/8-HiltonHotelsLogo.png'},
+  {src: '/image/communicate/9-Kimpton-hotels-restaurants-logo-kimpton-hotels-restaurants-logo.png'},
+  {src: '/image/communicate/10-Renaissance-hotels-resorts-logo-png-transparent.png'},
+  {src: '/image/communicate/11-DoubletreeLogo.png'},
+  {src: '/image/communicate/12-Westin.png'},
+  {src: '/image/communicate/13-Embassy-suites-hotels-logo-png-transparent-embassy-suites.png'},
+  {src: '/image/communicate/14-Flamingo_CUN-01_Sin_fondo.png'},
+  {src: '/image/communicate/15-Graduate.png'},
+  {src: '/image/communicate/16-Golden-Nugget.png'},
+  {src: '/image/communicate/17-Delta_Hotels_logo.png'},
+  {src: '/image/communicate/18-Aloft-Sunnyvale.png'},
+  {src: '/image/communicate/19Postoak-stacked-white.png'},
+  {src: '/image/communicate/20-The-Wink.png'},
 ]
 
 </script>

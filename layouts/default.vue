@@ -1,5 +1,7 @@
 <template>
     <div>
+        <TestSlide/>
+         <!-- <TestChange/> -->
         <slot />
     </div>
 </template>
