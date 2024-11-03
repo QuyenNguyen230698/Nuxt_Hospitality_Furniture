@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TestSlide/>
+        <!-- <TestSlide/> -->
          <!-- <TestChange/> -->
         <slot />
     </div>
