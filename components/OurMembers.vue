@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-image-member w-full h-full pb-5 pt-10 px-14">
+    <div class="bg-image-member w-full h-full pb-5 px-14">
         <div class="container mx-auto text-center flex flex-col w-full h-full text-white py-6">
             <h2 class="p-6 font-black text-5xl">Our members</h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>

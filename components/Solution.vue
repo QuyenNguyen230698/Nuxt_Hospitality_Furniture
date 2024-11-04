@@ -2,12 +2,12 @@
       <div class="bg-black p-4 lg:p-0">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 bg-solution w-full h-full">
         <div class="hidden lg:block">
-          <div class="flex flex-col items-center justify-center w-full h-full gap-5 container mx-auto">
-          <h2 class="text-4xl font-bold text-white text-right">
+          <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+          <h2 class="text-center text-5xl font-bold p-6 text-white">
             One Stop Solution
           </h2>
-          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px"></div>
-          <p class="text-sm color-text text-center">
+          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
+          <p class="text-sm color-text text-center mb-5">
             Established in 2001, Tran Duc Furnishings has been specialized in
             exporting luxury hotel furniture which is located in Binh Duong
             province and takes a 50-minute drive from Ho Chi Minh airport. Tran
@@ -38,12 +38,12 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center w-full h-full gap-5 container mx-auto lg:hidden">
-          <h2 class="text-4xl font-bold text-white text-right">
+        <div class="flex flex-col items-center justify-center w-full h-full p-5 container mx-auto lg:hidden">
+          <h2 class="text-center text-5xl font-bold p-6 text-white">
             One Stop Solution
           </h2>
-          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px"></div>
-          <p class="text-sm color-text text-center">
+          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
+          <p class="text-sm color-text text-center mb-10">
             Established in 2001, Tran Duc Furnishings has been specialized in
             exporting luxury hotel furniture which is located in Binh Duong
             province and takes a 50-minute drive from Ho Chi Minh airport. Tran

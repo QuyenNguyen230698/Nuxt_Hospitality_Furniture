@@ -152,9 +152,9 @@
       <!-- Section -->
       <Section />
       <!-- Clients -->
-      <div class="flex flex-col items-center justify-center bg-black">
+      <div class="flex flex-col items-center justify-center bg-black p-6">
         <div class="py-2 px-10 md:px-0">
-          <h2 class="text-center text-5xl font-bold pb-4 text-white">
+          <h2 class="text-center text-5xl font-bold p-6 text-white">
             Clients
           </h2>
           <p class="text-sm text-center color-section">
@@ -175,6 +175,8 @@
       <Communicate/>
       <!-- Solution -->
        <Solution/>
+       <!-- Factories -->
+        <Factories/>
       <!-- members -->
       <OurMembers />
     </div>
@@ -220,9 +222,6 @@ const menu = ref(false);
 function toggleMenu() {
   menu.value = !menu.value;
 }
-
-
-
 
 </script>
 
