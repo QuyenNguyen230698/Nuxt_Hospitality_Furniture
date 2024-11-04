@@ -10,7 +10,7 @@
               <img :src="item.src" class="w-full h-auto object-cover">
               <div class="absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-1000 flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center justify-center">
-                    <h3 class="text-orange-500 text-xl font-bold z-10 ">{{item.title}}</h3>
+                    <h3 class="text-orange-500 text-xl font-bold z-10 pb-4">{{item.title}}</h3>
                 </div>
                 <div class="flex gap-2">
                     <a href="/" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-magnifying-glass"></i></a>
