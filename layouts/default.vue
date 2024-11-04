@@ -2,6 +2,7 @@
     <div>
          <!-- <TestChange/> -->
         <slot />
+        <ButtonScrollToTop/>
     </div>
 </template>
 
