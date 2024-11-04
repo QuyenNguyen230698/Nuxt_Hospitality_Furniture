@@ -5,11 +5,14 @@
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
         <div class="flex flex-col md:flex-row w-full h-full">
-            <div class="flex items-center justify-center w-1/3 h-full">
+            <div class="items-center justify-center w-1/3 h-full hidden md:flex">
+                <h2 class="text-white text-2xl font-bold">Playlist Desktop</h2>
+            </div>
+            <div class="flex items-center justify-center w-full h-full md:w-2/3">
                 <h2 class="text-white text-2xl font-bold">Screens</h2>
             </div>
-            <div class="flex items-center justify-center w-2/3 h-full">
-                <h2 class="text-white text-2xl font-bold">Screens</h2>
+            <div class="flex items-center justify-center w-full h-full md:hidden">
+                <h2 class="text-white text-2xl font-bold">Playlist Mobile</h2>
             </div>
         </div>
     </div>
