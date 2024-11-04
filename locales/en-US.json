@@ -1,34 +1,19 @@
 {
   "app":{
-    "form":{
-      "signEvent":"REGISTER PARTICIPATE",
-      "signBooth":"REGISTER BOOTH"
+    "menu":{
+      "aboutus":"About Us",
+      "capabilities":"Capabilities",
+      "woodenfurniture":"Wooden Furniture",
+      "metalfurniture":"Metal Furniture",
+      "upholstery":"Upholstery",
+      "door":"Door",
+      "finishing":"Finishing",
+      "projects":"Projects",
+      "referenceprice":"Reference Price",
+      "news":"News",
+      "contact":"Contact"
     },
-    "bus":{
-      "schedule":"Bus Schedule"
-    },
-    "event":{
-      "hot2":"FEATURED",
-      "hot1":"EVENTS",
-      "venue":"event Venue"
-    },
-    "speaker":{
-      "speaker1":"GUEST",
-      "speaker2":"SPEAKER"
-    },
-    "partner": {
-      "partner": "Partner"
-    },
-    "time": {
-      "timeline": "Timeline"
-    },
-    "media":{
-      "ponsorship":"Media Sponsorship",
-      "communication":"Media"
-    },
-    "news":{
-      "new":"NEWS"
-    }
+    "sliceShow":{}
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",
   "form": {
