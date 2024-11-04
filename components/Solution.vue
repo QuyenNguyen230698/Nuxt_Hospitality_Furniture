@@ -42,8 +42,8 @@
           <h2 class="text-center text-5xl font-bold p-6 text-white">
             One Stop Solution
           </h2>
-          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
-          <p class="text-sm color-text text-center mb-10">
+          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
+          <p class="text-sm color-text text-center mb-5">
             Established in 2001, Tran Duc Furnishings has been specialized in
             exporting luxury hotel furniture which is located in Binh Duong
             province and takes a 50-minute drive from Ho Chi Minh airport. Tran

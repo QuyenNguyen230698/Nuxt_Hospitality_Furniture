@@ -157,6 +157,7 @@
           <h2 class="text-center text-5xl font-bold p-6 text-white">
             Clients
           </h2>
+          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
           <p class="text-sm text-center color-section">
             With over 20 years of experience, having completed more than 400
             projects, and achieving an export milestone of over 200 containers
@@ -167,9 +168,6 @@
             industry, particularly in the U.S market
           </p>
         </div>
-        <div class="py-4">
-          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto" style="height: 1px"></div>
-        </div>
       </div>
       <!-- Communicate -->
       <Communicate/>
@@ -177,6 +175,8 @@
        <Solution/>
        <!-- Factories -->
         <Factories/>
+        <!-- Projects -->
+         <Projects/>
       <!-- members -->
       <OurMembers />
     </div>
