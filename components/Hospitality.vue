@@ -1,43 +1,28 @@
 <template>
   <div>
-    <!-- header -->
+     <!-- header -->
     <header class="flex bg-word">
-      <div
-        class="flex items-center justify-between w-full h-full shadow-xl p-0 md:p-2"
-      >
-        <div
-          class="w-1/3 md:w-1/5 lg:w-1/4 flex flex-start md:justify-evenly lg:justify-center lg:p-1"
-        >
+      <div class="flex items-center justify-between w-full h-full shadow-xl p-0 md:p-2">
+        <div class="w-1/3 md:w-1/5 lg:w-1/4 flex flex-start md:justify-evenly lg:justify-center lg:p-1">
           <a href="/">
-            <img
-              src="/public/image/logo/Tranduc-Furnishings-compress.png"
+            <img src="/public/image/logo/Tranduc-Furnishings-compress.png"
               alt=""
-              class="h-fit p-0 lg:pb-1 xl:pb-1 md:h-12 xl:h-12 max-w-full max-h-full"
-            />
+              class="h-fit p-0 lg:pb-1 xl:pb-1 md:h-12 xl:h-12 max-w-full max-h-full"/>
           </a>
         </div>
-        <div
-          class="h-full flex flex-col lg:flex-row items-center lg:justify-end w-1/3 md:w-4/5 lg:w-4/6 xl:w-2/4 2xl:w-2/5 color-text"
-        >
-          <div
-            @click="toggleMenu"
+        <div class="h-full flex flex-col lg:flex-row items-center lg:justify-end w-1/3 md:w-4/5 lg:w-4/6 xl:w-2/4 2xl:w-2/5 color-text">
+          <div @click="toggleMenu"
             :class="{ flex: menu, hidden: !menu }"
-            class="cursor-pointer justify-end w-full p-4 lg:hidden"
-          >
+            class="cursor-pointer justify-end w-full p-4 lg:hidden">
             <i class="fa-solid fa-xmark hover:text-orange-500 text-xl"></i>
           </div>
-          <div
-            @click="toggleMenu"
+          <div @click="toggleMenu"
             :class="{ hidden: menu, flex: !menu }"
-            class="cursor-pointer justify-end w-full p-4 lg:hidden"
-          >
+            class="cursor-pointer justify-end w-full p-4 lg:hidden">
             <i class="fa-solid fa-bars hover:text-orange-500 text-xl"></i>
           </div>
           <!-- Mobile Menu -->
-          <div
-            v-if="menu"
-            class="text-sm flex flex-col bg-menu w-full px-4 lg:hidden"
-          >
+          <div v-if="menu" class="text-sm flex flex-col bg-menu w-full px-4 lg:hidden">
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
               {{ $t('app.menu.aboutus') }}
             </div>
@@ -82,17 +67,14 @@
           </div>
           <!-- Desktop Menu -->
           <div
-            class="hidden lg:flex lg:flex-row justify-end lg:w-full lg:text-sm xl:text-base font-medium"
-          >
+            class="hidden lg:flex lg:flex-row justify-end lg:w-full lg:text-sm xl:text-base font-medium">
             <div class="grid grid-cols-6 w-full text-center">
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
-              >
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.aboutus') }}
               </div>
               <div
-                class="navbar-center text-nowrap flex cursor-pointer py-2 hover:border-b hover:border-orange-500 justify-center"
-              >
+                class="navbar-center text-nowrap flex cursor-pointer py-2 hover:border-b hover:border-orange-500 justify-center">
                 <ul class="menu">
                   <li>
                     <details>
@@ -121,23 +103,19 @@
                 </ul>
               </div>
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
-              >
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.projects') }}
               </div>
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
-              >
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.referenceprice') }}
               </div>
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
-              >
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.news') }}
               </div>
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
-              >
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.contact') }}
               </div>
             </div>
@@ -178,6 +156,7 @@
       <!-- members -->
       <OurMembers />
     </div>
+    <!-- footer -->
     <footer>
       <div class="flex flex-col justify-between md:flex-row bg-black px-5">
         <div
