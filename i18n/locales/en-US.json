@@ -1,0 +1,125 @@
+{
+  "app":{
+    "menu":{
+      "aboutus":"About Us",
+      "capabilities":"Capabilities",
+      "woodenfurniture":"Wooden Furniture",
+      "metalfurniture":"Metal Furniture",
+      "upholstery":"Upholstery",
+      "door":"Door",
+      "finishing":"Finishing",
+      "projects":"Projects",
+      "referenceprice":"Reference Price",
+      "news":"News",
+      "contact":"Contact"
+    },
+    "sliceShow":{
+      "tophospitality":"Top Hospitality Furniture Manufacturer",
+      "inVietnam":"in Vietnam",
+      "factorytour":"Factory Tour",
+      "capabilityprofile":"Capability Profile"
+    },
+    "section":{
+      "23years":"23 Years",
+      "ofsatisfying":"of satisfying",
+      "customerswithour":"customers with our",
+      "worldclassproducts":"world-class products",
+      "2factories":"2 Factories",
+      "120000m2":"120.000m²",
+      "2000employees":"2,000+ Employees",
+      "200containerspermonth":"200 Containers per month",
+      "technology":"Technology",
+      "newestmachines":"Newest Machines",
+      "innovationtechnology":"Innovation Technology",
+      "automationsystem":"Automatic System",
+      "400projects":"400+ Projects",
+      "inusandnowexpanding":"in the US and now expanding",
+      "ourglobalreach":"our global reach to Europe and the",
+      "middleeast":"Middle East"
+    },
+    "clients":{
+      "clients":"Clients",
+      "withover":"With over 20 years of experience, having completed more than 400 projects, and achieving an export milestone of over 200 containers each month.",
+      "bespokefurniture":"Tran Duc Furnishings proudly stands as one of the leading providers of bespoke furniture solutions for the Hospitality and Resort industry, particularly in the U.S market"
+    },
+    "solution":{
+      "onestopsolution":"One Stop Solution",
+      "established":"Established in 2001, Tran Duc Furnishings has been specialized in exporting luxury hotel furniture which is located in Binh Duong province and takes a 50-minute drive from Ho Chi Minh airport. Tran Duc Furnishings has become “One Stop Solution” for the hospitality furniture industry in house facilities consisting of Wooden factory, Upholstery factory, and Metal factory.",
+      "moredetails":"More Details"
+    },
+    "factories":{
+      "ourfactories":"Our Factories",
+      "wood":"Wood",
+      "veneer":"Veneer",
+      "metal":"Metal",
+      "upholstery":"Upholstery",
+      "painting":"Painting",
+      "coating":"Coating",
+      "finishing":"Finishing",
+      "shape":"Shape",
+      "assemble":"Assemble",
+      "delivery":"Delivery",
+      "art":"Art"
+    },
+    "projects":{
+      "projects":"Projects"
+    },
+    "overview":{
+      "productmanufacturingoverview":"Product Manufacturing Overview",
+      "playlist":"Playlist"
+    },
+    "members":{
+      "ourmembers":"Our Members",
+      "totalsolutionforgreenprojects":"Total Solution for Green Projects",
+      "sustainabledevelopment":"Sustainable Living Solution"
+    }
+  },
+  "notificationQR":"The QR code is being generated. Please wait a moment!",
+  "form": {
+    "title": "EVENT REGISTRATION",
+    "fullName": "Full name",
+    "placeHolderName": "Your full name",
+    "phone": "Phone number",
+    "placeHolderPhone": "Your phone number",
+    "email": "Email",
+    "placeHolderEmail": "Your email",
+    "gender": "Gender",
+    "isStudent": "Are you a student?",
+    "companyName": "Company name",
+    "position": "Position",
+    "universityName": "University name",
+    "major": "Major",
+    "textPolicy": "We are committed to using customer information safely, legally, and in compliance with current laws and regulations.",
+    "textButton": "Register",
+    "joinDate": "Participation date"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "news": "News",
+    "contact": "Contact",
+    "sustainability": "Sustainability",
+    "environment": "Environment",
+    "social": "Social",
+    "governance": "Governance",
+    "netZero2030": "NetZero 2030",
+    "solutions": "Solutions",
+    "hospitalityFurniture": "Hospitality Furniture",
+    "architectureAndConstruction": "Architecture & Construction",
+    "modularHomes": "Modular Homes",
+    "hospitalityManagement": "Hospitality Management",
+    "projects": "Projects",
+    "category": "Category",
+    "threeDTour": "3D Tour",
+    "career": "Career",
+    "contest": "Contest",
+    "brochure": "Brochure"
+  },
+  "toast": {
+    "notification":"Please check your email (inbox or spam) after 1 - 5 minutes.",
+    "help":"Support: (+84) 931 866 698 (Mr. Duc).",
+    "errorName": "Please enter your name.",
+    "errorEmail": "Please enter your email.",
+    "errorPhone": "Please enter your phone number.",
+    "errorEmailInvalid": "Please enter a valid email address."
+  }
+}

@@ -1,18 +1,18 @@
 <template>
     <div class="bg-overview flex flex-col w-full h-full p-6">
         <div class="text-center ">
-            <h2 class="text-center text-5xl font-bold p-6 text-white">Product Manufacturing Overview</h2>
+            <h2 class="text-center text-5xl font-bold p-6 text-white">{{ $t('app.overview.productmanufacturingoverview') }}</h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
         <div class="flex flex-col md:flex-row w-full h-full">
             <div class="items-center justify-center w-1/3 h-full hidden md:flex flex-col">
-                <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">Playlist</h2>
+                <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
                 <ul class="space-y-2 w-full">
                     <li
                         v-for="item in playlist"
                         :key="item.id"
                         @click="selectPlaylist(item)"
-                        class="p-2 cursor-pointer text-white hover:text-orange-500 hover:bg-white"
+                        class="p-2 cursor-pointer text-white hover:text-orange-500 hover:bg-gray-200"
                     >
                         {{ item.name }}
                     </li>
@@ -32,13 +32,13 @@
                 ></iframe>
             </div>
             <div class="flex flex-col items-center justify-center w-full h-full md:hidden">
-                <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">Playlist</h2>
+                <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
                 <ul class="space-y-2 w-full">
                     <li
                         v-for="item in playlist"
                         :key="item.id"
                         @click="selectPlaylist(item)"
-                        class="p-2 cursor-pointer text-white hover:text-orange-500 hover:bg-white"
+                        class="p-2 cursor-pointer text-white hover:text-orange-500 hover:bg-gray-200"
                     >
                         {{ item.name }}
                     </li>
@@ -51,7 +51,7 @@
 <script setup>
 import { ref } from "vue";
 
-// Initialize selectedPlaylist with the first item in the playlist
+// khởi tạo playlist
 const playlist = ref([
   { id: 1, name: 'Hotel Furniture Manufacturer', src: 'https://youtu.be/SD0Wpexdhu0?si=QC8d-GoGNYXmFWDa' },
   { id: 2, name: 'Nightstands', src: 'https://youtu.be/aYZqSfvjMR4?si=qDJF7UcdDSRcEsws' },
@@ -60,14 +60,12 @@ const playlist = ref([
   { id: 5, name: 'Flamingo Las Vegas', src: 'https://youtu.be/TbZ7EBZWmho?si=AS4o5sh2DOreO-pX' },
   { id: 6, name: 'RITZ CARLTON ATLANTA', src: 'https://youtu.be/C3xKIXZzIgc?si=lZEep1DVmBMr0A37' }
 ]);
-
+// khởi tạo selectedPlaylist
 const selectedPlaylist = ref(playlist.value[0]); // Set default to the first item
-
 // Hàm chọn video và chuyển đổi URL thành dạng nhúng của YouTube
 const selectPlaylist = (item) => {
   selectedPlaylist.value = item;
 };
-
 const getEmbedUrl = (url) => {
   const videoId = url.split("v=")[1]?.split("&")[0] || url.split("youtu.be/")[1];
   return `https://www.youtube.com/embed/${videoId}`;
@@ -77,28 +75,5 @@ const getEmbedUrl = (url) => {
 <style scoped>
 .bg-overview {
     background-color: #0D0E12;
-}
-.nav-item {
-  position: relative;
-}
-.nav-item.active {
-  color: #f5833e;
-}
-.nav-item.active:after,
-.nav-item:hover:after {
-  width: 100%;
-}
-.nav-item:after {
-  bottom: 0;
-  content: "";
-  height: 0.125rem;
-  left: 0;
-  position: absolute;
-  width: 0;
-  --tw-bg-opacity: 1;
-  background-color: #f5833e;
-  transition-duration: 0.5s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

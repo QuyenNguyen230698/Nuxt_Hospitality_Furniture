@@ -1,0 +1,125 @@
+{
+  "app": {
+  "menu": {
+    "aboutus": "Về Chúng Tôi",
+    "capabilities": "Năng Lực",
+    "woodenfurniture": "Nội Thất Gỗ",
+    "metalfurniture": "Nội Thất Kim Loại",
+    "upholstery": "Nội Thất Bọc Nệm",
+    "door": "Cửa",
+    "finishing": "Hoàn Thiện",
+    "projects": "Dự Án",
+    "referenceprice": "Giá Tham Khảo",
+    "news": "Tin Tức",
+    "contact": "Liên Hệ"
+  },
+  "sliceShow": {
+    "tophospitality": "Nhà Sản Xuất Nội Thất Khách Sạn Hàng Đầu",
+    "inVietnam": "tại Việt Nam",
+    "factorytour": "Tham Quan Nhà Máy",
+    "capabilityprofile": "Hồ Sơ Năng Lực"
+  },
+  "section": {
+    "23years": "23 Năm",
+    "ofsatisfying": "với sự hài lòng của",
+    "customerswithour": "khách hàng với các",
+    "worldclassproducts": "sản phẩm đẳng cấp thế giới",
+    "2factories": "2 Nhà Máy",
+    "120000m2": "120.000m²",
+    "2000employees": "Hơn 2.000 Nhân Viên",
+    "200containerspermonth": "200 Container mỗi tháng",
+    "technology": "Công Nghệ",
+    "newestmachines": "Máy Móc Hiện Đại",
+    "innovationtechnology": "Công Nghệ Đổi Mới",
+    "automationsystem": "Hệ Thống Tự Động",
+    "400projects": "400+ Dự Án",
+    "inusandnowexpanding": "tại Mỹ và đang mở rộng",
+    "ourglobalreach": "mạng lưới toàn cầu đến Châu Âu và",
+    "middleeast": "Trung Đông"
+  },
+  "clients": {
+    "clients": "Khách Hàng",
+    "withover": "Với hơn 20 năm kinh nghiệm, hoàn thành hơn 400 dự án và đạt cột mốc xuất khẩu trên 200 container mỗi tháng.",
+    "bespokefurniture": "Nội Thất Trần Đức tự hào là một trong những nhà cung cấp hàng đầu các giải pháp nội thất theo yêu cầu cho ngành công nghiệp khách sạn và khu nghỉ dưỡng, đặc biệt là tại thị trường Mỹ."
+  },
+  "solution": {
+    "onestopsolution": "Giải Pháp Toàn Diện",
+    "established": "Thành lập từ năm 2001, Nội Thất Trần Đức chuyên xuất khẩu nội thất khách sạn cao cấp và tọa lạc tại tỉnh Bình Dương, cách sân bay Hồ Chí Minh 50 phút lái xe. Nội Thất Trần Đức đã trở thành “Giải Pháp Toàn Diện” cho ngành nội thất khách sạn với các nhà máy bao gồm nhà máy gỗ, nhà máy bọc nệm và nhà máy kim loại.",
+    "moredetails": "Xem Chi Tiết"
+  },
+  "factories": {
+    "ourfactories": "Các Nhà Máy Của Chúng Tôi",
+    "wood": "Gỗ",
+    "veneer": "Ván Mỏng",
+    "metal": "Kim Loại",
+    "upholstery": "Bọc Nệm",
+    "painting": "Sơn",
+    "coating": "Phủ",
+    "finishing": "Hoàn Thiện",
+    "shape": "Định Hình",
+    "assemble": "Lắp Ráp",
+    "delivery": "Giao Hàng",
+    "art": "Nghệ Thuật"
+  },
+  "projects": {
+    "projects": "Dự Án"
+  },
+  "overview": {
+    "productmanufacturingoverview": "Tổng Quan Quy Trình Sản Xuất",
+    "playlist": "Danh Sách Phát"
+  },
+  "members": {
+    "ourmembers": "Thành Viên Của Chúng Tôi",
+    "totalsolutionforgreenprojects": "Giải Pháp Toàn Diện Cho Các Dự Án Xanh",
+    "sustainabledevelopment": "Giải Pháp Sống Bền Vững"
+  }
+},
+  "notificationQR": "Mã QR đang được tạo. Xin vui lòng đợi trong giây lát!",
+  "form": {
+    "title": "ĐĂNG KÝ THAM GIA SỰ KIỆN",
+    "fullName": "Họ và tên",
+    "placeHolderName": "Họ và tên của bạn",
+    "phone": "Số điện thoại",
+    "placeHolderPhone": "Số điện thoại của bạn",
+    "email": "Email",
+    "placeHolderEmail": "Email của bạn",
+    "gender": "Giới tính",
+    "isStudent": "Bạn có phải là sinh viên các trường cao đẳng, đại học? ",
+    "companyName": "Tên công ty",
+    "position": "Chức vụ",
+    "universityName": "Tên trường đại học",
+    "major": "Chuyên ngành",
+    "textPolicy": "Chúng tôi cam kết sẽ sử dụng thông tin của khách hàng một cách an toàn, hợp pháp và tuân thủ các quy định pháp luật hiện hành.",
+    "textButton": "Đăng ký",
+    "joinDate": "Ngày tham gia"
+  },
+  "footer": {
+    "aboutUs": "Giới thiệu",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
+    "sustainability": "Sự bền vững",
+    "environment": "Môi trường",
+    "social": "Trách nhiệm xã hội",
+    "governance": "Quản trị",
+    "netZero2030": "NetZero 2030",
+    "solutions": "Giải pháp",
+    "hospitalityFurniture": "Nội thất khách sạn",
+    "architectureAndConstruction": "Kiến trúc & Xây dựng",
+    "modularHomes": "Nhà mô-đun",
+    "hospitalityManagement": "Quản lý khách sạn",
+    "projects": "Dự án",
+    "category": "Danh mục",
+    "threeDTour": "3D Tour",
+    "career": "Tuyển Dụng",
+    "contest": "Cuộc thi",
+    "brochure": "Brochure"
+  },
+  "toast": {
+    "notification": "Vui lòng kiểm tra email (tại hộp thư đến hoặc thư rác) sau 1 - 5 phút.",
+    "help": "Hỗ trợ:(+84) 931 866 698 (Mr. Đức)",
+    "errorName": "Vui lòng điền Họ và Tên.",
+    "errorEmail": "Vui lòng điền email.",
+    "errorPhone": "Vui lòng điền số điện thoại.",
+    "errorEmailInvalid": "Vui lòng điền email hợp lệ."
+  }
+}

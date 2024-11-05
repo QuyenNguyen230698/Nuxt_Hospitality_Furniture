@@ -5,11 +5,29 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
     '@nuxtjs/i18n',
+    '@nuxt/image',
     '@nuxtjs/tailwindcss',
   ],
   css: ['@/assets/css/main.css','@fortawesome/fontawesome-free/css/all.min.css'],
   devServer: {
     port: 3333,
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'vi-VN',
+        file: 'vi-VN.json'
+      },
+      {
+        code: 'en-US',
+        file: 'en-US.json'
+      }
+    ],
+    defaultLocale: 'en-US',
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: 'locales',
+    vueI18n: './i18n.config.ts'
   },
   vite: {
     plugins: [

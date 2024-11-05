@@ -4,21 +4,16 @@
         <div class="hidden lg:block">
           <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
           <h2 class="text-center text-5xl font-bold p-6 text-white">
-            One Stop Solution
+            {{ $t('app.solution.onestopsolution') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
           <p class="text-sm color-text text-center mb-5">
-            Established in 2001, Tran Duc Furnishings has been specialized in
-            exporting luxury hotel furniture which is located in Binh Duong
-            province and takes a 50-minute drive from Ho Chi Minh airport. Tran
-            Duc Furnishings has become “One Stop Solution” for the hospitality
-            furniture industry in house facilities consisting of Wooden factory,
-            Upholstery factory, and Metal factory.
+            {{ $t('app.solution.established') }}
           </p>
           <button
             class="bg-none button-solution text-base px-5 py-1 rounded-md"
           >
-            More Details
+            {{ $t('app.solution.moredetails') }}
           </button>
         </div>
         </div>
@@ -40,21 +35,16 @@
         </div>
         <div class="flex flex-col items-center justify-center w-full h-full p-5 container mx-auto lg:hidden">
           <h2 class="text-center text-5xl font-bold p-6 text-white">
-            One Stop Solution
+            {{ $t('app.solution.onestopsolution') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
           <p class="text-sm color-text text-center mb-5">
-            Established in 2001, Tran Duc Furnishings has been specialized in
-            exporting luxury hotel furniture which is located in Binh Duong
-            province and takes a 50-minute drive from Ho Chi Minh airport. Tran
-            Duc Furnishings has become “One Stop Solution” for the hospitality
-            furniture industry in house facilities consisting of Wooden factory,
-            Upholstery factory, and Metal factory.
+            {{ $t('app.solution.established') }}
           </p>
           <button
             class="bg-none button-solution text-base px-5 py-1 rounded-md"
           >
-            More Details
+            {{ $t('app.solution.moredetails') }}
           </button>
         </div>
       </div>
@@ -62,15 +52,17 @@
 </template>
 
 <script setup>
+// khởi tạo Arr hình ảnh
 const solution = [
   { src: "/image/slice/slice1.jpg" },
   { src: "/image/slice/slice2.jpg" },
   { src: "/image/slice/slice3.jpg" },
   { src: "/image/slice/slice4.jpg" },
 ];
-
+//#region QuyenNC ( khởi tạo các biến )
 const currentSlide = ref(0);
-const slideInterval = 3000; // 3 seconds
+const slideInterval = 3000; 
+//#endregion
 
 function nextSlide() {
   currentSlide.value = (currentSlide.value + 1) % solution.length;

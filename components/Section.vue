@@ -4,27 +4,27 @@
               <div class="grid grid-cols-2 md:grid-cols-4 w-full text-center gap-4">
                 <div class="flex flex-col items-center justify-center color-section lg:py-5">
                   <i aria-hidden="true" class="fas fa-business-time text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
-                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">23 Years</h3>
+                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.23years') }}</h3>
                   <div >
                     <p class="text-xs">
-                      of satisfying
+                      {{ $t('app.section.ofsatisfying') }}
                       <br>
-                      customers with our
+                      {{ $t('app.section.customerswithour') }}
                       <br>
-                      world-class products
+                      {{ $t('app.section.worldclassproducts') }}
                     </p>
                   </div>
                 </div>
                 <div class="flex flex-col items-center justify-center color-section lg:py-5">
                   <i aria-hidden="true" class="fas fa-warehouse text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
-                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">2 Factories</h3>
+                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.2factories') }}</h3>
                   <div >
                     <p class="text-xs">
-                      120.000m²
+                      {{ $t('app.section.120000m2') }}
                       <br>
-                      2,000+ Employees
+                      {{ $t('app.section.2000employees') }}
                       <br>
-                      200 Containers per month
+                      {{ $t('app.section.200containerspermonth') }}
                     </p>
                   </div>
                 </div>
@@ -34,27 +34,27 @@
                     <path class="st0" d="M111.6,17.7c-2.2,0-4.2,1.7-4.6,3.9l-4.6,27.8c-5.4,1.6-10.6,3.7-15.6,6.4L64.1,39.5c-1.9-1.3-4.4-1.1-6,0.5  L40,58c-1.6,1.6-1.9,4.1-0.6,6l16.1,23c-2.7,4.9-4.8,10.2-6.5,15.7l-27.6,4.6c-2.2,0.4-3.9,2.3-3.9,4.6v25.6c0,2.2,1.6,4.2,3.8,4.6  l27.7,4.9c1.6,5.5,3.8,10.7,6.5,15.7l-16.3,22.9c-1.3,1.9-1.1,4.4,0.5,6l18.1,18.2c1.6,1.6,4.1,1.9,6,0.6L86.8,194  c4.9,2.7,10.2,4.8,15.6,6.4l4.7,27.8c0.4,2.2,2.3,3.9,4.6,3.9h25.6c2.2,0,4.2-1.6,4.6-3.8l4.9-27.9c5.4-1.6,10.6-3.8,15.6-6.5  l23.2,16.3c1.9,1.3,4.4,1.1,6-0.6l18.1-18.2c1.6-1.6,1.8-4.2,0.5-6.1l-16.6-23c2.6-4.8,4.8-10,6.3-15.5l28-4.9  c2.2-0.4,3.8-2.3,3.8-4.6v-25.6c0-2.2-1.7-4.2-3.9-4.6l-28-4.6c-1.6-5.4-3.7-10.5-6.4-15.4l16.3-23.3c1.3-1.9,1.1-4.4-0.6-6  L190.9,40c-1.6-1.6-4.2-1.8-6.1-0.5l-22.5,16.4c-4.8-2.7-10.1-4.8-15.6-6.4l-4.8-27.9c-0.4-2.2-2.3-3.8-4.6-3.8L111.6,17.7  L111.6,17.7z M115.6,27.1h17.7l4.7,26.5c0.3,1.8,1.7,3.3,3.4,3.7c6.8,1.7,13.2,4.4,19,7.9c1.6,0.9,3.6,0.9,5.1-0.2l21.8-15.7  l12.6,12.6L184.4,84c-1,1.5-1.1,3.5-0.2,5c3.5,5.9,6.1,12.2,7.8,19c0.5,1.8,2,3.2,3.7,3.4l26.6,4.4v17.7l-26.6,4.7  c-1.8,0.3-3.3,1.7-3.7,3.4c-1.7,6.8-4.4,13.1-7.8,18.9c-0.9,1.6-0.8,3.6,0.2,5.1l15.7,21.8l-12.6,12.6l-21.8-15.4  c-1.5-1-3.5-1.1-5.1-0.2c-5.8,3.5-12.2,6.2-19,7.9c-1.8,0.5-3.2,1.9-3.4,3.7l-4.7,26.5h-17.8l-4.4-26.4c-0.3-1.9-1.7-3.4-3.4-3.7  c-6.8-1.7-13.2-4.4-19.1-7.9c-1.6-0.9-3.5-0.8-5,0.2l-21.9,15.4l-12.6-12.6L64.6,166c1.1-1.5,1.1-3.5,0.2-5.1  c-3.5-5.9-6.2-12.3-8-19.2c-0.5-1.8-1.9-3.2-3.7-3.4l-26.3-4.7v-17.8l26.2-4.4c1.9-0.3,3.4-1.7,3.7-3.4c1.7-6.9,4.4-13.3,8-19.2  c0.9-1.6,0.9-3.5-0.2-5.1L49.3,61.8l12.6-12.6l21.7,15.6c1.5,1.1,3.5,1.1,5.1,0.2c5.9-3.5,12.3-6.1,19.1-7.8c1.8-0.5,3.2-2,3.4-3.8  L115.6,27.1z M124.7,87.6c-20.5,0-37.3,16.8-37.3,37.3s16.8,37.3,37.3,37.3s37.3-16.8,37.3-37.3S145.2,87.6,124.7,87.6z M124.7,96.9  c15.5,0,28,12.5,28,28s-12.5,28-28,28s-28-12.5-28-28S109.2,96.9,124.7,96.9z"></path>
                     <path class="st0" d="M112.3,25.6c-2.1,0-3.9,1.6-4.2,3.6l-4.2,25.7c-5,1.5-9.8,3.5-14.4,6L68.2,45.7c-1.7-1.2-4.1-1-5.5,0.4  L45.8,62.9c-1.5,1.5-1.7,3.8-0.5,5.5l14.9,21.3c-2.5,4.6-4.5,9.4-6,14.5l-25.6,4.2c-2.1,0.3-3.6,2.2-3.6,4.2v23.8  c0,2.1,1.5,3.9,3.5,4.2l25.7,4.6c1.5,5.1,3.5,9.9,6,14.5l-15.1,21.2c-1.2,1.7-1,4.1,0.4,5.5l16.8,16.8c1.5,1.5,3.8,1.7,5.5,0.5  L89.3,189c4.6,2.5,9.4,4.5,14.4,6l4.3,25.7c0.3,2.1,2.2,3.6,4.2,3.6H136c2.1,0,3.9-1.5,4.2-3.5l4.6-25.8c5-1.5,9.8-3.5,14.4-6  l21.5,15.1c1.7,1.2,4.1,1,5.5-0.5l16.8-16.8c1.5-1.5,1.6-3.9,0.4-5.6l-15.4-21.3c2.4-4.5,4.4-9.2,5.9-14.3l26-4.6  c2.1-0.3,3.5-2.2,3.5-4.2v-23.8c0-2.1-1.6-3.9-3.6-4.2l-25.9-4.2c-1.5-5-3.5-9.8-6-14.3l15.1-21.6c1.2-1.7,1-4.1-0.5-5.5l-16.8-16.8  c-1.5-1.5-3.9-1.6-5.6-0.4L159.3,61c-4.5-2.5-9.3-4.5-14.4-6l-4.5-25.8c-0.3-2.1-2.2-3.5-4.2-3.5L112.3,25.6L112.3,25.6z M116,34.2  h16.4l4.3,24.5c0.3,1.6,1.6,3,3.2,3.5c6.3,1.6,12.3,4.1,17.6,7.3c1.5,0.9,3.4,0.9,4.8-0.2l20.2-14.5l11.7,11.7L179.7,87  c-1,1.4-1,3.3-0.2,4.7c3.3,5.4,5.7,11.3,7.3,17.6c0.4,1.6,1.8,2.9,3.5,3.2l24.6,4.1v16.4l-24.7,4.3c-1.6,0.3-3,1.6-3.5,3.2  c-1.6,6.3-4.1,12.2-7.3,17.5c-0.9,1.5-0.8,3.4,0.2,4.8l14.6,20.2l-11.7,11.7l-20.2-14.3c-1.4-1-3.3-1-4.8-0.2  c-5.4,3.3-11.3,5.8-17.6,7.3c-1.6,0.4-2.9,1.7-3.2,3.5l-4.3,24.5H116l-4.1-24.4c-0.3-1.7-1.6-3.1-3.2-3.5  c-6.3-1.6-12.3-4.1-17.7-7.3c-1.5-0.9-3.3-0.8-4.7,0.2l-20.3,14.3L54.4,183l14.3-20c1-1.4,1-3.3,0.2-4.8c-3.3-5.4-5.8-11.4-7.4-17.8  c-0.4-1.6-1.7-2.9-3.5-3.2l-24.4-4.3v-16.5l24.3-4.1c1.7-0.3,3.1-1.6,3.5-3.2c1.6-6.4,4.1-12.4,7.4-17.8c0.9-1.5,0.9-3.3-0.2-4.8  L54.5,66.4l11.7-11.7l20.1,14.4c1.4,1,3.3,1,4.8,0.2c5.4-3.3,11.4-5.7,17.7-7.3c1.6-0.4,2.9-1.8,3.2-3.5L116,34.2z M124.4,90.4  c-19,0-34.6,15.5-34.6,34.6s15.5,34.6,34.6,34.6s34.6-15.5,34.6-34.6S143.4,90.4,124.4,90.4z M124.4,99c14.3,0,25.9,11.6,25.9,25.9  s-11.6,25.9-25.9,25.9s-25.9-11.6-25.9-25.9S110,99,124.4,99z"></path>
                   </svg>
-                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">Technology</h3>
+                  <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.technology') }}</h3>
                   <div >
                     <p class="text-xs">
-                      Newest Machines
+                      {{ $t('app.section.newestmachines') }}
                       <br>
-                      Innovation Technology
+                      {{ $t('app.section.innovationtechnology') }}
                       <br>
-                      Automatic System
+                      {{ $t('app.section.automationsystem') }}
                     </p>
                   </div>
                 </div>
                 <div class="flex flex-col items-center justify-center color-section lg:py-5">
                   <i aria-hidden="true" class="fas fa-globe-americas text-5xl md:text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
-                  <h3 class="text-base text-white font-bold uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">400+ Projects</h3>
+                  <h3 class="text-base text-white font-bold uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.400projects') }}</h3>
                   <div >
                     <p class="text-xs">
-                      in the US and now expanding
+                      {{ $t('app.section.inusandnowexpanding') }}
                       <br>
-                      our global reach to Europe and the
+                      {{ $t('app.section.ourglobalreach') }}
                       <br>
-                      Middle East
+                      {{ $t('app.section.middleeast') }}
                     </p>
                   </div>
                 </div>
@@ -68,15 +68,18 @@
 </script>
 
 <style scoped>
+/* background image */
 .bg-image-member {
     background-image: url('/image/logo/TDF-bg.jpg');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
 }
+/* icon color */
 .icon-section {
   color: #F5833E;
 }
+/* text color */
 .color-section {
   color: #bfbfbf;
 }

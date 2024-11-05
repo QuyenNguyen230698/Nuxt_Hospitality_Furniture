@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
-    "@nuxtjs/i18n": "^9.0.0",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/i18n": "^9.0.0-rc.2",
     "@tailwindcss/typography": "^0.5.15",
     "i18n": "^0.15.1",
     "nuxt": "^3.13.2",

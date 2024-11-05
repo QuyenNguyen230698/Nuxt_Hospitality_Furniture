@@ -39,28 +39,28 @@
             class="text-sm flex flex-col bg-menu w-full px-4 lg:hidden"
           >
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
-              About Us
+              {{ $t('app.menu.aboutus') }}
             </div>
             <div class="navbar-center text-nowrap flex cursor-pointer py-2">
               <ul class="menu">
                 <li>
                   <details>
                     <summary class="hover:text-orange-500 text-sm">
-                      Capabilities
+                      {{ $t('app.menu.capabilities') }}
                     </summary>
                     <ul>
                       <li class="hover:text-orange-500 text-xs">
-                        <a>Wooden Furniture</a>
+                        <a>{{ $t('app.menu.woodenfurniture') }}</a>
                       </li>
                       <li class="hover:text-orange-500 text-xs">
-                        <a>Metal Furniture</a>
+                        <a>{{ $t('app.menu.metalfurniture') }}</a>
                       </li>
                       <li class="hover:text-orange-500 text-xs">
-                        <a>Upholstery</a>
+                        <a>{{ $t('app.menu.upholstery') }}</a>
                       </li>
-                      <li class="hover:text-orange-500 text-xs"><a>Door</a></li>
+                      <li class="hover:text-orange-500 text-xs"><a>{{ $t('app.menu.door') }}</a></li>
                       <li class="hover:text-orange-500 text-xs">
-                        <a>Finishing</a>
+                        <a>{{ $t('app.menu.finishing') }}</a>
                       </li>
                     </ul>
                   </details>
@@ -68,16 +68,16 @@
               </ul>
             </div>
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
-              Projects
+              {{ $t('app.menu.projects') }}
             </div>
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
-              Reference Price
+              {{ $t('app.menu.referenceprice') }}
             </div>
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
-              News
+              {{ $t('app.menu.news') }}
             </div>
             <div class="hover:text-orange-500 py-2 text-nowrap cursor-pointer">
-              Contact
+              {{ $t('app.menu.contact') }}
             </div>
           </div>
           <!-- Desktop Menu -->
@@ -88,7 +88,7 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                About Us
+                {{ $t('app.menu.aboutus') }}
               </div>
               <div
                 class="navbar-center text-nowrap flex cursor-pointer py-2 hover:border-b hover:border-orange-500 justify-center"
@@ -97,23 +97,23 @@
                   <li>
                     <details>
                       <summary class="lg:text-sm xl:text-base text-center">
-                        Capabilities
+                        {{ $t('app.menu.capabilities') }}
                       </summary>
                       <ul class="bg-menu">
                         <li class="hover:text-orange-500 text-xs text-nowrap">
-                          <a>Wooden Furniture</a>
+                          <a>{{ $t('app.menu.woodenfurniture') }}</a>
                         </li>
                         <li class="hover:text-orange-500 text-xs">
-                          <a>Metal Furniture</a>
+                          <a>{{ $t('app.menu.metalfurniture') }}</a>
                         </li>
                         <li class="hover:text-orange-500 text-xs">
-                          <a>Upholstery</a>
+                          <a>{{ $t('app.menu.upholstery') }}</a>
                         </li>
                         <li class="hover:text-orange-500 text-xs">
-                          <a>Door</a>
+                          <a>{{ $t('app.menu.door') }}</a>
                         </li>
                         <li class="hover:text-orange-500 text-xs">
-                          <a>Finishing</a>
+                          <a>{{ $t('app.menu.finishing') }}</a>
                         </li>
                       </ul>
                     </details>
@@ -123,22 +123,22 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                Projects
+                {{ $t('app.menu.projects') }}
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                Reference Price
+                {{ $t('app.menu.referenceprice') }}
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                News
+                {{ $t('app.menu.news') }}
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                Contact
+                {{ $t('app.menu.contact') }}
               </div>
             </div>
           </div>
@@ -155,17 +155,13 @@
       <div class="flex flex-col items-center justify-center bg-black p-6">
         <div class="py-2 px-10 md:px-0">
           <h2 class="text-center text-5xl font-bold p-6 text-white">
-            Clients
+            {{ $t('app.clients.clients') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
           <p class="text-sm text-center color-section">
-            With over 20 years of experience, having completed more than 400
-            projects, and achieving an export milestone of over 200 containers
-            each month.
+            {{ $t('app.clients.withover') }}
             <br />
-            Tran Duc Furnishings proudly stands as one of the leading providers
-            of bespoke furniture solutions for the Hospitality and Resort
-            industry, particularly in the U.S market
+            {{ $t('app.clients.bespokefurniture') }}
           </p>
         </div>
       </div>
@@ -210,6 +206,7 @@
             ><a href="/"
               ><i class="fab fa-linkedin hover:text-orange-500 h-4"></i></a
           ></span>
+          <LanguageSwitch/>
         </div>
       </div>
     </footer>
@@ -218,6 +215,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+const { locale } = useI18n();
 
 const menu = ref(false);
 

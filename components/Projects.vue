@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col w-full h-full bg-black p-0 py-6">
         <div class="text-center font-bold">
-            <h2 class="text-center text-5xl font-bold p-6 text-white">Projects</h2>
+            <h2 class="text-center text-5xl font-bold p-6 text-white">{{ $t('app.projects.projects') }}</h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
         <div class="container w-full mx-auto px-4">
@@ -24,6 +24,7 @@
 </template>
 
 <script setup>
+//khởi tạo Arr projects
 const projects = [
     {src:'/image/project/project1.jpg',title:'Golden Nugget Lake Charles'},
     {src:'/image/project/project2.jpg',title:'Renaissance Richardson'},

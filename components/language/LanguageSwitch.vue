@@ -1,22 +1,22 @@
 <template>
   <div class="flex justify-between items-center gap-5" ref="dropdownContainer">
-    <details id="language" class="dropdown dropdown-end" ref="dropdown">
+    <details id="language" class="dropdown dropdown-top" ref="dropdown">
       <summary style="    width: 32px !important;
     height: 32px !important;
     padding-left: 0rem !important;
     padding-right: 0rem !important;"
         class="btn w-full shadow-none border-none bg-transparent hover:bg-transparent focus:bg-transparent">
         <NuxtImg class="w-8 h-8 aspect-square rounded-full shadow-xl"
-          :src="`image/netzero/header/${locale === 'vi-VN' ? 'language-vi.png' : 'language-en.png'}`" />
+          :src="`image/header/${locale === 'vi-VN' ? 'language-vi.png' : 'language-en.png'}`" />
       </summary>
       <ul class="menu dropdown-content bg-base-100 rounded z-40 w-40 mr-3 p-1 shadow">
         <li><button @click="selectLanguage('en-US')" class="custorm-btn w-full">
-            <NuxtImg class="w-8 h-8 rounded-full" src="image/netzero/header/language-en.png" />
+            <NuxtImg class="w-8 h-8 rounded-full" src="image/header/language-en.png" />
             <span class="font-[sans-serif] text-black focus:text-white"> English</span>
           </button>
         </li>
         <li><button @click="selectLanguage('vi-VN')" class="custorm-btn  w-full ">
-            <NuxtImg class="w-8 h-8 rounded-full" src="image/netzero/header/language-vi.png" />
+            <NuxtImg class="w-8 h-8 rounded-full" src="image/header/language-vi.png" />
             <span class="font-[sans-serif] text-black "> Vietnamese</span>
           </button>
         </li>
