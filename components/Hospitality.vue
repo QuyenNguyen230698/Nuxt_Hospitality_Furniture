@@ -34,17 +34,17 @@
                       {{ $t('app.menu.capabilities') }}
                     </summary>
                     <ul>
-                      <li class="hover:text-orange-500 text-xs">
+                      <li class="hover:text-orange-500 text-sm">
                         <a>{{ $t('app.menu.woodenfurniture') }}</a>
                       </li>
-                      <li class="hover:text-orange-500 text-xs">
+                      <li class="hover:text-orange-500 text-sm">
                         <a>{{ $t('app.menu.metalfurniture') }}</a>
                       </li>
-                      <li class="hover:text-orange-500 text-xs">
+                      <li class="hover:text-orange-500 text-sm">
                         <a>{{ $t('app.menu.upholstery') }}</a>
                       </li>
-                      <li class="hover:text-orange-500 text-xs"><a>{{ $t('app.menu.door') }}</a></li>
-                      <li class="hover:text-orange-500 text-xs">
+                      <li class="hover:text-orange-500 text-sm"><a>{{ $t('app.menu.door') }}</a></li>
+                      <li class="hover:text-orange-500 text-sm">
                         <a>{{ $t('app.menu.finishing') }}</a>
                       </li>
                     </ul>
@@ -66,56 +66,56 @@
             </div>
           </div>
           <!-- Desktop Menu -->
-          <div
-            class="hidden lg:flex lg:flex-row justify-end lg:w-full lg:text-sm xl:text-base font-medium">
-            <div class="grid grid-cols-6 w-full text-center">
-              <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
+          <div class="hidden lg:flex lg:flex-row justify-end lg:w-full lg:text-sm xl:text-base font-medium">
+              <div class="grid grid-cols-6 w-full text-center">
+              <!-- About Us Menu Item -->
+              <div class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.aboutus') }}
+                </div>
+
+              <!-- Capabilities Dropdown Menu Item -->
+                <div class="relative">
+                <div class="navbar-center text-nowrap flex cursor-pointer py-2 hover:border-b hover:border-orange-500 justify-center">
+                  <ul class="menu">
+                    <li>
+                      <details>
+                        <summary class="lg:text-sm xl:text-base text-center cursor-pointer">
+                          {{ $t('app.menu.capabilities') }}
+                        </summary>
+                        <ul class="absolute left-0 top-full mt-1 bg-menu bg-white shadow-md rounded-md p-2 w-48 text-left z-50">
+                          <li class="hover:text-orange-500 text-xs text-nowrap">
+                            <a>{{ $t('app.menu.woodenfurniture') }}</a>
+                          </li>
+                          <li class="hover:text-orange-500 text-xs">
+                            <a>{{ $t('app.menu.metalfurniture') }}</a>
+                          </li>
+                          <li class="hover:text-orange-500 text-xs">
+                            <a>{{ $t('app.menu.upholstery') }}</a>
+                          </li>
+                          <li class="hover:text-orange-500 text-xs">
+                            <a>{{ $t('app.menu.door') }}</a>
+                          </li>
+                          <li class="hover:text-orange-500 text-xs">
+                            <a>{{ $t('app.menu.finishing') }}</a>
+                          </li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div
-                class="navbar-center text-nowrap flex cursor-pointer py-2 hover:border-b hover:border-orange-500 justify-center">
-                <ul class="menu">
-                  <li>
-                    <details>
-                      <summary class="lg:text-sm xl:text-base text-center">
-                        {{ $t('app.menu.capabilities') }}
-                      </summary>
-                      <ul class="bg-menu">
-                        <li class="hover:text-orange-500 text-xs text-nowrap">
-                          <a>{{ $t('app.menu.woodenfurniture') }}</a>
-                        </li>
-                        <li class="hover:text-orange-500 text-xs">
-                          <a>{{ $t('app.menu.metalfurniture') }}</a>
-                        </li>
-                        <li class="hover:text-orange-500 text-xs">
-                          <a>{{ $t('app.menu.upholstery') }}</a>
-                        </li>
-                        <li class="hover:text-orange-500 text-xs">
-                          <a>{{ $t('app.menu.door') }}</a>
-                        </li>
-                        <li class="hover:text-orange-500 text-xs">
-                          <a>{{ $t('app.menu.finishing') }}</a>
-                        </li>
-                      </ul>
-                    </details>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
+
+              <!-- Other Menu Items -->
+              <div class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.projects') }}
               </div>
-              <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
+              <div class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.referenceprice') }}
               </div>
-              <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
+              <div class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.news') }}
               </div>
-              <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
+              <div class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer">
                 {{ $t('app.menu.contact') }}
               </div>
             </div>
@@ -194,7 +194,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-const { locale } = useI18n();
 
 const menu = ref(false);
 
