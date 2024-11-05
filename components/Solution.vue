@@ -7,7 +7,7 @@
             {{ $t('app.solution.onestopsolution') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-          <p class="text-sm color-text text-center mb-5">
+          <p class="text-sm color-text text-justify mb-5">
             {{ $t('app.solution.established') }}
           </p>
           <button
@@ -38,7 +38,7 @@
             {{ $t('app.solution.onestopsolution') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-          <p class="text-sm color-text text-center mb-5">
+          <p class="text-sm color-text text-justify mb-5">
             {{ $t('app.solution.established') }}
           </p>
           <button
