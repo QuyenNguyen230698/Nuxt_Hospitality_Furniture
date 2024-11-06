@@ -1,9 +1,8 @@
 <template>
     <div>
-        <h2>Test</h2>
-        <ClientOnly>
+        <!-- <ClientOnly>
             <TestCom/>
-        </ClientOnly>
+        </ClientOnly> -->
         <slot />
         <ButtonScrollToTop/>
     </div>

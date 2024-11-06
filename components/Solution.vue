@@ -1,39 +1,22 @@
 <template>
       <div class="bg-black p-4 lg:p-0">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 bg-solution w-full h-full">
-        <div class="hidden lg:block">
-          <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-          <h2 class="text-center text-5xl font-bold p-6 text-white">
-            {{ $t('app.solution.onestopsolution') }}
-          </h2>
-          <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-          <p class="text-sm color-text text-justify mb-5">
-            {{ $t('app.solution.established') }}
-          </p>
-          <button
-            class="bg-none button-solution text-base px-5 py-1 rounded-md"
-          >
-            {{ $t('app.solution.moredetails') }}
-          </button>
-        </div>
-        </div>
-        <div class="flex items-center justify-center lg:justify-start text-white w-full ">
-          <div class="carousel w-full overflow-hidden relative ">
-            <div
-              class="carousel-inner flex transition-transform duration-500"
-              :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-            >
-              <div
-                v-for="(item, index) in solution"
-                :key="index"
-                class="carousel-item w-full flex-shrink-0"
-              >
-                <img :src="item.src" class="w-full h-auto object-center" />
-              </div>
+          <!-- Carousel -->
+          <div class="carousel w-full relative overflow-hidden order-1 lg:order-2">
+            <div v-for="(slide, index) in solution" :key="index" class="carousel-item w-full transition-transform duration-700" 
+              :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+              <img :src="slide.src" alt="Slide image" class="w-full" />
+            </div>
+            <div class="absolute inset-y-1/2 left-5 flex items-center">
+              <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+            </div>
+            <div class="absolute inset-y-1/2 right-5 flex items-center">
+              <button @click="nextSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
             </div>
           </div>
-        </div>
-        <div class="flex flex-col items-center justify-center w-full h-full p-5 container mx-auto lg:hidden">
+
+          <!-- Content -->
+          <div class="flex flex-col items-center justify-center w-full h-full p-5 container mx-auto order-2 lg:order-1">
           <h2 class="text-center text-5xl font-bold p-6 text-white">
             {{ $t('app.solution.onestopsolution') }}
           </h2>
@@ -66,6 +49,9 @@ const slideInterval = 3000;
 
 function nextSlide() {
   currentSlide.value = (currentSlide.value + 1) % solution.length;
+}
+function prevSlide() {
+  currentSlide.value = (currentSlide.value - 1 + solution.length) % solution.length;
 }
 
 let intervalId;
