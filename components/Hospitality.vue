@@ -55,6 +55,14 @@
                   class="menu bg-menu text-base-conten text-xl min-h-full w-4/5 p-4"
                 >
                   <!-- Sidebar content here -->
+                   <li><a href="/">
+                      <img
+                        src="/public/image/logo/Tranduc-Furnishings-compress.png"
+                        alt=""
+                        class="w-40 h-fit"
+                      />
+                    </a>
+                  </li>
                   <li class="hover:text-orange-500 py-2 text-nowrap">
                     <a href="/AboutUs" aria-label="Sidebar Item 1">{{
                       $t("app.menu.aboutus")
