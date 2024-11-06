@@ -56,7 +56,7 @@
                 >
                   <!-- Sidebar content here -->
                   <li class="hover:text-orange-500 py-2 text-nowrap">
-                    <a href="/" aria-label="Sidebar Item 1">{{
+                    <a href="/AboutUs" aria-label="Sidebar Item 1">{{
                       $t("app.menu.aboutus")
                     }}</a>
                   </li>
@@ -79,41 +79,44 @@
                         class="collapse-content p-0 min-h-0 flex flex-col gap-4"
                         v-show="isCollapseOpen"
                       >
-                        <a class="hover:text-orange-500 py-2 text-nowrap">{{
+                      <a href="/Capabilities" class="hover:text-orange-500 py-2 text-nowrap">{{
+                          $t("app.menu.capabilities")
+                        }}</a>
+                        <a href="/Capabilities/WoodenFurniture" class="hover:text-orange-500 py-2 text-nowrap">{{
                           $t("app.menu.woodenfurniture")
                         }}</a>
-                        <a class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/MetalFurniture" class="hover:text-orange-500 py-2 text-nowrap">{{
                           $t("app.menu.metalfurniture")
                         }}</a>
-                        <a class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Ulpholstery" class="hover:text-orange-500 py-2 text-nowrap">{{
                           $t("app.menu.upholstery")
                         }}</a>
-                        <a class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Door" class="hover:text-orange-500 py-2 text-nowrap">{{
                           $t("app.menu.door")
                         }}</a>
-                        <a class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Finishing" class="hover:text-orange-500 py-2 text-nowrap">{{
                           $t("app.menu.finishing")
                         }}</a>
                       </div>
                     </div>
                   </li>
                   <li class="hover:text-orange-500 py-2 text-nowrap">
-                    <a href="/" aria-label="Sidebar Item 1">{{
+                    <a href="/Projects" aria-label="Sidebar Item 1">{{
                       $t("app.menu.projects")
                     }}</a>
                   </li>
                   <li class="hover:text-orange-500 py-2 text-nowrap">
-                    <a href="/" aria-label="Sidebar Item 1">{{
+                    <a href="/ReferencePrice" aria-label="Sidebar Item 1">{{
                       $t("app.menu.referenceprice")
                     }}</a>
                   </li>
                   <li class="hover:text-orange-500 py-2 text-nowrap">
-                    <a href="/" aria-label="Sidebar Item 1">{{
+                    <a href="/News" aria-label="Sidebar Item 1">{{
                       $t("app.menu.news")
                     }}</a>
                   </li>
                   <li class="hover:text-orange-500 py-2 text-nowrap">
-                    <a href="/" aria-label="Sidebar Item 1">{{
+                    <a href="/Contact" aria-label="Sidebar Item 1">{{
                       $t("app.menu.contact")
                     }}</a>
                   </li>
@@ -130,9 +133,9 @@
             >
               <!-- About Us Menu Item -->
               <div
-                class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
+                class="hover:border-orange-500 hover:border-b py-2 text-nowrap"
               >
-                {{ $t("app.menu.aboutus") }}
+                <a href="/AboutUs">{{ $t("app.menu.aboutus") }}</a>
               </div>
 
               <!-- Capabilities Dropdown Menu Item -->
@@ -151,20 +154,23 @@
                         <ul
                           class="absolute left-0 top-full mt-1 bg-menu bg-white shadow-md rounded-md p-2 w-48 text-left z-50"
                         >
+                         <li class="hover:text-orange-500 text-sm text-nowrap">
+                            <a href="/Capabilities">{{ $t("app.menu.capabilities") }}</a>
+                          </li>
                           <li class="hover:text-orange-500 text-sm text-nowrap">
-                            <a>{{ $t("app.menu.woodenfurniture") }}</a>
+                            <a href="/Capabilities/WoodenFurniture">{{ $t("app.menu.woodenfurniture") }}</a>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a>{{ $t("app.menu.metalfurniture") }}</a>
+                            <a href="/Capabilities/MetalFurniture">{{ $t("app.menu.metalfurniture") }}</a>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a>{{ $t("app.menu.upholstery") }}</a>
+                            <a href="/Capabilities/Ulpholstery">{{ $t("app.menu.upholstery") }}</a>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a>{{ $t("app.menu.door") }}</a>
+                            <a href="/Capabilities/Door">{{ $t("app.menu.door") }}</a>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a>{{ $t("app.menu.finishing") }}</a>
+                            <a href="/Capabilities/Finishing">{{ $t("app.menu.finishing") }}</a>
                           </li>
                         </ul>
                       </details>
@@ -177,22 +183,22 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                {{ $t("app.menu.projects") }}
+                <a href="/Projects">{{ $t("app.menu.projects") }}</a>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                {{ $t("app.menu.referenceprice") }}
+                <a href="/ReferencePrice">{{ $t("app.menu.referenceprice") }}</a>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                {{ $t("app.menu.news") }}
+                <a href="/News">{{ $t("app.menu.news") }}</a>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                {{ $t("app.menu.contact") }}
+                <a href="/Contact">{{ $t("app.menu.contact") }}</a>
               </div>
             </div>
           </div>
@@ -249,19 +255,19 @@
           class="w-full md:w-1/2 flex justify-center items-center color-text gap-5 p-2"
         >
           <span
-            ><a href="/"
+            ><a href="https://www.facebook.com/TranDucFurnishings" target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-facebook-f hover:text-orange-500 h-4"></i></a
           ></span>
           <span
-            ><a href="/"
+            ><a href="https://www.youtube.com/@TranDucCorporation" target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-youtube hover:text-orange-500 h-4"></i></a
           ></span>
           <span
-            ><a href="/"
+            ><a href="https://www.instagram.com/tranducfurnishings/" target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-instagram hover:text-orange-500 h-4"></i></a
           ></span>
           <span
-            ><a href="/"
+            ><a href="https://vn.linkedin.com/company/tranduccorp" target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-linkedin hover:text-orange-500 h-4"></i></a
           ></span>
           <LanguageSwitch />
