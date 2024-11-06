@@ -11,8 +11,26 @@
                 </h2>
               </div>
               <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-                <button class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/6 lg:w-1/6 h-10 lg:h-12 text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
-                <button class="transition-colors duration-300 border-2 w-2/6 lg:w-1/6 h-10 lg:h-12 text-md leading-none btn-hover2 rounded-md uppercase">{{ $t('app.sliceShow.capabilityprofile') }}</button>
+                <button @click="showVideo=true" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
+                <button class="transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none btn-hover2 rounded-md uppercase">{{ $t('app.sliceShow.capabilityprofile') }}</button>
+              </div>
+            </div>
+            <!-- video show -->
+            <div>
+              <!-- Video Modal -->
+              <div v-if="showVideo" class="fixed inset-0 flex items-center justify-center bg-black" style="z-index: 9999;">
+                <div class="relative w-full h-full max-w-full max-h-full">
+                  <!-- Video Element -->
+                  <video
+                      ref="videoPlayer"
+                  src="https://api.tranduc.com/api/video/TDF_Factory.mp4"
+                  controls
+                  autoplay
+                  class="w-full h-full object-contain"></video>
+          
+                <!-- Close Button -->
+                <button @click="closeVideo" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+                </div>
               </div>
             </div>
          </div>
@@ -39,12 +57,18 @@ const slideImage = [
 //#region QuyenNC ( khởi tạo các biến )
 const scaleAnimate = ref(true)
 const currentImage = ref(slideImage[0])
+const showVideo = ref(false);
 let currentIndex = 0
 const offScale = () => {
   scaleAnimate.value = false
 }
 //#endregion
-
+  // Function to close video and pause playback
+  function closeVideo() {
+    showVideo.value = false;
+    const videoPlayer = document.querySelector('video');
+    if (videoPlayer) videoPlayer.pause();
+  }
 // Khởi tạo hàm để thay đổi hình ảnh
 function changeImage() {
   currentIndex = (currentIndex + 1) % slideImage.length
@@ -88,7 +112,12 @@ onMounted(() => {
   color:#B9A97A;
   border-color: #B9A97A;
 }
-
+.fixed {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 @keyframes scaleUp {
   0% {
     transform: scale(1); /* Kích thước ban đầu */

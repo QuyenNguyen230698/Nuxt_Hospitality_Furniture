@@ -3,7 +3,10 @@
         <!-- <ClientOnly>
             <TestCom/>
         </ClientOnly> -->
+        <!-- header -->
+        <Header/>
         <slot />
+        <Footer/>
         <ButtonScrollToTop/>
     </div>
 </template>
