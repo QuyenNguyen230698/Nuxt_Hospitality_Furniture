@@ -5,7 +5,8 @@
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
         <div class="flex flex-col md:flex-row w-full h-full">
-            <div class="items-center justify-center w-1/3 h-full hidden md:flex flex-col">
+            <!-- PlayList -->
+            <div class="items-center justify-center w-full md:w-1/3 h-full md:flex flex-col order-2 md:order-1">
                 <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
                 <ul class="space-y-2 w-full">
                     <li
@@ -18,7 +19,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center justify-center w-full h-full md:w-2/3">
+            <!-- Screen -->
+            <div class="flex items-center justify-center w-full h-full md:w-2/3 order-1 md:order-2">
                 <iframe
                 v-if="selectedPlaylist !== 0"
                     :src="getEmbedUrl(playlist[selectedPlaylist].src)"
@@ -34,19 +36,7 @@
                 alt="Video" style="object-position: top;">
               </video>
             </div>     
-            <div class="flex flex-col items-center justify-center w-full h-full md:hidden">
-                <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
-                <ul class="space-y-2 w-full">
-                    <li
-                        v-for="(item, index) in playlist"
-                        :key="index"
-                        @click="selectPlaylist(index)"
-                        class="p-2 cursor-pointer text-white hover:text-orange-500 hover:bg-gray-200"
-                    >
-                        {{ item.name }}
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </div>
 </template>
