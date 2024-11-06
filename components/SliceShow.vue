@@ -1,5 +1,5 @@
 <template>
-    <div class="py-10 md:py-14 border-y border-y-orange-500 relative overflow-hidden">
+    <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden">
         <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
             <div class="absolute inset-0 bg-slice" :class="{ 'animate-scale': scaleAnimate }" :style="{ backgroundImage: `url(${currentImage.src})` }"></div>
             <div class="flex flex-col w-full h-full relative z-40">
