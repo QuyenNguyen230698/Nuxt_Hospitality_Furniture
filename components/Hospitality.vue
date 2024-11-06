@@ -63,18 +63,19 @@
                       />
                     </a>
                   </li>
-                  <li class="hover:text-orange-500 py-2 text-nowrap">
+                  <li class=" py-2 text-nowrap">
                     <a href="/AboutUs" aria-label="Sidebar Item 1">{{
                       $t("app.menu.aboutus")
                     }}</a>
                   </li>
-                  <li>
+                  <li @click="isCollapseOpen = !isCollapseOpen" class="cursor-pointer text-nowrap">
                     <div class="collapse bg-transparent">
                       <input
                         type="checkbox"
                         id="collapse-toggle"
                         v-model="isCollapseOpen"
                         aria-expanded="false"
+                        class="hidden"
                       />
                       <label
                         for="collapse-toggle"
@@ -87,43 +88,43 @@
                         class="collapse-content p-0 min-h-0 flex flex-col gap-4"
                         v-show="isCollapseOpen"
                       >
-                      <a href="/Capabilities" class="hover:text-orange-500 py-2 text-nowrap">{{
+                      <a href="/Capabilities" class=" py-2 text-nowrap">{{
                           $t("app.menu.capabilities")
                         }}</a>
-                        <a href="/Capabilities/WoodenFurniture" class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/WoodenFurniture" class=" py-2 text-nowrap">{{
                           $t("app.menu.woodenfurniture")
                         }}</a>
-                        <a href="/Capabilities/MetalFurniture" class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/MetalFurniture" class=" py-2 text-nowrap">{{
                           $t("app.menu.metalfurniture")
                         }}</a>
-                        <a href="/Capabilities/Ulpholstery" class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Ulpholstery" class=" py-2 text-nowrap">{{
                           $t("app.menu.upholstery")
                         }}</a>
-                        <a href="/Capabilities/Door" class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Door" class=" py-2 text-nowrap">{{
                           $t("app.menu.door")
                         }}</a>
-                        <a href="/Capabilities/Finishing" class="hover:text-orange-500 py-2 text-nowrap">{{
+                        <a href="/Capabilities/Finishing" class=" py-2 text-nowrap">{{
                           $t("app.menu.finishing")
                         }}</a>
                       </div>
                     </div>
                   </li>
-                  <li class="hover:text-orange-500 py-2 text-nowrap">
+                  <li class=" py-2 text-nowrap">
                     <a href="/Projects" aria-label="Sidebar Item 1">{{
                       $t("app.menu.projects")
                     }}</a>
                   </li>
-                  <li class="hover:text-orange-500 py-2 text-nowrap">
+                  <li class=" py-2 text-nowrap">
                     <a href="/ReferencePrice" aria-label="Sidebar Item 1">{{
                       $t("app.menu.referenceprice")
                     }}</a>
                   </li>
-                  <li class="hover:text-orange-500 py-2 text-nowrap">
+                  <li class=" py-2 text-nowrap">
                     <a href="/News" aria-label="Sidebar Item 1">{{
                       $t("app.menu.news")
                     }}</a>
                   </li>
-                  <li class="hover:text-orange-500 py-2 text-nowrap">
+                  <li class=" py-2 text-nowrap">
                     <a href="/Contact" aria-label="Sidebar Item 1">{{
                       $t("app.menu.contact")
                     }}</a>
