@@ -57,9 +57,10 @@ module.exports = {
         "37r": "37rem",
         "38r": "38rem",
       },
-    },
-    animation: {
-      fadeIn: "fadeIn 1s ease-in-out", // Custom animation
+      animation: {
+        fadeIn: "fadeIn 1s ease-in-out", // Custom animation
+        bounce: "bounce 1s infinite", // Add bounce animation
+      },
     },
   },
   plugins: [

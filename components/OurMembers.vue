@@ -11,7 +11,7 @@
                 <p>{{ $t('app.members.totalsolutionforgreenprojects') }}</p>
                </div>
                <div class="flex flex-col items-center justify-center w-full min-h-52 bg-member gap-4 text-gray-300">
-                <a href="https://timberhouse.vn/" target="_blank" rel="noopener noreferrer">
+                <a href="https://moduluxhomes.com/" target="_blank" rel="noopener noreferrer">
                     <img src="/public/image/logo/Modulux-White-ByTranduc-768x600.png" alt="" class="h-28">
                 </a>
                 <p>{{ $t('app.members.sustainabledevelopment') }}</p>
