@@ -93,6 +93,22 @@
       "upholstery":"Upholstery workshop on site",
       "independent":"Independent QC system",
       "years":"1-year warranty on products for hotel furniture manufacturing defects"
+    },
+    "capability":{
+      "wooden":"Wooden Furniture",
+      "23years":"With over 23 years of experience, TranDuc Furnishings is a leading supplier of premium wooden furniture for the global hospitality industry. The perfect combination of experienced staff, advanced production technology, and comprehensive in-house production capabilities allows us to manufacture products that not only excel in quality and boast rapid production times, but also meet international standards and are eco-friendly. TranDuc is committed to offering a wide range of wooden furniture solutions, from modern wooden desks and wardrobes to dining tables and nightstands, all of which are sophisticatedly designed and tailored to fit any space, meeting the unique aesthetic and design needs of each architectural project.",
+      "metal":"Metal Furniture",
+      "tranDucMetal":"TranDuc Furnishings is proud to offer high-end metal furniture solutions, combining the beauty of metal, wood, and glass in each design. Our Metal Furniture collection offers modern interior solutions, incorporating advanced surface treatment processes such as PVD Coating, Metal & Glass Décor, and Timber Décor to create furniture that is not only elegant and luxurious, but also durable over time.",
+      "upholstery":"Upholstery",
+      "tranDucUpholstery":"TranDuc Furnishings specializes in manufacturing high-end upholstery products for hotel interiors. We provide custom upholstery solutions, customizing every detail based on design drawings to perfectly meet every luxury hotel project.",
+      "door":"Door",
+      "tranDucDoor":"TranDuc Furnishings proudly offers two lines of Luxury wooden doors: architectural wooden doors and wooden doors combined with aluminum. These are modern door solutions designed to complement the most luxurious architectural styles today. With an advanced production line, TranDuc Furnishings is committed to providing top-tier high-quality wooden doors, resistant to all harsh weather conditions and completely eliminate the warping issues commonly found in traditional wooden doors. The sophisticated combination of sustainable materials with premium accessories from renowned European brands ensures that our wooden doors not only bring a luxurious and warm aesthetic but also elevate your space, perfectly fitting any custom design.",
+      "finishing":"Finishing",
+      "tranDucFinishing":"TranDuc Furnishings proudly offers exquisite handcrafted finishing solutions, particularly with products that incorporate glass and morden surface treatment techniques. Our premium finishing lines include PU Finishing, UV Finishing, Powder Coating Finishing, PVD, and Metal Art. With our professional wood finishing services, each product is crafted with meticulous precision, not only enhancing the luxurious beauty of the interior space but also affirming TranDuc Furnishings’ leading position in the field of high-end hotel interior design.",
+      "technology":"Technology",
+      "working":"Working",
+      "packing":"Packing",
+      "loading":"Loading & Shipping"
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",
