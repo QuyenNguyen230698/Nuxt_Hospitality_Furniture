@@ -6,7 +6,7 @@
                   <i aria-hidden="true" class="fas fa-business-time text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.23years') }}</h3>
                   <div >
-                    <p class="text-xs">
+                    <p class="text-sm ">
                       {{ $t('app.section.ofsatisfying') }}
                       <br>
                       {{ $t('app.section.customerswithour') }}
@@ -19,7 +19,7 @@
                   <i aria-hidden="true" class="fas fa-warehouse text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.2factories') }}</h3>
                   <div >
-                    <p class="text-xs">
+                    <p class="text-sm">
                       {{ $t('app.section.120000m2') }}
                       <br>
                       {{ $t('app.section.2000employees') }}
@@ -36,7 +36,7 @@
                   </svg>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.technology') }}</h3>
                   <div >
-                    <p class="text-xs">
+                    <p class="text-sm">
                       {{ $t('app.section.newestmachines') }}
                       <br>
                       {{ $t('app.section.innovationtechnology') }}
@@ -49,7 +49,7 @@
                   <i aria-hidden="true" class="fas fa-globe-americas text-5xl md:text-4xl icon-section hover:scale-110 duration-300 cursor-pointer"></i>
                   <h3 class="text-base text-white font-bold uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.400projects') }}</h3>
                   <div >
-                    <p class="text-xs">
+                    <p class="text-sm">
                       {{ $t('app.section.inusandnowexpanding') }}
                       <br>
                       {{ $t('app.section.ourglobalreach') }}

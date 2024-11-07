@@ -17,7 +17,7 @@
             class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
             style="height: 1px"
           ></div>
-          <p class="text-sm color-section text-justify">
+          <p class="text-sm color-section text-justify leading-loose">
             {{ $t("app.clients.withover") }}
             <br />
             {{ $t("app.clients.bespokefurniture") }}

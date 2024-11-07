@@ -21,7 +21,7 @@
             <a href="/AboutUs">{{ $t('app.solution.onestopsolution') }}</a>
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-          <p class="text-sm color-text text-justify mb-5">
+          <p class="text-sm color-text text-justify mb-5 leading-loose">
             {{ $t('app.solution.established') }}
           </p>
           <button
@@ -47,12 +47,15 @@ const currentSlide = ref(0);
 const slideInterval = 3000; 
 //#endregion
 
+//#region QuyenNC ( hàm chuyển slide )
 function nextSlide() {
   currentSlide.value = (currentSlide.value + 1) % solution.length;
 }
 function prevSlide() {
   currentSlide.value = (currentSlide.value - 1 + solution.length) % solution.length;
 }
+//#endregion
+
 
 let intervalId;
 

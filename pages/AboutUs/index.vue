@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
                     <div class="w-full md:w-1/2 order-1">
-                        <p class="text-base color-section text-justify">
+                        <p class="text-base color-section text-justify leading-loose">
                         {{ $t("app.aboutUs.esbtablished") }}
                         <br /><br />
                         {{ $t("app.aboutUs.combination") }}
@@ -33,7 +33,7 @@
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
                     <div class="w-full md:w-1/2 order-2">
-                        <p class="text-base color-section text-justify ">
+                        <p class="text-base color-section text-justify leading-loose">
                         {{ $t("app.aboutUs.quality") }}
                         <br /><br />
                         {{ $t("app.aboutUs.furthermore") }}
@@ -54,7 +54,7 @@
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
                     <div class="w-full md:w-1/2 order-1">
-                        <p class="text-base color-section text-justify">
+                        <p class="text-base color-section text-justify leading-loose">
                         {{ $t("app.aboutUs.tranDuc") }}
                         <br /><br />
                         {{ $t("app.aboutUs.skilled") }}
@@ -88,7 +88,7 @@
             <div class="flex flex-col items-center justify-center md:container py-20">
                 <div class="flex flex-col md:flex-row justify-center items-center gap-5 p-6 md:p-0">
                     <div class="w-full md:w-1/2 order-3 ">
-                        <ul class="text-base color-text text-justify ">
+                        <ul class="text-base color-text text-justify leading-loose">
                             <li>{{ $t("app.aboutUs.days") }}</li>
                             <li>{{ $t("app.aboutUs.loading") }}</li>
                             <li>{{ $t("app.aboutUs.veneer") }}</li>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="h-60 bg-orange-500 ml-10 mr-4 order-2 hidden md:block" style="width: 1px;"></div>
                     <div class="w-full md:w-1/3 order-1">
-                        <h2 class="text-center text-5xl font-bold p-6 text-white uppercase">{{ $t("app.aboutUs.offering") }}</h2>
+                        <h2 class="text-center text-5xl font-bold p-6 text-white uppercase leading-snug">{{ $t("app.aboutUs.offering") }}</h2>
                         <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5 md:hidden" style="height: 1px"></div>
                     </div>
                 </div>
