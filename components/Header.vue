@@ -4,13 +4,13 @@
         class="navbar justify-between items-center w-full h-full shadow-xl color-text "
       >
         <div
-          class="w-1/3 md:w-1/5 lg:w-1/4 flex flex-start md:justify-evenly lg:justify-center"
+          class="w-1/3 md:w-1/5 lg:w-1/4 flex flex-start md:justify-evenly lg:justify-center "
         >
           <a href="/">
             <img
               src="/public/image/logo/Tranduc-Furnishings-compress.png"
               alt=""
-              class="h-fit p-0 lg:pb-1 xl:pb-1 md:h-12 xl:h-12 max-w-full max-h-full"
+              class="h-fit p-3 md:p-1 md:h-12 xl:h-12 max-w-full max-h-full"
             />
           </a>
         </div>
@@ -50,14 +50,14 @@
                   class="drawer-overlay"
                 ></label>
                 <ul
-                  class="menu bg-menu text-base-conten text-xl min-h-full w-4/5 p-4"
+                  class="menu bg-menu text-base min-h-full w-4/5 p-4"
                 >
                   <!-- Sidebar content here -->
                    <li class="border-b border-orange-500"><a href="/">
                       <img
                         src="/public/image/logo/Tranduc-Furnishings-compress.png"
                         alt=""
-                        class="w-40 h-fit "
+                        class="w-40 h-fit p-3"
                       />
                     </a>
                   </li>
@@ -78,7 +78,7 @@
                       <label
                       @click="isCollapseOpen = !isCollapseOpen"
                         for="collapse-toggle"
-                        class="collapse-title py-1 px-0 min-h-0 text-xl"
+                        class="collapse-title py-1 px-0 min-h-0 text-base"
                       >
                         {{ $t("app.menu.capabilities") }}
                         <i class="fa-solid fa-caret-down"></i>
