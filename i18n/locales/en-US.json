@@ -109,6 +109,9 @@
       "working":"Working",
       "packing":"Packing",
       "loading":"Loading & Shipping"
+    },
+    "woodenfurniture":{
+      "woodenFurniture":"Wooden Furniture"
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",

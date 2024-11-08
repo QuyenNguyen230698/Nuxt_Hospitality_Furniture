@@ -4,10 +4,10 @@
             <div class="absolute inset-0 bg-slice" :class="{ 'animate-scale': scaleAnimate }" :style="{ backgroundImage: `url(${currentImage.src})` }"></div>
             <div class="flex flex-col w-full h-full relative z-40">
               <div class="flex flex-col justify-center items-center text-white container m-8 mx-auto">
-                <h2 class=" font-black text-center leading-snug tracking-widest uppercase" style="line-height: 3.5;">
-                  <span class="text-5xl">{{ $t('app.sliceShow.tophospitality') }}</span>
+                <h2 class=" font-black text-center leading-snug tracking-widest uppercase" >
+                  <span class="text-3xl lg:text-5xl">{{ $t('app.sliceShow.tophospitality') }}</span>
                   <br>
-                  <span class="text-5xl">{{ $t('app.sliceShow.inVietnam') }}</span>
+                  <span class="text-3xl lg:text-5xl">{{ $t('app.sliceShow.inVietnam') }}</span>
                 </h2>
               </div>
               <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full">

@@ -4,10 +4,8 @@
             <div class="absolute inset-0 bg-slice" :class="{ 'animate-scale': scaleAnimate }" :style="{ backgroundImage: `url(${currentImage.src})` }"></div>
             <div class="flex flex-col w-full h-full relative z-40">
               <div class="flex flex-col justify-center items-center text-white container m-8 mx-auto">
-                <h2 class=" font-black text-center leading-snug tracking-widest uppercase">
-                  <span class="text-3xl lg:text-5xl">{{ $t('app.sliceShow.tophospitality') }}</span>
-                  <br>
-                  <span class="text-3xl lg:text-5xl">{{ $t('app.sliceShow.inVietnam') }}</span>
+                <h2 class=" font-black text-center leading-snug tracking-widest uppercase" >
+                  <span class="text-3xl lg:text-5xl">{{ $t('app.woodenfurniture.woodenFurniture') }}</span>
                 </h2>
               </div>
               <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
@@ -41,11 +39,10 @@ import { ref, onMounted } from 'vue'
 
 // Danh sách hình ảnh
 const slideImage = [
-  { src: '/image/capability/cap1.jpg' },
-  { src: '/image/capability/cap2.jpg' },
-  { src: '/image/capability/cap3.jpg' },
-  { src: '/image/capability/cap4.jpg' },
-  { src: '/image/capability/cap5.jpg' },
+  { src: '/image/capability/wooden/wooden1.jpg' },
+  { src: '/image/capability/wooden/wooden2.jpg' },
+  { src: '/image/capability/wooden/wooden3.jpg' },
+  { src: '/image/capability/wooden/wooden4.jpg' },
 ]
 //#region QuyenNC ( khởi tạo các biến )
 const scaleAnimate = ref(true)

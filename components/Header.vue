@@ -4,13 +4,13 @@
         class="navbar justify-between items-center w-full h-full shadow-xl color-text "
       >
         <div
-          class="w-1/3 md:w-1/5 lg:w-1/4 flex flex-start md:justify-evenly lg:justify-center "
+          class="w-1/3 md:w-1/5 lg:w-1/4 h-12 md:h-fit flex flex-start md:justify-evenly lg:justify-center "
         >
           <a href="/">
             <img
               src="/public/image/logo/Tranduc-Furnishings-compress.png"
               alt=""
-              class="h-fit p-3 md:p-1 md:h-12 xl:h-12 max-w-full max-h-full"
+              class="h-fit p-1 md:p-1 md:h-12 xl:h-12 max-w-full max-h-full"
             />
           </a>
         </div>
