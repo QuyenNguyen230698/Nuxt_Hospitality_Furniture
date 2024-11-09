@@ -2,7 +2,7 @@
     <div>
         <SliceShowWooden/>
         <!-- Desks -->
-        <div class="bg-black p-4 lg:py-20">
+        <div class="bg-wooden1 bg-fixed p-4 lg:py-20">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full">
           <div class="lg:w-1/2 w-full flex flex-col items-center justify-center px-0 lg:px-10 overflow-hidden">
             <!-- Carousel -->
@@ -50,7 +50,7 @@
       </div>
       </div>
       <!-- Dressers -->
-      <div class="bg-black p-4 lg:py-20">
+      <div class="bg-wooden2 bg-fixed p-4 lg:py-20">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full ">
           <div class="lg:w-1/2 w-full flex flex-col items-center justify-center px-0 lg:px-10 overflow-hidden order-1 lg:order-2">
             <!-- Carousel -->
@@ -98,7 +98,7 @@
       </div>
       </div>
       <!-- Table & Nightstand -->
-      <div class="bg-black p-4 lg:py-20">
+      <div class="bg-wooden1 bg-fixed p-4 lg:py-20">
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full ">
           <div class="lg:w-1/2 w-full flex flex-col items-center justify-center px-0 lg:px-10 overflow-hidden order-1">
             <!-- Carousel -->
@@ -212,6 +212,7 @@ let intervalIdTables;
 onMounted(() => {
   intervalIdDesks = setInterval(nextSlideDesks, slideInterval);
   intervalIdDressers = setInterval(nextSlideDressers, slideInterval);
+  intervalIdTables = setInterval(nextSlideTables, slideInterval);
 });
 
 onUnmounted(() => {
@@ -222,6 +223,18 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.bg-wooden1 {
+  background-image: url("/image/capability/Wooden/bgwooden1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-wooden2 {
+  background-image: url("/image/capability/Wooden/bgwooden2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .color-text {
   color: #ababab;
 }

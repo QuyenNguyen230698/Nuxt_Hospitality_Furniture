@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col w-full h-full bg-black p-0 py-6">
         <div class="text-center font-bold">
-            <h2 class="text-center text-5xl font-bold p-6 text-white">{{ $t('app.projects.projects') }}</h2>
+            <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">{{ $t('app.projects.projects') }}</h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
         <div class="container w-full mx-auto px-4">
@@ -10,7 +10,7 @@
               <img :src="item.src" class="w-full h-auto object-cover">
               <div class="absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-1000 flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center justify-center">
-                    <h3 class="text-orange-500 text-xl font-bold z-10 pb-4">{{item.title}}</h3>
+                    <h3 class="text-orange-500 text-base text-justify lg:text-xl font-bold z-10 pb-4">{{item.title}}</h3>
                 </div>
                 <div class="flex gap-2">
                     <a href="/" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-magnifying-glass"></i></a>

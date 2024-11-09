@@ -10,7 +10,7 @@
       <!-- Clients -->
       <div class="flex flex-col items-center justify-center bg-black p-6">
         <div class="py-2 px-10 md:px-0">
-          <h2 class="text-center text-5xl font-bold p-6 text-white">
+          <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
             {{ $t("app.clients.clients") }}
           </h2>
           <div

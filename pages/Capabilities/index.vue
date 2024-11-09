@@ -8,7 +8,7 @@
                     <img src="/public/image/capability/capWooden.jpg" class="w-full h-fit object-cover ">
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-5xl font-bold p-6 text-white">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
                         {{ $t("app.capability.wooden") }}
                     </h2>
                     <div
@@ -22,8 +22,8 @@
             </div>
             <!-- Metal Furniture -->
             <div class="flex flex-col md:flex-row h-full w-full bg-metal">
-                <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-5xl font-bold p-6 text-white">
+                <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
                         {{ $t("app.capability.metal") }}
                     </h2>
                     <div
@@ -34,7 +34,7 @@
                         {{ $t("app.capability.tranDucMetal") }}
                     </p>
                 </div>
-                <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
+                <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
                     <img src="/public/image/capability/cap5.jpg" class="w-full h-full object-cover ">
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <img src="/public/image/capability/capUlpho.jpg" class="w-full h-full object-cover ">
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-5xl font-bold p-6 text-white">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
                         {{ $t("app.capability.upholstery") }}
                     </h2>
                     <div
@@ -58,8 +58,8 @@
             </div>
             <!-- Door -->
             <div class="flex flex-col md:flex-row h-full w-full bg-metal">
-                <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-5xl font-bold p-6 text-white">
+                <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
                         {{ $t("app.capability.door") }}
                     </h2>
                     <div
@@ -70,7 +70,7 @@
                         {{ $t("app.capability.tranDucDoor") }}
                     </p>
                 </div>
-                <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
+                <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
                     <img src="/public/image/capability/capDoor.jpg" class="w-full h-full object-cover ">
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <img src="/public/image/capability/capFinishing.jpg" class="w-full h-full object-cover ">
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-5xl font-bold p-6 text-white">
+                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
                         {{ $t("app.capability.finishing") }}
                     </h2>
                     <div
