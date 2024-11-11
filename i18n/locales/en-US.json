@@ -134,6 +134,18 @@
       "headboardDescription":"Elevate your hotel rooms with our exquisite customizable headboards for hospitality, meticulously designed to blend style and comfort. Our premium hotel room headboards with upholstery reflect high-quality craftsmanship and modern aesthetics, offering a touch of luxury and enhancing the guest experience.",
       "sofa":"Sofa & Chair",
       "sofaDescription":"From luxurious sofas & chairs for hospitality spaces in lounge areas to elegant comfortable hotel lounge sofas & chairs in premium guest rooms, each seating piece at TranDuc can be customized to meet the unique needs and style of every hotel. As specialists in bespoke sofas & chairs for hospitality design, we offer comprehensive hotel seating solutions for guest rooms that ensure perfect comfort, creating remarkable guest experiences."
+    },
+    "door":{
+      "door":"Door",
+      "arch":"Architectural Wooden Door",
+      "archDescription":"TranDuc Furnishings proudly offers two lines of Luxury wooden doors: architectural wooden doors and wooden doors combined with aluminum. These are modern door solutions designed to complement the most luxurious architectural styles today. With an advanced production line, TranDuc Furnishings is committed to providing top-tier high-quality wooden doors, resistant to all harsh weather conditions and completely eliminate the warping issues commonly found in traditional wooden doors. The sophisticated combination of sustainable materials with premium accessories from renowned European brands ensures that our wooden doors not only bring a luxurious and warm aesthetic but also elevate your space, perfectly fitting any custom design.",
+      "alu":"Wooden Aluminum Door",
+      "aluDescription":"TranDuc Furnishing’s wood-aluminum combination doors provide the perfect door solution for luxury hotels, combining the elegance of wood with the superior durability of aluminum. Crafted from natural woods such as Oak, Walnut, and Ash, these doors not only offer excellent sound and thermal insulation but also possess refined beauty."
+    },
+    "finishing":{
+      "finishing":"Finishing",
+      "engineeredVeneers":"Engineered Veneers",
+      "finishingDescription":"TranDuc Furnishings’ engineered veneers offer innovative veneer finishes for hospitality interiors while respecting and recreating the natural beauty of wood. Produced from sustainable wood sources, our veneers not only preserve the unique characteristics of wood but also deliver consistent and refined beauty across every panel. We utilize a wide range of natural and high-tech engineered veneers to meet our clients’ design requirements, creating multiple options for luxury hotel projects."
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",
