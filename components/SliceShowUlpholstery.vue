@@ -5,7 +5,7 @@
             <div class="flex w-full h-full relative z-40">
               <div class="flex justify-center items-center text-white container m-8 mx-auto">
                 <h2 class=" font-black text-center leading-snug tracking-widest uppercase" >
-                  <span class="text-3xl lg:text-5xl">{{ $t('app.woodenfurniture.woodenFurniture') }}</span>
+                  <span class="text-3xl lg:text-5xl">{{ $t('app.upholstery.upholstery') }}</span>
                 </h2>
               </div>
             </div>
@@ -17,10 +17,11 @@ import { ref, onMounted } from 'vue'
 
 // Danh sách hình ảnh
 const slideImage = [
-  { src: '/image/capability/wooden/wooden1.jpg' },
-  { src: '/image/capability/wooden/wooden2.jpg' },
-  { src: '/image/capability/wooden/wooden3.jpg' },
-  { src: '/image/capability/wooden/wooden4.jpg' },
+  { src: '/image/capability/Ulpholstery/slide1.jpg' },
+  { src: '/image/capability/Ulpholstery/slide2.jpg' },
+  { src: '/image/capability/Ulpholstery/slide3.jpg' },
+  { src: '/image/capability/Ulpholstery/slide4.jpg' },
+  { src: '/image/capability/Ulpholstery/slide5.jpg' },
 ]
 //#region QuyenNC ( khởi tạo các biến )
 const scaleAnimate = ref(true)
@@ -55,7 +56,6 @@ onMounted(() => {
 .bg-slice {
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 /* Tự động scale trong 3 giây */
 .animate-scale {

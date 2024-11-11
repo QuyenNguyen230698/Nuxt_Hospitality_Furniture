@@ -127,6 +127,13 @@
       "glassDescription":"TranDuc Furnishing’s bespoke Metal and Glass Decor offers a perfect harmony between metal and glass, unlocking unique and impressive design possibilities. Our tailored metal and glass decor showcases our commitment to innovation, creating diverse decorative glass solutions for applications including feature walls, canopies, frameless glass doors, signage, water features, table surfaces, sculptures, and wall cladding. Each of our elegant metal & glass design pieces for hospitality reflects meticulous attention to detail, not only elevates the aesthetic appeal of any space but also affirms a superior level of luxury and refinement.",
       "timberDecor":"Timber Decor",
       "timberDescription":"TranDuc creates elegant wooden furniture for hotel design, specializing in sustainable timber decor for hospitality design. As experts in bespoke timber decor for hotel rooms, we offering solutions from customized wooden pieces to modern decorative details, highlighting the beauty of wood with unique metallic accents. The wood is either metal-plated or combined with various veneers, creating beautiful contrasting effects."
+    },
+    "upholstery":{
+      "upholstery":"Upholstery",
+      "headboard":"Head Board",
+      "headboardDescription":"Elevate your hotel rooms with our exquisite customizable headboards for hospitality, meticulously designed to blend style and comfort. Our premium hotel room headboards with upholstery reflect high-quality craftsmanship and modern aesthetics, offering a touch of luxury and enhancing the guest experience.",
+      "sofa":"Sofa & Chair",
+      "sofaDescription":"From luxurious sofas & chairs for hospitality spaces in lounge areas to elegant comfortable hotel lounge sofas & chairs in premium guest rooms, each seating piece at TranDuc can be customized to meet the unique needs and style of every hotel. As specialists in bespoke sofas & chairs for hospitality design, we offer comprehensive hotel seating solutions for guest rooms that ensure perfect comfort, creating remarkable guest experiences."
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",

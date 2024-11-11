@@ -1,34 +1,12 @@
 <template>
-    <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden">
+    <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden h-60 md:h-80 lg:h-96">
         <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
             <div class="absolute inset-0 bg-slice" :class="{ 'animate-scale': scaleAnimate }" :style="{ backgroundImage: `url(${currentImage.src})` }"></div>
-            <div class="flex flex-col w-full h-full relative z-40">
-              <div class="flex flex-col justify-center items-center text-white container m-8 mx-auto">
+            <div class="flex w-full h-full relative z-40">
+              <div class="flex justify-center items-center text-white container m-8 mx-auto">
                 <h2 class=" font-black text-center leading-snug tracking-widest uppercase" >
                   <span class="text-3xl lg:text-5xl">{{ $t('app.metalfurniture.metalFurniture') }}</span>
                 </h2>
-              </div>
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-                <button @click="showVideo=true" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
-                <button class="transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none btn-hover2 rounded-md uppercase"><a href="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</a></button>
-              </div>
-            </div>
-            <!-- video show -->
-            <div>
-              <!-- Video Modal -->
-              <div v-if="showVideo" class="fixed inset-0 flex items-center justify-center bg-black" style="z-index: 9999;">
-                <div class="relative w-full h-full max-w-full max-h-full">
-                  <!-- Video Element -->
-                  <video
-                      ref="videoPlayer"
-                  src="https://api.tranduc.com/api/video/TDF_Factory.mp4"
-                  controls
-                  autoplay
-                  class="w-full h-full object-contain"></video>
-          
-                <!-- Close Button -->
-                <button @click="closeVideo" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
-                </div>
               </div>
             </div>
          </div>

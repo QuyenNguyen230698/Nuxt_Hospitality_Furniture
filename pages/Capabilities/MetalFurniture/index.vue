@@ -2,7 +2,8 @@
     <div>
         <SliceShowMetal/>
         <!-- PVD -->
-        <div class="bg-wooden1 bg-fixed p-4 lg:py-20">
+        <div class="bg-wooden1 bg-fixed p-4 lg:py-20 relative">
+          <div class="absolute inset-0 bg-black opacity-40 h-full w-full"></div>
         <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full">
           <div class="lg:w-1/2 w-full flex flex-col items-center justify-center px-0 lg:px-10 overflow-hidden">
             <!-- Carousel -->
@@ -24,7 +25,7 @@
             </div>
 
             <!-- Thumbnails -->
-            <div class="flex justify-center mt-5 space-x-2 order-2 ">
+            <div class="flex justify-center mt-5 space-x-2 order-2 z-10">
             <div
                 v-for="(slide, index) in pvd"
                 :key="'thumb-' + index"
@@ -38,7 +39,7 @@
           </div>
 
           <!-- Content -->
-          <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-3">
+          <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-3 z-10">
           <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
             {{ $t('app.metalfurniture.pvdCoating') }}
           </h2>
@@ -98,8 +99,9 @@
       </div>
       </div>
       <!-- Timber -->
-      <div class="bg-wooden1 bg-fixed p-4 lg:py-20">
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full ">
+      <div class="bg-wooden1 bg-fixed p-4 lg:py-20 relative">
+        <div class="absolute inset-0 bg-black opacity-40 h-full w-full"></div>
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-5 w-full h-full z-10">
           <div class="lg:w-1/2 w-full flex flex-col items-center justify-center px-0 lg:px-10 overflow-hidden order-1">
             <!-- Carousel -->
           <div class="carousel w-full relative overflow-hidden">
@@ -120,7 +122,7 @@
             </div>
 
             <!-- Thumbnails -->
-            <div class="flex justify-center mt-5 space-x-2">
+            <div class="flex justify-center mt-5 space-x-2 z-10">
             <div
                 v-for="(slide, index) in timber"
                 :key="'thumb-' + index"
@@ -134,7 +136,7 @@
           </div>
 
           <!-- Content -->
-          <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-2">
+          <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-2 z-10">
           <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
             {{ $t('app.metalfurniture.timberDecor') }}
           </h2>
