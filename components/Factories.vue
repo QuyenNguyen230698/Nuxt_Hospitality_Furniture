@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col w-full h-full bg-black p-0 md:py-6">
-        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white"><a href="/capabilities">{{ $t('app.factories.ourfactories') }}</a></h2>
+        <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white"><a href="/capabilities">{{ $t('app.factories.ourfactories') }}</a></h2>
         <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         <div class="flex flex-col w-full px-2 lg:p-0 justify-center items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full h-72 overflow-hidden">

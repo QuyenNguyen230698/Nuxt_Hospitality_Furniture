@@ -8,7 +8,7 @@
                 <div
           class="w-full md:w-1/2 flex justify-center items-center color-text p-2"
         >
-          <p class="text-xs md:text-sm">
+          <p class="text-xs text-center md:text-sm">
             Copyright 2024 © All rights Reserved. Design by Tran Duc Furnishings
           </p>
         </div>

@@ -78,7 +78,7 @@ function changeImage() {
 // setInterval để thay đổi hình ảnh và tắt/ bật animation
 onMounted(() => {
     setInterval(changeImage, 3000)
-    setInterval(offScale, 2995)
+    setInterval(offScale, 2990)
 
 })
 </script>

@@ -1,6 +1,8 @@
 <template>
     <div>
-       <Hospitality />
+        <ClientOnly>
+            <Hospitality />
+        </ClientOnly>
     </div>
 </template>
 

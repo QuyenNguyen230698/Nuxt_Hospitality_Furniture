@@ -10,7 +10,7 @@
             <div
                 v-for="(slide, index) in desks"
                 :key="index"
-                class="carousel-item w-fit h-96 transition-transform duration-700"
+                class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideDesks * 100}%)` }"
             >
                 <img :src="slide.src" alt="Slide image" class="w-full" />
@@ -39,7 +39,7 @@
 
           <!-- Content -->
           <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-3">
-          <h2 class="text-center text-5xl font-bold p-6 text-white">
+          <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
             {{ $t('app.woodenfurniture.desks') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
@@ -58,7 +58,7 @@
             <div
                 v-for="(slide, index) in dressers"
                 :key="index"
-                class="carousel-item w-fit h-96 transition-transform duration-700"
+                class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideDressers * 100}%)` }"
             >
                 <img :src="slide.src" alt="Slide image" class="w-full" />
@@ -87,7 +87,7 @@
 
           <!-- Content -->
           <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-2 lg:order-1">
-          <h2 class="text-center text-5xl font-bold p-6 text-white">
+          <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
             {{ $t('app.woodenfurniture.dressers') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
@@ -106,7 +106,7 @@
             <div
                 v-for="(slide, index) in tables"
                 :key="index"
-                class="carousel-item w-fit h-96 transition-transform duration-700"
+                class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideTables * 100}%)` }"
             >
                 <img :src="slide.src" alt="Slide image" class="w-full" />
@@ -135,7 +135,7 @@
 
           <!-- Content -->
           <div class="flex flex-col items-center justify-center lg:w-1/2 w-full h-full p-5 container mx-auto order-2">
-          <h2 class="text-center text-5xl font-bold p-6 text-white">
+          <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
             {{ $t('app.woodenfurniture.tables') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
