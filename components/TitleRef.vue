@@ -3,7 +3,7 @@
         <div class="w-full h-full overflow-hidden">
             <NuxtImg src="/image/ReferencePrice/bgRef.jpg" alt="bgRef" class="w-full h-full relative object-cover scale-110"/>
             <div class="absolute inset-0 z-10 flex flex-col items-center gap-2 p-5 lg:gap-5 mt-20 md:mt-32 lg:mt-40">
-                <h1 class="text-white text-center text-xl shadow-lg lg:text-5xl font-bold">{{ $t('app.referenceprice.top') }}</h1>
+                <h1 class="text-white text-center text-xl lg:text-5xl font-bold">{{ $t('app.referenceprice.top') }}</h1>
                 <p class="uppercase text-slate-300 text-center text-xs lg:text-lg tracking-widest">{{ $t('app.referenceprice.from') }}</p>
             </div>
         </div>

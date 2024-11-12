@@ -1,32 +1,27 @@
 <template>
     <div class="bg-black text-white">
-        <TitleRef />
-        <!-- Categories -->
-         <div class="flex flex-col w-full h-full items-center justify-center bg-black bg-cate">
-            <div class="flex flex-col items-center justify-center w-full h-full">
-                <div class="py-2 px-10 md:px-0 flex flex-col items-center justify-center">
-                    <h2 class="text-center text-xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.referenceprice.categories") }}
-                    </h2>
-                    <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-                    <p class="text-xs md:text-base color-section md:w-3/4 lg:w-1/2 text-justify leading-loose text-slate-400">{{ $t("app.referenceprice.cateDescription") }}</p>
+        <div class="flex flex-col justify-center items-center bg-color">
+            <div class="w-full h-full overflow-hidden">
+                <NuxtImg src="/image/ReferencePrice/bgRef.jpg" alt="bgRef" class="w-full h-full relative object-cover scale-110"/>
+                <div class="absolute inset-0 z-10 flex flex-col items-center gap-2 p-5 lg:gap-5 mt-20 md:mt-32 lg:mt-40">
+                    <h1 class="text-white text-center text-xl lg:text-5xl font-bold">{{ $t('app.referenceprice.top') }}</h1>
+                    <p class="uppercase text-slate-300 text-center text-xs lg:text-lg tracking-widest">{{ $t('app.referenceprice.from') }}</p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full h-full gap-4 lg:container mx-auto p-4">
-                <div v-for="item in categories" :key="item.src" class="w-full h-full relative group">
-                    <div class="text-xl lg:text-2xl text-white mb-2 absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 flex items-center justify-center hover:hidden">{{ item.alt }}</div>
-                    <div class="absolute top-0 left-0 w-full h-full bg-orange-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <div class="text-center">
-                            <div class="text-xl lg:text-2xl text-white mb-2">{{ item.alt }}</div>
-                            <button class="border border-white text-slate-100 px-4 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300">
-                                <NuxtLink :to="item.link">{{ $t('app.referenceprice.detail') }}</NuxtLink>
-                            </button>
+            <div class="w-full h-full flex flex-col lg:flex-row container mx-auto gap-5 p-5 lg:p-10">
+                <div class="flex flex-col justify-center items-center w-full lg:w-1/2 gap-2 ">
+                    <h2 class="text-white text-center text-2xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.collection') }}</h2>
+                    <p class="text-justify text-gray-400 text-sm lg:text-base container mx-auto">{{ $t('app.referenceprice.collectionDescription') }}</p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="lg:relative w-full ">
+                        <div class="lg:absolute lg:inset-0 m-auto z-30 bg-white p-1 md:w-96 w-80 h-40 lg:h-72">
+                            <NuxtImg src="/image/ReferencePrice/bgRef2.jpg" alt="bgRef" class="w-full h-full object-cover"/>
                         </div>
                     </div>
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-80 md:h-full object-cover" />
                 </div>
             </div>
-         </div>
+        </div>
         <!-- See more -->
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
@@ -137,14 +132,14 @@
 
 <script setup>
 const categories = [
-    {src: '/image/ReferencePrice/Categories/cate1.jpg', alt: 'Headboard & Bedbase', link: '/referenceprice/bedBase'},
-    {src: '/image/ReferencePrice/Categories/cate2.jpg', alt: 'Closet & Wardrobe', link: '/referenceprice/closet'},
-    {src: '/image/ReferencePrice/Categories/cate3.jpg', alt: 'TV Unit', link: '/referenceprice/tv'},
-    {src: '/image/ReferencePrice/Categories/cate4.jpg', alt: 'Nightstand', link: '/referenceprice/nightstand'},
-    {src: '/image/ReferencePrice/Categories/cate5.jpg', alt: 'Dresser & Cabinet', link: '/referenceprice/cabinet'},
-    {src: '/image/ReferencePrice/Categories/cate6.jpg', alt: 'Desk & Table', link: '/referenceprice/table'},
-    {src: '/image/ReferencePrice/Categories/cate7.jpg', alt: 'Chair & Sofa', link: '/referenceprice/sofas'},
-    {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity', link: '/referenceprice/vanities'},
+    {src: '/image/ReferencePrice/Categories/cate1.jpg', alt: 'Headboard & Bedbase'},
+    {src: '/image/ReferencePrice/Categories/cate2.jpg', alt: 'Closet & Wardrobe'},
+    {src: '/image/ReferencePrice/Categories/cate3.jpg', alt: 'TV Unit'},
+    {src: '/image/ReferencePrice/Categories/cate4.jpg', alt: 'Nightstand'},
+    {src: '/image/ReferencePrice/Categories/cate5.jpg', alt: 'Dresser & Cabinet'},
+    {src: '/image/ReferencePrice/Categories/cate6.jpg', alt: 'Desk & Table'},
+    {src: '/image/ReferencePrice/Categories/cate7.jpg', alt: 'Chair & Sofa'},
+    {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity'},
 ]
 const bedBase = [
     {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bedbase1'},
