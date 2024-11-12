@@ -1,12 +1,8 @@
 <template>
     <div>
-        <!-- <ClientOnly>
-            <TestCom/>
-        </ClientOnly> -->
-        <!-- header -->
-        <Header/>
+        <Header />
         <slot />
-        <Footer/>
+        <Footer />
         <ButtonScrollToTop/>
     </div>
 </template>

@@ -28,7 +28,7 @@
                               {{ $t('form.fullName') }}
                             </span>
                           </label>
-                          <input type="text" :placeholder="$t('form.placeHolderName')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
+                          <input type="text" v-model="fullName" :placeholder="$t('form.placeHolderName')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
                         </div>
                         <div  class="col-span-2 lg:col-span-1">
                           <label class="block mb-1 font-light text-base">
@@ -36,7 +36,7 @@
                               {{ $t('form.email') }}
                             </span>
                           </label>
-                          <input type="email" :placeholder="$t('form.placeHolderEmail')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
+                          <input type="email" v-model="email" :placeholder="$t('form.placeHolderEmail')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
                         </div>
                         <div  class="col-span-2 lg:col-span-1">
                           <label class="block mb-1 font-light text-base">
@@ -44,42 +44,46 @@
                               {{ $t('form.phone') }}
                             </span>
                           </label>
-                          <input type="tel" :placeholder="$t('form.placeHolderPhone')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
+                          <input type="tel" v-model="phone" :placeholder="$t('form.placeHolderPhone')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
                         </div>
                         <div  class="col-span-2 lg:col-span-1">
                           <label class="block mb-1 font-light text-base">
                             <span class="text-base flex items-center text-center">{{ $t('form.companyName') }}</span>
                           </label>
-                          <input type="text" :placeholder="$t('form.companyName')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
+                          <input type="text" v-model="companyName" :placeholder="$t('form.companyName')" class="w-full bg-transparent border-b border-gray-500 focus:outline-none py-1 text-base">
                         </div>
                         <div class="col-span-2">
                           <label class="block mb-1 font-light text-base">
-                            <span class="text-base flex items-center text-center">Furniture Project (Required)</span>
+                            <span class="text-base flex items-center text-center">{{ $t('app.contact.furnitureProject') }}</span>
                           </label>
-                          <select class="select select-bordered select-sm w-full text-black">
-                            <option>5-star Hotel</option>
-                            <option>4-star Hotel</option>
-                            <option>3-star Hotel</option>
-                            <option>Luxury Resort</option>
-                            <option>Restaurant</option>
+                          <select v-model="projectType" class="select select-bordered select-sm w-full text-black">
+                            <option>{{ $t('app.contact.5star') }}</option>
+                            <option>{{ $t('app.contact.4star') }}</option>
+                            <option>{{ $t('app.contact.3star') }}</option>
+                            <option>{{ $t('app.contact.luxuryResort') }}</option>
+                            <option>{{ $t('app.contact.restaurant') }}</option>
                           </select>
                         </div>
                         <div  class="col-span-2">
                           <label class="block mb-1 font-light text-base">
-                            <span class="text-base flex items-center text-center">[Max 5Mb/file] Specs, Documents, Images, zip... to get quotation</span>
+                            <span class="text-base flex items-center text-center">{{ $t('app.contact.5mb') }}</span>
                           </label>
-                          <input type="file" class="file-input file-input-bordered file-input-sm w-full max-w-xs" />
+                          <input type="file" class="file-input file-input-bordered file-input-sm w-full max-w-xs text-gray-400" placeholder="$t('app.contact.nofile')"/>
                         </div>
-                        <div  class="col-span-2">
+                        <div class="col-span-2">
                           <label class="inline-flex items-center">
                             <span class="text-sm text-gray-400 text-justify">
-                                Message (Required) 
+                                {{ $t('app.contact.message') }}
                             </span>
                           </label>
-                          <textarea class="w-full bg-transparent border border-gray-300 focus:outline-none focus:border-gray-500 rounded-md p-2 text-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Your message" required aria-required="true"></textarea>
+                          <textarea v-model="message" 
+                                    :placeholder="$t('app.contact.yourMessage')" 
+                                    class="w-full bg-transparent border border-gray-300 focus:outline-none focus:border-gray-500 rounded-md p-2 text-sm" 
+                                    rows="4">
+                          </textarea>
                         </div>
                         <div  class="col-span-2 flex justify-center">
-                          <button class="w-full btn bg-white rounded-none border-none text-black py-1 md:py-2 hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">Send message</button>
+                          <button @click="logFormData" type="button" class="w-full btn bg-white rounded-none border-none text-black py-1 md:py-2 hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">{{ $t('app.contact.sendMessage') }}</button>
                         </div>
                       </div>
                     </div>
@@ -90,25 +94,26 @@
             <div class="flex flex-col justify-center w-full h-full">
                 <div class="flex flex-col lg:flex-row justify-center h-full w-full gap-4 px-4">
                     <div class="flex flex-col text-center w-full lg:w-1/4 h-full">
-                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">Representative</h2>
-                    <p class="text-gray-400">Sale Department</p>
+                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">{{ $t('app.contact.representative') }}</h2>
+                    <p class="text-gray-400">{{ $t('app.contact.sale') }}</p>
                     <p class="text-gray-400">(+84-274) 3 718 111</p>
                     <p class="text-orange-500"><a href="mailto:sales@tranducfurnishings.com">sales@tranducfurnishings.com</a></p>
                 </div>
                 <div class="flex flex-col text-center w-full lg:w-1/4 h-full">
-                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">Working Hours</h2>
-                    <p class="text-gray-400">8:00 am – 5.00 pm Monday – Friday</p>
-                    <p class="text-gray-400">8:00 am – 12.00 am  Saturday</p>
+                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">{{ $t('app.contact.workingHours') }}</h2>
+                    <p class="text-gray-400">{{ $t('app.contact.hours') }}</p>
+                    <p class="text-gray-400">{{ $t('app.contact.saturday') }}</p>
                 </div>
                 <div class="flex flex-col text-center w-full lg:w-1/4 h-full">
-                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">Address</h2>
-                    <div style="text-align: left; width: 100%; max-width: 600px; margin: 0 auto;"><span style="display: inline-block; width: 18%; color: #ff6600; vertical-align: top; font-weight: 500;">Office</span>
-                    <span class="text-gray-400" style="display: inline-block; width: 75%; vertical-align: top;">
-                    : Unit 901, The Waterfront Saigon, 1-1A Ton Duc Thang, District 1, Ho Chi Minh City, Vietnam
+                    <h2 class="text-2xl lg:text-3xl font-extrabold py-6">{{ $t('app.contact.address') }}</h2>
+                    <div class="text-left w-full mx-auto">
+                        <span class="inline-block w-1/5 text-orange-500 align-top">{{ $t('app.contact.office') }}</span>
+                    <span class="text-gray-400 inline-block w-3/4 align-top">
+                    : {{ $t('app.contact.unit') }}
                         </span>
-                        <span style="display: inline-block; width: 18%; color: #ff6600; vertical-align: top; font-weight: 500;">Factory</span>
-                        <span class="text-gray-400" style="display: inline-block; width: 75%; vertical-align: top;">
-                        : 69/13 Binh Chuan 42 Street, Binh Chuan Ward, Thuan An City, Binh Duong Province
+                        <span class="inline-block w-1/5 text-orange-500 align-top">{{ $t('app.contact.factory') }}</span>
+                        <span class="text-gray-400 inline-block w-3/4 align-top">
+                        : {{ $t('app.contact.binhDuong') }}
                         </span></div>
                     </div>
                 </div>
@@ -132,7 +137,25 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
+const fullName = ref('');
+const email = ref('');
+const phone = ref('');
+const companyName = ref('');
+const projectType = ref('');
+const message = ref('');
+
+function logFormData() {
+  console.log({
+    fullName: fullName.value,
+    email: email.value,
+    phone: phone.value,
+    companyName: companyName.value,
+    projectType: projectType.value,
+    message: message.value,
+  });
+}
 </script>
 
 <style scoped>
