@@ -171,6 +171,24 @@
       "factory":"Factory",
       "unit":"Unit 901, The Waterfront Saigon, 1-1A Ton Duc Thang, District 1, Ho Chi Minh City, Vietnam",
       "binhDuong":"69/13 Binh Chuan 42 Street, Binh Chuan Ward, Thuan An City, Binh Duong Province"
+    },
+    "referenceprice":{
+      "top":"Top Hospitality Furniture Manufacturer",
+      "from":"FROM FACTORY TO LUXURY HOTEL",
+      "collection":"Furniture Collection",
+      "collectionDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "categories":"Categories",
+      "cateDescription":"Every furniture is unique, functional, elegant,… in order to dedicate to luxury standard at 3-5 star hotels and resorts.",
+      "detail":"Detail",
+      "headboard":"Headboard & Bedbase",
+      "seeMore":"See More",
+      "dresser":"Dresser & Cabinet",
+      "closets":"Closets",
+      "tv":"TV Units",
+      "nightstands":"Nightstands",
+      "tables":"Desks & Tables",
+      "sofas":"Chairs & Sofas",
+      "vanities":"Vanities"
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",
