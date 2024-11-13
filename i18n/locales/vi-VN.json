@@ -189,7 +189,50 @@
   "tables": "Bàn & Bàn Làm Việc",
   "sofas": "Ghế & Sofa",
   "vanities": "Bàn Trang Điểm"
-}
+},
+"bedding": {
+    "bedding": "Bộ Sưu Tập Giường Khách Sạn",
+    "beddingDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "king": "Đầu Giường King Khách Sạn",
+    "queen": "Đầu Giường Queen Khách Sạn",
+    "bed": "Bộ Giường Khách Sạn"
+  },
+  "tvUnit": {
+    "tvUnit": "Bộ Sưu Tập Kệ TV",
+    "tvUnitDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel": "Kệ TV Khách Sạn"
+  },
+  "nightstand": {
+    "nightStand": "Bộ Sưu Tập Tủ Đầu Giường",
+    "nightStandDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel": "Tủ Đầu Giường Khách Sạn"
+  },
+  "cabinet": {
+    "cabinet": "Bộ Sưu Tập Tủ & Tủ Đầu Giường",
+    "cabinetDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel": "Tủ & Tủ Đầu Giường Khách Sạn"
+  },
+  "desk": {
+    "desk": "Bộ Sưu Tập Bàn & Bàn Làm Việc",
+    "deskDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "table": "Bàn Khách Sạn",
+    "hotel": "Bàn Làm Việc Khách Sạn"
+  },
+  "sofa": {
+    "sofa": "Bộ Sưu Tập Ghế & Sofa",
+    "sofaDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel": "Ghế, Băng Ghế & Sofa Khách Sạn"
+  },
+  "vanity": {
+    "vanity": "Bộ Sưu Tập Bàn Trang Điểm",
+    "vanityDescription": "Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel": "Bàn Trang Điểm Khách Sạn"
+  },
+  "closet":{
+    "closet":"Bộ Sưu Tập Tủ Quần Áo",
+    "closetDescription":"Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
+    "hotel":"Tủ Quần Áo Khách Sạn"
+  }
 },
   "notificationQR": "Mã QR đang được tạo. Xin vui lòng đợi trong giây lát!",
   "form": {

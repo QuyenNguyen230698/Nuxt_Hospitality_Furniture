@@ -189,6 +189,49 @@
       "tables":"Desks & Tables",
       "sofas":"Chairs & Sofas",
       "vanities":"Vanities"
+    },
+    "bedding":{
+      "bedding":"Hotel bedding Collection",
+      "beddingDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "king":"Hotel King Headboard",
+      "queen":"Hotel Queen Headboard",
+      "bed":"Hotel Bed Set"
+    },
+    "tvUnit":{
+      "tvUnit":"TV Unit Collection",
+      "tvUnitDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel TV Units"
+    },
+    "nightstand":{
+      "nightStand":"Nightstand Collection",
+      "nightStandDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel Nightstands"
+    },
+    "cabinet":{
+      "cabinet":"Dresser & Cabinet Collection",
+      "cabinetDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel Dressers & Cabinets"
+    },
+    "desk":{
+      "desk":"Desk & Table Collection",
+      "deskDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "table":"Hotel Tables",
+      "hotel":"Hotel Desks"
+    },
+    "sofa":{
+      "sofa":"Chair & Sofa Collection",
+      "sofaDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel Chairs, Benches & Sofas"
+    },
+    "vanity":{
+      "vanity":"Vanity Collection",
+      "vanityDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel Vanities"
+    },
+    "closet":{
+      "closet":"Closet Collection",
+      "closetDescription":"Disclaimer: The furniture items below are from hotel furniture projects in the past. The price can not be exact due to confidential terms. The furniture designs belong to clients as their own projects. We do not repurpose or reuse their designs for any other projects. Our Company is only responsible for production as a manufacturer.",
+      "hotel":"Hotel Closets"
     }
   },
   "notificationQR":"The QR code is being generated. Please wait a moment!",

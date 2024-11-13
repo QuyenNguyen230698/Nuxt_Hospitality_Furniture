@@ -30,7 +30,7 @@
         <!-- See more -->
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.headboard') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/bedBase">{{ $t('app.referenceprice.headboard') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -38,12 +38,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.dresser') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/cabinet">{{ $t('app.referenceprice.dresser') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -51,12 +51,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.closets') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/closet">{{ $t('app.referenceprice.closets') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -64,12 +64,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.tv') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/tv">{{ $t('app.referenceprice.tv') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -77,12 +77,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.nightstands') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/nightstand">{{ $t('app.referenceprice.nightstands') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -90,12 +90,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.tables') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/table">{{ $t('app.referenceprice.tables') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -103,12 +103,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.sofas') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/sofas">{{ $t('app.referenceprice.sofas') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -116,12 +116,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.vanities') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/vanities">{{ $t('app.referenceprice.vanities') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <a href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
             </div>
         </section>
     </div>

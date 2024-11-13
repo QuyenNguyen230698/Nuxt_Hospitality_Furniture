@@ -10,13 +10,13 @@
             </div>
             <div class="w-full h-full flex flex-col lg:flex-row container mx-auto gap-5 p-5 lg:p-10">
                 <div class="flex flex-col justify-center items-center w-full lg:w-1/2 gap-2 ">
-                    <h2 class="text-white text-center text-2xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.collection') }}</h2>
-                    <p class="text-justify text-gray-400 text-sm lg:text-base container mx-auto">{{ $t('app.referenceprice.collectionDescription') }}</p>
+                    <h2 class="text-white text-center text-2xl lg:text-4xl font-extrabold">{{ $t('app.cabinet.cabinet') }}</h2>
+                    <p class="text-justify text-gray-400 text-sm lg:text-base container mx-auto">{{ $t('app.cabinet.cabinetDescription') }}</p>
                 </div>
                 <div class="w-full lg:w-1/2">
                     <div class="lg:relative w-full ">
                         <div class="lg:absolute lg:inset-0 m-auto z-30 bg-white p-1 md:w-96 w-80 h-40 lg:h-72">
-                            <NuxtImg src="/image/ReferencePrice/bgRef2.jpg" alt="bgRef" class="w-full h-full object-cover"/>
+                            <NuxtImg src="/image/ReferencePrice/Cabinet/Detail/title.jpg" alt="titleRef" class="w-full h-full object-cover"/>
                         </div>
                     </div>
                 </div>
@@ -25,174 +25,39 @@
         <!-- See more -->
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.headboard') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.cabinet.hotel') }}</a></h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.dresser') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.closets') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.tv') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.nightstands') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.tables') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.sofas') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.referenceprice.vanities') }}</a></h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
-                </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
-            </div>
         </section>
     </div>
 </template>
 
 <script setup>
-const categories = [
-    {src: '/image/ReferencePrice/Categories/cate1.jpg', alt: 'Headboard & Bedbase'},
-    {src: '/image/ReferencePrice/Categories/cate2.jpg', alt: 'Closet & Wardrobe'},
-    {src: '/image/ReferencePrice/Categories/cate3.jpg', alt: 'TV Unit'},
-    {src: '/image/ReferencePrice/Categories/cate4.jpg', alt: 'Nightstand'},
-    {src: '/image/ReferencePrice/Categories/cate5.jpg', alt: 'Dresser & Cabinet'},
-    {src: '/image/ReferencePrice/Categories/cate6.jpg', alt: 'Desk & Table'},
-    {src: '/image/ReferencePrice/Categories/cate7.jpg', alt: 'Chair & Sofa'},
-    {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity'},
-]
 const bedBase = [
-    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bedbase1'},
-    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bedbase2'},
-    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bedbase3'},
-    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bedbase4'},
-]
-const cabinet = [
-    {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet2.jpg', alt: 'cabinet2'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet3.jpg', alt: 'cabinet3'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet4.jpg', alt: 'cabinet4'},
-]
-const closet = [
-    {src: '/image/ReferencePrice/Closets/closet1.jpg', alt: 'closet1'},
-    {src: '/image/ReferencePrice/Closets/closet2.jpg', alt: 'closet2'},
-    {src: '/image/ReferencePrice/Closets/closet3.jpg', alt: 'closet3'},
-    {src: '/image/ReferencePrice/Closets/closet4.jpg', alt: 'closet4'},
-]
-const tv = [
-    {src: '/image/ReferencePrice/TVunits/unit1.jpg', alt: 'tv1'},
-    {src: '/image/ReferencePrice/TVunits/unit2.jpg', alt: 'tv2'},
-    {src: '/image/ReferencePrice/TVunits/unit3.jpg', alt: 'tv3'},
-    {src: '/image/ReferencePrice/TVunits/unit4.jpg', alt: 'tv4'},
-]
-const nightstand = [
-    {src: '/image/ReferencePrice/Nightstands/night1.jpg', alt: 'nightstand1'},
-    {src: '/image/ReferencePrice/Nightstands/night2.jpg', alt: 'nightstand2'},
-    {src: '/image/ReferencePrice/Nightstands/night3.jpg', alt: 'nightstand3'},
-    {src: '/image/ReferencePrice/Nightstands/night4.jpg', alt: 'nightstand4'},
-]
-const table = [
-    {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1'},
-    {src: '/image/ReferencePrice/Table/table2.jpg', alt: 'table2'},
-    {src: '/image/ReferencePrice/Table/table3.jpg', alt: 'table3'},
-    {src: '/image/ReferencePrice/Table/table4.jpg', alt: 'table4'},
-]
-const sofas = [
-    {src: '/image/ReferencePrice/Sofa/sofa1.jpg', alt: 'sofa1'},
-    {src: '/image/ReferencePrice/Sofa/sofa2.jpg', alt: 'sofa2'},
-    {src: '/image/ReferencePrice/Sofa/sofa3.jpg', alt: 'sofa3'},
-    {src: '/image/ReferencePrice/Sofa/sofa4.jpg', alt: 'sofa4'},
-]
-const vanities = [
-    {src: '/image/ReferencePrice/Vanitis/vaniti1.jpg', alt: 'vanity1'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti2.jpg', alt: 'vanity2'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti3.jpg', alt: 'vanity3'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti4.jpg', alt: 'vanity4'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1.jpg', alt: 'cabinet1'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2.jpg', alt: 'cabinet2'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3.jpg', alt: 'cabinet3'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4.jpg', alt: 'cabinet4'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5.jpg', alt: 'cabinet5'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6.jpg', alt: 'cabinet6'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7.jpg', alt: 'cabinet7'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8.jpg', alt: 'cabinet8'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9.jpg', alt: 'cabinet9'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10.jpg', alt: 'cabinet10'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11.jpg', alt: 'cabinet11'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12.jpg', alt: 'cabinet12'},
 ]
 </script>
 
 <style scoped>
 .bg-cate {
     background-image: url('/image/ReferencePrice/bgRef3.png');
+}
+.bg-color {
+    background-color: #1C1C1C;
 }
 </style>
