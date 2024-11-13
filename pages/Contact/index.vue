@@ -64,12 +64,6 @@
                             <option>{{ $t('app.contact.restaurant') }}</option>
                           </select>
                         </div>
-                        <div  class="col-span-2">
-                          <label class="block mb-1 font-light text-base">
-                            <span class="text-base flex items-center text-center">{{ $t('app.contact.5mb') }}</span>
-                          </label>
-                          <input type="file" class="file-input file-input-bordered file-input-sm w-full max-w-xs text-gray-400" placeholder="$t('app.contact.nofile')"/>
-                        </div>
                         <div class="col-span-2">
                           <label class="inline-flex items-center">
                             <span class="text-sm text-gray-400 text-justify">

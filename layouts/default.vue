@@ -1,9 +1,11 @@
 <template>
     <div>
-        <Header />
-        <slot />
-        <Footer />
-        <ButtonScrollToTop/>
+        <ClientOnly>
+            <Header />
+            <slot />
+            <Footer />
+            <ButtonScrollToTop/>
+        </ClientOnly>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-black text-white">
       <SliceShowProject />
       <!-- slide communicate -->
       <div class="carousel w-full relative overflow-hidden bg-word">
@@ -29,17 +29,20 @@
           <button @click="nextSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full">
-        <div class="col-span-1"></div>
-        <div class="col-span-1"></div>
-        <div class="col-span-1"></div>
+      {{ test }}
+      <div class="text-center ">We have dedicated over 400 hotel furniture projects for 23 years. Under intesive effort, our mission is to reach client sactifaction.</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-5 py-5">
+        <div class="col-span-1" v-for="project in test?.data" :key="project.title">
+          <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain rounded-lg" />
+          <div><p class="text-justify text-sm">{{ project.title }}</p></div>
+        </div>
       </div>
     </div>
   </template>
   
   <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
-  
+  const { locale } = useI18n();
   // Image array
   const solution = [
     { src: "/image/communicate/1-Four-Season.png" },
@@ -63,7 +66,16 @@
     { src: "/image/communicate/19Postoak-stacked-white.png" },
     { src: "/image/communicate/20-The-Wink.png" },
   ];
-  
+
+  const newProjects = ref(null);
+
+  const payload = async() => {
+    const data = await $fetch("/api/test");
+    newProjects.value = data
+  }
+
+  const test = computed(() => newProjects?.value?.find(item => item.locale === locale.value));
+
   // Divide solution array into groups of 5 images for each slide
   const slideGroups = [];
   for (let i = 0; i < solution.length; i += 5) {
@@ -85,6 +97,7 @@
   
   onMounted(() => {
     intervalId = setInterval(nextSlide, slideInterval);
+    payload();
   });
   
   onUnmounted(() => {
