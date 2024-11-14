@@ -30,7 +30,9 @@
         </div>
       </div>
       <div class="text-center font-thin color-title text-xs md:text-base">We have dedicated over 400 hotel furniture projects for 23 years. Under intesive effort, our mission is to reach client sactifaction.</div>
+      <!-- List Projects -->
       <div class="carousel w-full">
+        <!-- data 1 -->
         <div id="item1" class="carousel-item w-full">
             <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 p-4 lg:container">
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden" 
@@ -49,6 +51,7 @@
                 </div>
             </div>
         </div>
+        <!-- data 2 -->
         <div id="item2" class="carousel-item w-full">
             <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 p-4 lg:container">
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
@@ -67,9 +70,10 @@
             </div>
         </div>
         </div>
-        <div class="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" class="btn btn-xs">1</a>
-        <a href="#item2" class="btn btn-xs">2</a>
+        <!-- button -->
+        <div class="flex w-full justify-center gap-2 pb-2">
+        <a href="#item1" class="btn btn-circle">1</a>
+        <a href="#item2" class="btn btn-circle">2</a>
         </div>
     </div>
   </template>
@@ -100,34 +104,41 @@
     { src: "/image/communicate/19Postoak-stacked-white.png" },
     { src: "/image/communicate/20-The-Wink.png" },
   ];
-
+  //#region quyenNC gọi api data
   const newProjects = ref(null);
-
   const payload = async() => {
     const data = await $fetch("/api/test");
     newProjects.value = data
   }
-
   const test = computed(() => newProjects?.value?.find(item => item.locale === locale.value));
+  //#endregion
 
-  // Divide solution array into groups of 5 images for each slide
-  const slideGroups = [];
+  //#region slide logo communicate
+
+    // hàm slide logo communicate
+    const slideGroups = [];
   for (let i = 0; i < solution.length; i += 5) {
     slideGroups.push(solution.slice(i, i + 5));
   }
-  
-  // Current slide and interval for auto slide change
+
+  // set thời gian 3s slide logo communicate
   const currentSlide = ref(0);
   const slideInterval = 3000;
-  
+
+  // hàm next slide logo communicate
   function nextSlide() {
     currentSlide.value = (currentSlide.value + 1) % slideGroups.length;
   }
+
+  // hàm prev slide logo communicate
   function prevSlide() {
     currentSlide.value = (currentSlide.value - 1 + slideGroups.length) % slideGroups.length;
   }
-  
+
+  // set thời gian 3s slide logo communicate
   let intervalId;
+  //#endregion
+
   
   onMounted(() => {
     intervalId = setInterval(nextSlide, slideInterval);
