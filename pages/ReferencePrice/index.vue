@@ -30,7 +30,7 @@
         <!-- See more -->
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/bedBase">{{ $t('app.referenceprice.headboard') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.headboard') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -43,7 +43,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/cabinet">{{ $t('app.referenceprice.dresser') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.dresser') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -56,7 +56,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/closet">{{ $t('app.referenceprice.closets') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.closets') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -69,7 +69,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/tv">{{ $t('app.referenceprice.tv') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tv') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -82,7 +82,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/nightstand">{{ $t('app.referenceprice.nightstands') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.nightstands') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -95,7 +95,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/table">{{ $t('app.referenceprice.tables') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tables') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -108,7 +108,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/sofas">{{ $t('app.referenceprice.sofas') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.sofas') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
@@ -121,7 +121,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="/referenceprice/vanities">{{ $t('app.referenceprice.vanities') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.vanities') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">

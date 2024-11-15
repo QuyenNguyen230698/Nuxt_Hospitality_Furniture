@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col w-full h-full bg-black p-0 md:py-6">
-        <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white"><a href="/capabilities">{{ $t('app.factories.ourfactories') }}</a></h2>
+        <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">{{ $t('app.factories.ourfactories') }}</h2>
         <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         <div class="flex flex-col w-full px-2 lg:p-0 justify-center items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center w-full h-72 overflow-hidden">
@@ -8,7 +8,9 @@
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
                         style="background-image: url('/image/factory/Wood.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
-                        <h3 class="text-white text-3xl font-bold z-10">{{ $t('app.factories.wood') }}</h3>
+                        <h3 class="text-white text-3xl font-bold z-10">
+                            <nuxt-link to="/capabilities/woodenfurniture">{{ $t('app.factories.wood') }}</nuxt-link>
+                        </h3>
                     </div>
                 </div>
                 <div class="col-span-1 h-full flex justify-center items-center overflow-hidden">
@@ -24,14 +26,18 @@
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
                         style="background-image: url('/image/factory/Metal.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
-                        <h3 class="text-white text-3xl font-bold z-10">{{ $t('app.factories.metal') }}</h3>
+                        <h3 class="text-white text-3xl font-bold z-10">
+                            <nuxt-link to="/capabilities/metalfurniture">{{ $t('app.factories.metal') }}</nuxt-link>
+                        </h3>
                     </div>
                 </div>
                 <div class="col-span-1 h-full flex justify-center items-center overflow-hidden">
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
                         style="background-image: url('/image/factory/Upholstery.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
-                        <h3 class="text-white text-3xl font-bold z-10">{{ $t('app.factories.upholstery') }}</h3>
+                        <h3 class="text-white text-3xl font-bold z-10">
+                            <nuxt-link to="/capabilities/ulpholstery">{{ $t('app.factories.upholstery') }}</nuxt-link>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -47,7 +53,9 @@
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
                         style="background-image: url('/image/factory/Coating.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
-                        <h3 class="text-white text-3xl font-bold z-10">{{ $t('app.factories.coating') }}</h3>
+                        <h3 class="text-white text-3xl font-bold z-10">
+                            <nuxt-link to="/capabilities/metalfurniture">{{ $t('app.factories.coating') }}</nuxt-link>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -56,7 +64,9 @@
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
                         style="background-image: url('/image/factory/Finishing.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
-                        <h3 class="text-white text-3xl font-bold z-10">{{ $t('app.factories.finishing') }}</h3>
+                        <h3 class="text-white text-3xl font-bold z-10">
+                            <nuxt-link to="/capabilities/finishing">{{ $t('app.factories.finishing') }}</nuxt-link>
+                        </h3>
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold"><a href="">{{ $t('app.desk.hotel') }}</a></h2>
+                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.desk.hotel') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">

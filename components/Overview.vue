@@ -2,7 +2,7 @@
     <div class="bg-overview flex flex-col w-full h-full p-6">
         <div class="text-center ">
             <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
-                <nuxt-link to="/referenceprice">{{ $t('app.overview.productmanufacturingoverview') }}</nuxt-link>
+                {{ $t('app.overview.productmanufacturingoverview') }}
             </h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>

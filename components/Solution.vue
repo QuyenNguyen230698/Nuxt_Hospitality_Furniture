@@ -18,7 +18,7 @@
           <!-- Content -->
           <div class="flex flex-col items-center justify-center w-full h-full p-5 container mx-auto order-2 lg:order-1">
           <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
-            <a href="/aboutus">{{ $t('app.solution.onestopsolution') }}</a>
+            {{ $t('app.solution.onestopsolution') }}
           </h2>
           <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
           <p class="text-sm color-text text-justify mb-5 leading-loose">
