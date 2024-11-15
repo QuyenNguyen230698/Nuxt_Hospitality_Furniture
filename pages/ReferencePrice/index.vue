@@ -173,10 +173,10 @@ const tv = [
     {src: '/image/ReferencePrice/TVunits/unit4.jpg', alt: 'tv4'},
 ]
 const nightstand = [
-    {src: '/image/ReferencePrice/NightStands/night1.jpg', alt: 'nightstand1'},
-    {src: '/image/ReferencePrice/NightStands/night2.jpg', alt: 'nightstand2'},
-    {src: '/image/ReferencePrice/NightStands/night3.jpg', alt: 'nightstand3'},
-    {src: '/image/ReferencePrice/NightStands/night4.jpg', alt: 'nightstand4'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night1.jpg', alt: 'nightstand1'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night2.jpg', alt: 'nightstand2'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night3.jpg', alt: 'nightstand3'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'nightstand4'},
 ]
 const table = [
     {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1'},
