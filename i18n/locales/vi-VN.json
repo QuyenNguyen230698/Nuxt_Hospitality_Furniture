@@ -62,7 +62,8 @@
     "art": "Nghệ Thuật"
   },
   "projects": {
-    "projects": "Dự Án"
+    "projects": "Dự Án",
+    "readmore":"Đọc Thêm"
   },
   "overview": {
     "productmanufacturingoverview": "Tổng Quan Quy Trình Sản Xuất",
@@ -232,7 +233,22 @@
     "closet":"Bộ Sưu Tập Tủ Quần Áo",
     "closetDescription":"Lưu ý: Các món đồ nội thất bên dưới thuộc các dự án nội thất khách sạn trước đây. Giá không thể chính xác do các điều khoản bảo mật. Các thiết kế nội thất thuộc quyền sở hữu của khách hàng theo dự án của họ. Chúng tôi không tái sử dụng hoặc tái chế các thiết kế này cho bất kỳ dự án nào khác. Công ty chúng tôi chỉ chịu trách nhiệm sản xuất với vai trò là nhà sản xuất.",
     "hotel":"Tủ Quần Áo Khách Sạn"
-  }
+  },
+  "ritz": {
+  "ritzcarlton": "Ritz Carlton Amelia Island",
+  "projectType": "Loại dự án: ",
+  "title": "Phòng Suite & Phòng Khách – Cải tạo khách sạn",
+  "status": "Trạng thái: ",
+  "completed": "Đã hoàn thành",
+  "hotel": "Nội thất khách sạn: ",
+  "hotelDesc": "Đầu giường King, Đầu giường Queen, Bàn ăn, Bàn bên, Bàn cà phê, Tủ quần áo và bàn trang điểm bên trái King, Tủ quần áo và bàn trang điểm bên phải King, Đơn vị tivi bên trái King, Đơn vị tivi bên phải King",
+  "location": "Địa điểm: ",
+  "locationDesc": "4750 Amelia Island Pkwy, Fernandina Beach, FL 32034, Hoa Kỳ",
+  "button": "DỰ ÁN CỦA BẠN ➟",
+  "trans": "Tranducfurnishings đã tham gia vào dự án cải tạo với vai trò là nhà sản xuất nội thất khách sạn. Với 20 năm kinh nghiệm, chúng tôi đã cống hiến hết mình cho quá trình sản xuất. Từ mẫu thử đến sản xuất hàng loạt, tất cả đều được thực hiện bởi những công nhân lành nghề cùng kiểm soát chất lượng nghiêm ngặt và các máy móc hiện đại. Cảm ơn các khách hàng đã cho chúng tôi cơ hội đóng vai trò trong các dự án.",
+  "we": "Chúng tôi tự hào góp phần cung cấp nội thất khách sạn đạt tiêu chuẩn cao cấp cho ngành công nghiệp dịch vụ. Chúng tôi luôn chú ý cao đến từng sản phẩm với quy trình kiểm soát chất lượng chuyên nghiệp. Sứ mệnh của chúng tôi là cung cấp giải pháp trọn gói trong sản xuất nội thất khách sạn, với mục tiêu mang thiết kế nội thất đặt riêng trở thành hiện thực trong ngành công nghiệp khách sạn.",
+  "relative": "Dự án liên quan"
+}
 },
   "notificationQR": "Mã QR đang được tạo. Xin vui lòng đợi trong giây lát!",
   "form": {

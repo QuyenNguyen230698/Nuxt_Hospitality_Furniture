@@ -46,7 +46,9 @@
                     <p class="text-justify text-sm md:text-base lg:text-lg font-thin color-title">{{ project.title }}</p>
                 </div>
                 <div class="absolute inset-0 hidden group-hover:flex justify-center items-center p-4 bg-black bg-opacity-50 transition-all duration-1000 ease-in-out">
-                    <h3 class="hover:text-orange-500 cursor-pointer transition-all duration-500 ease-in-out text-xl">{{ $t("app.referenceprice.detail") }}</h3>
+                    <h3 class="hover:text-orange-500 cursor-pointer transition-all duration-500 ease-in-out text-xl">
+                      <nuxt-link to="/news">{{ $t("app.referenceprice.detail") }}</nuxt-link>
+                    </h3>
                 </div>
                 </div>
             </div>
