@@ -1,7 +1,6 @@
 <template>
         <div class="bg-black color-text">
         <!-- Ritz project -->
-         {{ solution }}
         <div class="bg-ritz p-4 lg:p-0 lg:py-16">
             <div class="flex flex-col lg:flex-row items-center justify-center gap-5 bg-solution w-full h-full">
                 <!-- Carousel -->
@@ -109,10 +108,10 @@ const slideInterval = 3000;
 
 //#region QuyenNC ( hàm chuyển slide )
 function nextSlide() {
-  currentSlide.value = (currentSlide.value + 1) % solution.length;
+  currentSlide.value = (currentSlide.value + 1) % solution.value.length;
 }
 function prevSlide() {
-  currentSlide.value = (currentSlide.value - 1 + solution.length) % solution.length;
+  currentSlide.value = (currentSlide.value - 1 + solution.value.length) % solution.value.length;
 }
 //#endregion
 
