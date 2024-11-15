@@ -7,7 +7,7 @@
                 <div class="carousel w-full md:w-1/2 relative overflow-hidden">
                     <div v-for="(slide, index) in solution" :key="index" class="carousel-item w-full transition-transform duration-700" 
                     :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-                    <img :src="slide.src" alt="Slide image" class="w-full" />
+                    <NuxtImg :src="slide.src" alt="Slide image" class="w-full" loading="lazy"/>
                     </div>
                     <div class="absolute inset-y-1/2 left-5 flex items-center">
                     <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
@@ -108,10 +108,10 @@ const slideInterval = 3000;
 
 //#region QuyenNC ( hàm chuyển slide )
 function nextSlide() {
-  currentSlide.value = (currentSlide.value + 1) % solution.value.length;
+  currentSlide.value = (currentSlide.value + 1) % solution.value?.length;
 }
 function prevSlide() {
-  currentSlide.value = (currentSlide.value - 1 + solution.value.length) % solution.value.length;
+  currentSlide.value = (currentSlide.value - 1 + solution.value?.length) % solution.value?.length;
 }
 //#endregion
 

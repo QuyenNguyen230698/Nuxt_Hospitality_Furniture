@@ -12,6 +12,53 @@ export default defineNuxtConfig({
   devServer: {
     port: 3333,
   },
+  image: {
+    densities: [1, 2],
+    screens: {
+      'xs': 320,
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280,
+      'xxl': 1536,
+    },
+    domains: ["https://netzero.tranduc.com"],
+    alias: {
+      image: "/cdn/",
+    },
+    format: ["webp"],
+    presets: {
+      default: {
+        modifiers: {
+          quality: 75,
+          format: "webp",
+          loading: "lazy",
+        },
+      },
+    },
+    cache: {
+      maxAge: 60 * 60 * 24 * 30, // Cache trong 30 ngày
+      dir: '~~/node_modules/.cache/nuxt-image', // Đường dẫn lưu cache
+    },
+    optimize: {
+      mozjpeg: {
+        quality: 75,
+      },
+      pngquant: {
+        quality: [0.65, 0.8],
+        speed: 4,
+      },
+      svgo: {
+        plugins: [
+          { removeViewBox: false },
+          { cleanupIDs: false },
+        ],
+      },
+      webp: {
+        quality: 75,
+      },
+    },
+  },
   i18n: {
     locales: [
       {
