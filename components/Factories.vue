@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-span-1 h-full flex justify-center items-center overflow-hidden">
                     <div class="relative h-full w-full flex justify-center items-center transition-transform duration-1000 transform hover:scale-110"
-                        style="background-image: url('/image/factory/Coating.jpg'); background-size: cover; background-position: center;">
+                        style="background-image: url('/image/factory/coating.jpg'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity duration-1000"></div>
                         <h3 class="text-white text-3xl font-bold z-10">
                             <nuxt-link to="/capabilities/metalfurniture">{{ $t('app.factories.coating') }}</nuxt-link>
