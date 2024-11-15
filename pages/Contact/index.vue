@@ -14,9 +14,11 @@
                         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-4 w-full">
                             <div class="col-span-2">
                                 <h2 class="text-center text-3xl lg:text-5xl font-bold p-6 text-white">
-                                    Leave us your info!
+                                    {{ $t('app.contact.leaveus') }}
                                 </h2>
-                                <p class="text-center text-sm text-gray-400">and we will get back to you</p>
+                                <p class="text-center text-sm text-gray-400">
+                                    {{ $t('app.contact.and') }}
+                                </p>
                                 <div
                                     class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto my-5"
                                     style="height: 1px"
@@ -57,6 +59,7 @@
                             <span class="text-base flex items-center text-center">{{ $t('app.contact.furnitureProject') }}</span>
                           </label>
                           <select v-model="projectType" class="select select-bordered select-sm w-full text-black">
+                            <option disabled selected>{{ $t('app.contact.pickone') }}</option>
                             <option>{{ $t('app.contact.5star') }}</option>
                             <option>{{ $t('app.contact.4star') }}</option>
                             <option>{{ $t('app.contact.3star') }}</option>

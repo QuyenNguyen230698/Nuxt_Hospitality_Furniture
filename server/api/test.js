@@ -2,7 +2,8 @@ export default defineEventHandler(async (event) => {
     const { req, res } = event;
     res.statusCode = 200;
     return [{
-        locale:'vi-VN',data:[
+        locale:'vi-VN',
+        data:[
             {
                 "title": "Cải Tạo Khu Nghỉ Dưỡng Anlam Saigon River ở Việt Nam",
                 "src": "/image/project/pages/pro1.jpg",
@@ -76,7 +77,7 @@ export default defineEventHandler(async (event) => {
                 "desc": "Khu vực ngủ bao gồm đầu giường và đế giường khách sạn. Nhà máy của chúng tôi đã sản xuất rất nhiều nội thất cho ngành khách sạn sang trọng."
             }
         ],
-            data2:[
+        data2:[
                 {
                     "title": "Khách Sạn Sheraton Waikiki Sau Khi Được Cải Tạo",
                     "src": "/image/project/pages/pro13.jpg",
@@ -149,10 +150,27 @@ export default defineEventHandler(async (event) => {
                     "pdate": "30 tháng 10, 2021",
                     "desc": "Tranducfurnishings tự hào cung cấp nội thất bền vững, thân thiện với khách sạn và môi trường. Những thiết kế nội thất thân thiện với khách sạn góp phần tạo nên trải nghiệm nghỉ dưỡng thoải mái cho khách hàng."
                 }
-            ]
-    },
-    {
-        locale:'en-US',data:[
+        ],
+        data3:[
+            {title:"Golden Nugget Lake Charles",location:"2550 Đại lộ Golden Nugget, Lake Charles",id:'Golden',
+            img:[{src:'/image/project/detailProducts/Golden/product1.jpg'},
+                 {src:'/image/project/detailProducts/Golden/product2.jpg'},
+                 {src:'/image/project/detailProducts/Golden/product3.jpg'}
+                ]},
+            {title:"Renaissance Richardson",location:"900 E Lookout Dr, Richardson, TX 75082, Hoa Kỳ",id:'Renaissance',
+                img:[{src:'/image/project/detailProducts/Renaissance/product1.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product2.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product3.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product4.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product5.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product6.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product7.jpg'}
+                ]}
+        ]
+        },
+        {
+        locale:'en-US',
+        data:[
             {"title": "The Renovation Of Anlam Saigon River Resort in Vietnam",
              "src": "/image/project/pages/pro1.jpg",
              "pdate":"March 10, 2022",
@@ -212,8 +230,8 @@ export default defineEventHandler(async (event) => {
              "src": "/image/project/pages/pro12.jpg",
              "pdate":"December 13, 2021",
              "desc":"The sleeping area includes a hotel headboard & bed base. Our factories have generated so many furniture items for the luxury hotel industry.",
-            }],
-            data2:[
+        }],
+        data2:[
             {"title": "How Sheraton Waikiki Hotel Look Like After Hotel Renovation",
              "src": "/image/project/pages/pro13.jpg",
              "pdate":"December 10, 2021",
@@ -274,7 +292,23 @@ export default defineEventHandler(async (event) => {
              "pdate":"July 21, 2021",
              "desc":"Each high standard hotel obtains unique design and that requires custom-made furniture or bespoke furniture. Their attempt is to brings specialty to travelers, so it is impossible to pick up instance furniture right away from furniture shop next to them.",
             },
-            ]
-    }
-]
-})
+        ],
+        data3:[
+            {title:"Golden Nugget Lake Charles",location:"2550 Golden Nugget Blvd, Lake Charles",id:'Golden',
+            img:[{src:'/image/project/detailProducts/Golden/product1.jpg'},
+                 {src:'/image/project/detailProducts/Golden/product2.jpg'},
+                 {src:'/image/project/detailProducts/Golden/product3.jpg'}
+                ]},
+            {title:"Renaissance Richardson",location:"900 E Lookout Dr, Richardson, TX 75082, United States",id:'Renaissance',
+                img:[{src:'/image/project/detailProducts/Renaissance/product1.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product2.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product3.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product4.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product5.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product6.jpg'},
+                     {src:'/image/project/detailProducts/Renaissance/product7.jpg'}
+                ]}
+        ]
+        }
+    ]
+    })

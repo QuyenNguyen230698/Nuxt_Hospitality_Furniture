@@ -13,8 +13,8 @@
                     <h3 class="text-orange-500 text-base text-justify lg:text-xl font-bold z-10 pb-4">{{item.title}}</h3>
                 </div>
                 <div class="flex gap-2">
-                    <a href="/" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="/" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-link"></i></a>
+                    <nuxt-link to="/projects" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-magnifying-glass"></i></nuxt-link>
+                    <nuxt-link :to="`/projects/detail-products/${item.id}`" class="hover:text-orange-500 btn btn-circle"><i class="fa-solid fa-link"></i></nuxt-link>
                 </div>
               </div>
             </div>
@@ -26,18 +26,18 @@
 <script setup>
 //khởi tạo Arr projects
 const projects = [
-    {src:'/image/project/project1.jpg',title:'Golden Nugget Lake Charles'},
-    {src:'/image/project/project2.jpg',title:'Renaissance Richardson'},
-    {src:'/image/project/project3.jpg',title:'Hyatt Centric Fishermans Wharf'},
-    {src:'/image/project/project4.jpg',title:'Kimpton Charlotte'},
-    {src:'/image/project/project5.jpg',title:'Beekman new york hotel room'},
-    {src:'/image/project/project6.jpg',title:'Line Dc Hotel'},
-    {src:'/image/project/project7.jpg',title:'Fairmont Claremont'},
-    {src:'/image/project/project8.jpg',title:'Marriott Dallas Texas'},
-    {src:'/image/project/project9.jpg',title:'Conrad Miami'},
-    {src:'/image/project/project10.jpg',title:'Tampa Marriott Waterside'},
-    {src:'/image/project/project11.jpg',title:'Godfrey Illinois'},
-    {src:'/image/project/project12.jpg',title:'Hilton Grand Islander'},
+    {src:'/image/project/project1.jpg',title:'Golden Nugget Lake Charles',id:'Golden'},
+    {src:'/image/project/project2.jpg',title:'Renaissance Richardson',id:"Renaissance"},
+    {src:'/image/project/project3.jpg',title:'Hyatt Centric Fishermans Wharf',id:"Hyatt"},
+    {src:'/image/project/project4.jpg',title:'Kimpton Charlotte',id:"Kimpton"},
+    {src:'/image/project/project5.jpg',title:'Beekman new york hotel room',id:"Beekman"},
+    {src:'/image/project/project6.jpg',title:'Line Dc Hotel',id:"Line"},
+    {src:'/image/project/project7.jpg',title:'Fairmont Claremont',id:"Fairmont"},
+    {src:'/image/project/project8.jpg',title:'Marriott Dallas Texas',id:"Marriott"},
+    {src:'/image/project/project9.jpg',title:'Conrad Miami',id:"Conrad"},
+    {src:'/image/project/project10.jpg',title:'Tampa Marriott Waterside',id:"Tampa"},
+    {src:'/image/project/project11.jpg',title:'Godfrey Illinois',id:"Godfrey"},
+    {src:'/image/project/project12.jpg',title:'Hilton Grand Islander',id:"Hilton"},
 ]
 </script>
 
