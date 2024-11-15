@@ -6,7 +6,7 @@
             </h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 w-full h-full max-h-96">
+        <div class="grid grid-cols-1 md:grid-cols-12 w-full h-full">
             <!-- PlayList -->
             <div class="col-span-1 md:col-span-4 h-full w-full order-2 md:order-1">
                 <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
