@@ -24,7 +24,15 @@ export default defineNuxtConfig({
     },
     domains: ["https://netzero.tranduc.com"],
     alias: {
-      image: "/cdn/",
+      image: "/image/",
+    },
+    sizes: {
+      'xs': '100vw',
+      'sm': '50vw',
+      'md': '33vw',
+      'lg': '25vw',
+      'xl': '20vw',
+      'xxl': '15vw',
     },
     format: ["webp"],
     presets: {
