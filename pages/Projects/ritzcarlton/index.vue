@@ -131,7 +131,7 @@ onUnmounted(() => {
 
 <style scoped>
 .bg-ritz {
-    background-image: url('/image/RitzCarlton/bgritz.jpg');
+    background-image: url('/image/RitzCarlton/bgRitz.jpg');
     background-position: center right;
     background-color: #44444473;
 }
