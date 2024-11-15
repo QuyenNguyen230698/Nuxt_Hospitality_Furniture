@@ -17,10 +17,10 @@ import { ref, onMounted } from 'vue'
 
 // Danh sách hình ảnh
 const slideImage = [
-  { src: '/image/capability/wooden/wooden1.jpg' },
-  { src: '/image/capability/wooden/wooden2.jpg' },
-  { src: '/image/capability/wooden/wooden3.jpg' },
-  { src: '/image/capability/wooden/wooden4.jpg' },
+  { src: '/image/capability/Wooden/wooden1.jpg' },
+  { src: '/image/capability/Wooden/wooden2.jpg' },
+  { src: '/image/capability/Wooden/wooden3.jpg' },
+  { src: '/image/capability/Wooden/wooden4.jpg' },
 ]
 //#region QuyenNC ( khởi tạo các biến )
 const scaleAnimate = ref(true)
