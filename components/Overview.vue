@@ -33,10 +33,10 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                 ></iframe>
-                <div v-else class="w-full h-auto">
+                <div v-else class="w-full h-auto bg-black">
                     <video 
                     ref="video" preload="auto" webkit-playsinline="true" playsinline="true" autoplay="false" muted loop controls
-                    class="object-cover w-full  h-96 " src="https://api.tranduc.com/api/video/TDF_Factory.mp4" title="Video TranDuc Corporation"
+                    class="object-contain w-full h-96 " src="https://api.tranduc.com/api/video/TDF_Factory.mp4" title="Video TranDuc Corporation"
                     alt="Video">
                 </video>
                 </div>
