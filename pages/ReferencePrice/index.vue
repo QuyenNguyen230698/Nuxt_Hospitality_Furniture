@@ -35,7 +35,7 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
+                        <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" format="webp" quality="75" loading="eager" />
                     </NuxtLink>
                 </div>
             </div>

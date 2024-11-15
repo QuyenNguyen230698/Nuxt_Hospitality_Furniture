@@ -40,13 +40,13 @@ export default defineNuxtConfig({
         modifiers: {
           quality: 75,
           format: "webp",
-          loading: "lazy",
+          loading: "eager",
         },
       },
     },
     cache: {
       maxAge: 60 * 60 * 24 * 30, // Cache trong 30 ngày
-      dir: '~~/node_modules/.cache/nuxt-image', // Đường dẫn lưu cache
+      dir: '@/node_modules/.cache/nuxt-image', // Đường dẫn lưu cache
     },
     optimize: {
       mozjpeg: {

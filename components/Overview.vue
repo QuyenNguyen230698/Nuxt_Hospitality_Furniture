@@ -6,9 +6,9 @@
             </h2>
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10" style="height: 1px"></div>
         </div>
-        <div class="flex flex-col md:flex-row w-full h-full">
+        <div class="grid grid-cols-1 md:grid-cols-12 w-full h-full max-h-96">
             <!-- PlayList -->
-            <div class="items-center justify-center w-full md:w-1/3 h-full md:flex flex-col order-2 md:order-1">
+            <div class="col-span-1 md:col-span-4 h-full w-full order-2 md:order-1">
                 <h2 class="text-white text-2xl font-bold py-4 w-full border-b-2 border-b-orange-500 uppercase">{{ $t('app.overview.playlist') }}</h2>
                 <ul class="space-y-2 w-full">
                     <li
@@ -22,23 +22,25 @@
                 </ul>
             </div>
             <!-- Screen -->
-            <div class="flex items-center justify-center w-full h-full md:w-2/3 order-1 md:order-2">
+            <div class="col-span-1 md:col-span-8 h-full w-full order-1 md:order-2 ">
                 <iframe
                 v-if="selectedPlaylist !== 0"
                     :src="getEmbedUrl(playlist[selectedPlaylist].src)"
-                    class="w-full max-w-full min-w-full h-96 object-contain"
+                    class="w-full h-96 object-contain"
+                    
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                 ></iframe>
-                <video v-else
-                ref="video" preload="auto" webkit-playsinline="true" playsinline="true" autoplay="false" muted loop
-                class="object-cover w-full h-96 js-video" src="https://api.tranduc.com/api/video/TDF_Factory.mp4" title="Video TranDuc Corporation"
-                alt="Video" style="object-position: top;">
-              </video>
+                <div v-else class="w-full h-auto">
+                    <video 
+                    ref="video" preload="auto" webkit-playsinline="true" playsinline="true" autoplay="false" muted loop controls
+                    class="object-cover w-full  h-96 " src="https://api.tranduc.com/api/video/TDF_Factory.mp4" title="Video TranDuc Corporation"
+                    alt="Video">
+                </video>
+                </div>
             </div>     
-            
         </div>
     </div>
 </template>
