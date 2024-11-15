@@ -34,7 +34,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -147,10 +149,10 @@ const categories = [
     {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity', link: '/referenceprice/vanities'},
 ]
 const bedBase = [
-    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bedbase1'},
-    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bedbase2'},
-    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bedbase3'},
-    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bedbase4'},
+    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bedbase1',id:'king1'},
+    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bedbase2',id:'king2'},
+    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bedbase3',id:'king3'},
+    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bedbase4',id:'king4'},
 ]
 const cabinet = [
     {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1'},
