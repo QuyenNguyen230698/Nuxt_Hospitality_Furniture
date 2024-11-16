@@ -66,6 +66,7 @@ function toggleScaleEffect() {
 
 // Call toggleScaleEffect every 3 seconds when component is mounted
 onMounted(() => {
+    setInterval(toggleAutoSlide, 3000);
     setInterval(toggleScaleEffect, 3000);
 });
 
