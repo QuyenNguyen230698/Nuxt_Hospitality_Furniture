@@ -14,6 +14,15 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full h-full gap-4 lg:container mx-auto p-4">
                 <div v-for="item in categories" :key="item.src" class="w-full h-full relative group">
+                    <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        class="h-full"
+                        object="cover" 
+                    />
                     <div class="text-xl lg:text-2xl text-white mb-2 absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 flex items-center justify-center hover:hidden">{{ item.alt }}</div>
                     <div class="absolute top-0 left-0 w-full h-full bg-orange-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="text-center">
@@ -23,7 +32,6 @@
                             </button>
                         </div>
                     </div>
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-80 md:h-full object-cover" />
                 </div>
             </div>
          </div>
@@ -35,7 +43,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -50,7 +66,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -65,7 +89,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -80,7 +112,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -95,7 +135,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -110,7 +158,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -125,7 +181,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
@@ -140,7 +204,15 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                        <NuxtImg 
+                        quality="75" 
+                        loading="eager" 
+                        :src="item.src" 
+                        :alt="item.alt" 
+                        width="100%" 
+                        height="100%" 
+                        object="cover" 
+                    />
                     </NuxtLink>
                 </div>
             </div>
