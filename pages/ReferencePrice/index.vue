@@ -23,7 +23,7 @@
                             </button>
                         </div>
                     </div>
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-80 md:h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-80 md:h-full object-cover" />
                 </div>
             </div>
          </div>
@@ -35,12 +35,12 @@
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
                     <NuxtLink :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" format="webp" quality="75" loading="eager" />
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                     </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -49,11 +49,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -62,11 +62,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"/>
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -75,11 +75,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -88,11 +88,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -101,11 +101,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -114,11 +114,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -127,11 +127,11 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <a href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></a>
+                <NuxtLink href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
     </div>

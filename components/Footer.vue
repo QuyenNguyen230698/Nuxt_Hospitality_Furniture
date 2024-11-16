@@ -16,20 +16,20 @@
           class="w-full md:w-1/2 flex justify-center items-center color-text gap-5 p-2"
         >
           <span
-            ><a href="https://www.facebook.com/TranDucFurnishings" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-facebook-f hover:text-orange-500 h-4"></i></a
+            ><NuxtLink href="https://www.facebook.com/TranDucFurnishings" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-facebook-f hover:text-orange-500 h-4"></i></NuxtLink
           ></span>
           <span
-            ><a href="https://www.youtube.com/@TranDucCorporation" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-youtube hover:text-orange-500 h-4"></i></a
+            ><NuxtLink href="https://www.youtube.com/@TranDucCorporation" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-youtube hover:text-orange-500 h-4"></i></NuxtLink
           ></span>
           <span
-            ><a href="https://www.instagram.com/tranducfurnishings/" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-instagram hover:text-orange-500 h-4"></i></a
+            ><NuxtLink href="https://www.instagram.com/tranducfurnishings/" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-instagram hover:text-orange-500 h-4"></i></NuxtLink
           ></span>
           <span
-            ><a href="https://vn.linkedin.com/company/tranduccorp" target="_blank" rel="noopener noreferrer"
-              ><i class="fab fa-linkedin hover:text-orange-500 h-4"></i></a
+            ><NuxtLink href="https://vn.linkedin.com/company/tranduccorp" target="_blank" rel="noopener noreferrer"
+              ><i class="fab fa-linkedin hover:text-orange-500 h-4"></i></NuxtLink
           ></span>
           <LanguageSwitch />
         </div>

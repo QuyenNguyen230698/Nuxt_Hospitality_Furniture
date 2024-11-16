@@ -5,7 +5,7 @@
           <div class="carousel w-full relative overflow-hidden order-1 lg:order-2">
             <div v-for="(slide, index) in solution" :key="index" class="carousel-item w-full transition-transform duration-700" 
               :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-              <img :src="slide.src" alt="Slide image" class="w-full" />
+              <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full" ></NuxtImg>
             </div>
             <div class="absolute inset-y-1/2 left-5 flex items-center">
               <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
@@ -27,7 +27,7 @@
           <button
             class="bg-none button-solution text-base px-5 py-1 rounded-md"
           >
-            <a href="/aboutus">{{ $t('app.solution.moredetails') }}</a>
+            <NuxtLink href="/aboutus">{{ $t('app.solution.moredetails') }}</NuxtLink>
           </button>
         </div>
       </div>

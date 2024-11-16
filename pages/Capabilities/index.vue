@@ -5,7 +5,7 @@
             <!-- Wooden Furniture -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5">
-                    <img src="/public/image/capability/capWooden.jpg" class="w-full h-fit object-cover ">
+                    <NuxtImg quality="75" loading="eager" src="/image/capability/capWooden.jpg" class="w-full h-fit object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -35,13 +35,13 @@
                     </p>
                 </div>
                 <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <img src="/public/image/capability/cap5.jpg" class="w-full h-full object-cover ">
+                    <NuxtImg quality="75" loading="eager" src="/image/capability/cap5.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
             </div>
             <!-- Ulpholstery -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <img src="/public/image/capability/capUlpho.jpg" class="w-full h-full object-cover ">
+                    <NuxtImg quality="75" loading="eager" src="/image/capability/capUlpho.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -71,13 +71,13 @@
                     </p>
                 </div>
                 <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <img src="/public/image/capability/capDoor.jpg" class="w-full h-full object-cover ">
+                    <NuxtImg quality="75" loading="eager" src="/image/capability/capDoor.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
             </div>
             <!-- Finishing -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <img src="/public/image/capability/capFinishing.jpg" class="w-full h-full object-cover ">
+                    <NuxtImg quality="75" loading="eager" src="/image/capability/capFinishing.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -96,10 +96,10 @@
             <div class="flex flex-col items-center justify-center p-5 md:p-10 bg-black">
                 <!-- Navigation Links -->
                 <div class="grid grid-cols-2 md:grid-cols-4 items-center justify-center text-2xl gap-4 mb-10 color-text">
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'technology' }"><a @click="setImages('technology')" >{{ $t("app.capability.technology") }}</a></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'working' }"><a @click="setImages('working')" >{{ $t("app.capability.working") }}</a></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'packing' }"><a @click="setImages('packing')" >{{ $t("app.capability.packing") }}</a></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'loading' }"><a @click="setImages('loading')" >{{ $t("app.capability.loading") }}</a></div>
+                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'technology' }"><NuxtLink @click="setImages('technology')" >{{ $t("app.capability.technology") }}</NuxtLink></div>
+                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'working' }"><NuxtLink @click="setImages('working')" >{{ $t("app.capability.working") }}</NuxtLink></div>
+                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'packing' }"><NuxtLink @click="setImages('packing')" >{{ $t("app.capability.packing") }}</NuxtLink></div>
+                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'loading' }"><NuxtLink @click="setImages('loading')" >{{ $t("app.capability.loading") }}</NuxtLink></div>
                 </div>
                 <!-- images -->
                 <div class="carousel grid grid-cols-2 md:grid-cols-4 gap-4 md:w-4/5 items-center justify-center">
@@ -108,7 +108,7 @@
                         :key="index"
                         class="carousel-item w-full transition-all duration-300 ease-in-out"
                     >
-                        <img :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
+                        <NuxtImg quality="75" loading="eager" :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
                     </div>
                 </div>
             </div>

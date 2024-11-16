@@ -6,15 +6,15 @@
             <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-10 z-10" style="height: 1px"></div>
             <div class="flex flex-col md:flex-row gap-10 mb:gap-4 z-10">
                <div class="flex flex-col items-center justify-center w-full min-h-52 bg-member gap-4 text-gray-300">
-                <a href="https://tranduchomes.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/public/image/logo/TranDuc-homes.png" alt="" class="h-16 lg:h-20">
-                </a>
+                <NuxtLink href="https://tranduchomes.com/" target="_blank" rel="noopener noreferrer">
+                    <NuxtImg quality="75" loading="eager" src="/image/logo/TranDuc-homes.png" alt="" class="h-16 lg:h-20"></NuxtImg>
+                </NuxtLink>
                 <p>{{ $t('app.members.totalsolutionforgreenprojects') }}</p>
                </div>
                <div class="flex flex-col items-center justify-center w-full min-h-52 bg-member gap-4 text-gray-300">
-                <a href="https://moduluxhomes.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/public/image/logo/Modulux-White-ByTranduc-768x600.png" alt="" class="h-28">
-                </a>
+                <NuxtLink href="https://moduluxhomes.com/" target="_blank" rel="noopener noreferrer">
+                    <NuxtImg quality="75" loading="eager" src="/image/logo/Modulux-White-ByTranduc-768x600.png" alt="" class="h-28"></NuxtImg>
+                </NuxtLink>
                 <p>{{ $t('app.members.sustainabledevelopment') }}</p>
                </div>
             </div>

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
   ],
   css: ['@/assets/css/main.css','@fortawesome/fontawesome-free/css/all.min.css'],
   devServer: {
@@ -83,6 +84,13 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales',
     vueI18n: './i18n.config.ts'
+  },
+  imports: {
+    dirs: ["store"],
+    autoImport: true,
+  },
+  build: {
+    transpile: ['pinia-plugin-persistedstate'],
   },
   vite: {
     plugins: [

@@ -12,11 +12,13 @@
               :key="index"
               class="flex items-center justify-center"
             >
-              <img
+              <NuxtImg
+                quality="75"
+                loading="eager"
                 :src="item.src"
                 :alt="`client-${index}`"
                 class="w-2/3 max-h-20 min-h-20 md:w-1/2 h-auto col-span-1 object-contain hover:scale-110 transition-all duration-300"
-              />
+              ></NuxtImg>
             </div>
           </div>
         </div>

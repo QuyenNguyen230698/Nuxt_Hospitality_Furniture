@@ -7,7 +7,7 @@
         <div class="container w-full mx-auto px-4">
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-x-hidden">
             <div v-for="(item,index) in projects" :key="index" class="relative flex justify-center rounded-lg overflow-hidden">
-              <img :src="item.src" class="w-full h-auto object-cover">
+              <NuxtImg quality="75" loading="eager" :src="item.src" class="w-full h-auto object-cover"></NuxtImg>
               <div class="absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-1000 flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center justify-center">
                     <h3 class="text-orange-500 text-base text-justify lg:text-xl font-bold z-10 pb-4">{{item.title}}</h3>

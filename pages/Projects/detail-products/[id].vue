@@ -7,7 +7,7 @@
                 <div class="carousel w-full md:w-1/2 relative overflow-hidden">
                     <div v-for="(slide, index) in solution" :key="index" class="carousel-item w-full transition-transform duration-700" 
                     :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-                    <NuxtImg :src="slide.src" alt="Slide image" class="w-full" loading="lazy"/>
+                    <NuxtImg :src="slide.src" alt="Slide image" class="w-full" loading="eager" quality="75"/>
                     </div>
                     <div class="absolute inset-y-1/2 left-5 flex items-center">
                     <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
@@ -65,7 +65,7 @@
                         v-for="project in test?.data.slice(0, 4)" 
                         :key="project.title">
                         <div class="relative">
-                            <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" />
+                            <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" quality="75" loading="eager"/>
                             <div class="absolute inset-0 bg-black opacity-30"></div>
                         </div>
                         <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">

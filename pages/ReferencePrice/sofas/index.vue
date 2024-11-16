@@ -2,7 +2,7 @@
     <div class="bg-black text-white">
         <div class="flex flex-col justify-center items-center bg-color">
             <div class="w-full h-full overflow-hidden">
-                <NuxtImg src="/image/ReferencePrice/bgRef.jpg" alt="bgRef" class="w-full h-full relative object-cover scale-110"/>
+                <NuxtImg quality="75" loading="eager" src="/image/ReferencePrice/bgRef.jpg" alt="bgRef" class="w-full h-full relative object-cover scale-110"/>
                 <div class="absolute inset-0 z-10 flex flex-col items-center gap-2 p-5 lg:gap-5 mt-20 md:mt-32 lg:mt-40">
                     <h1 class="text-white text-center text-xl lg:text-5xl font-bold">{{ $t('app.referenceprice.top') }}</h1>
                     <p class="uppercase text-slate-300 text-center text-xs lg:text-lg tracking-widest">{{ $t('app.referenceprice.from') }}</p>
@@ -16,7 +16,7 @@
                 <div class="w-full lg:w-1/2">
                     <div class="lg:relative w-full ">
                         <div class="lg:absolute lg:inset-0 m-auto z-30 bg-white p-1 md:w-96 w-80 h-40 lg:h-72">
-                            <NuxtImg src="/image/ReferencePrice/Sofa/Detail/title.jpg" alt="titleRef" class="w-full h-full object-cover"/>
+                            <NuxtImg quality="75" loading="eager" src="/image/ReferencePrice/Sofa/Detail/title.jpg" alt="titleRef" class="w-full h-full object-cover"/>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
                 </div>
             </div>
         </section>

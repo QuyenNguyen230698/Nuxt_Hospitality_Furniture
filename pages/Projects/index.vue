@@ -14,6 +14,8 @@
             <!-- Display 5 images in each slide -->
             <NuxtImg
               v-for="(image, idx) in slideGroup"
+              loading="eager"
+              quality="75"
               :key="idx"
               :src="image.src"
               alt="Slide image"
@@ -39,7 +41,7 @@
                     v-for="project in test?.data" 
                     :key="project.title">
                 <div class="relative">
-                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" />
+                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" loading="eager" quality="75"/>
                     <div class="absolute inset-0 bg-black opacity-30"></div>
                 </div>
                 <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">
@@ -59,7 +61,7 @@
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
                  v-for="project in test?.data2" :key="project.title">
                 <div class="relative">
-                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" />
+                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" loading="eager" quality="75"/>
                     <div class="absolute inset-0 bg-black opacity-30"></div>
                 </div>
                 <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">
@@ -74,8 +76,8 @@
         </div>
         <!-- button -->
         <div class="flex w-full justify-center gap-2 pb-2">
-        <a href="#item1" class="btn btn-circle">1</a>
-        <a href="#item2" class="btn btn-circle">2</a>
+        <NuxtLink href="#item1" class="btn btn-circle">1</NuxtLink>
+        <NuxtLink href="#item2" class="btn btn-circle">2</NuxtLink>
         </div>
     </div>
   </template>

@@ -6,13 +6,15 @@
         <div
           class="w-1/3 md:w-1/5 lg:w-1/4 h-12 md:h-fit flex flex-start md:justify-evenly lg:justify-center "
         >
-          <a href="/">
-            <img
-              src="/public/image/logo/Tranduc-Furnishings-compress.png"
+          <NuxtLink href="/">
+            <NuxtImg
+              quality="75"
+              loading="eager"
+              src="/image/logo/Tranduc-Furnishings-compress.png"
               alt=""
               class="h-fit p-1 md:p-1 md:h-12 xl:h-12 max-w-full max-h-full"
-            />
-          </a>
+            ></NuxtImg>
+          </NuxtLink>
         </div>
 
         <div
@@ -53,18 +55,20 @@
                   class="menu bg-menu text-base min-h-full w-4/5 p-4"
                 >
                   <!-- Sidebar content here -->
-                   <li class="border-b border-orange-500"><a href="/">
-                      <img
-                        src="/public/image/logo/Tranduc-Furnishings-compress.png"
+                   <li class="border-b border-orange-500"><NuxtLink href="/">
+                      <NuxtImg
+                        quality="75"
+                        loading="eager"
+                        src="/image/logo/Tranduc-Furnishings-compress.png"
                         alt=""
                         class="w-40 h-fit p-3"
-                      />
-                    </a>
+                      ></NuxtImg>
+                    </NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <a href="/aboutus" aria-label="Sidebar Item 1">{{
+                    <NuxtLink href="/aboutus" aria-label="Sidebar Item 1">{{
                       $t("app.menu.aboutus")
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                   <li @click="isCollapseOpen = !isCollapseOpen" class="cursor-pointer text-nowrap">
                     <div class="collapse bg-transparent">
@@ -87,46 +91,46 @@
                         class="collapse-content p-0 min-h-0 flex flex-col gap-4"
                         v-show="isCollapseOpen"
                       >
-                      <a href="/capabilities" class=" py-2 text-nowrap">{{
+                      <NuxtLink href="/capabilities" class=" py-2 text-nowrap">{{
                           $t("app.menu.capabilities")
-                        }}</a>
-                        <a href="/capabilities/woodenfurniture" class=" py-2 text-nowrap">{{
+                        }}</NuxtLink>
+                        <NuxtLink href="/capabilities/woodenfurniture" class=" py-2 text-nowrap">{{
                           $t("app.menu.woodenfurniture")
-                        }}</a>
-                        <a href="/capabilities/metalfurniture" class=" py-2 text-nowrap">{{
+                        }}</NuxtLink>
+                        <NuxtLink href="/capabilities/metalfurniture" class=" py-2 text-nowrap">{{
                           $t("app.menu.metalfurniture")
-                        }}</a>
-                        <a href="/capabilities/ulpholstery" class=" py-2 text-nowrap">{{
+                        }}</NuxtLink>
+                        <NuxtLink href="/capabilities/ulpholstery" class=" py-2 text-nowrap">{{
                           $t("app.menu.upholstery")
-                        }}</a>
-                        <a href="/capabilities/door" class=" py-2 text-nowrap">{{
+                        }}</NuxtLink>
+                        <NuxtLink href="/capabilities/door" class=" py-2 text-nowrap">{{
                           $t("app.menu.door")
-                        }}</a>
-                        <a href="/capabilities/finishing" class=" py-2 text-nowrap">{{
+                        }}</NuxtLink>
+                        <NuxtLink href="/capabilities/finishing" class=" py-2 text-nowrap">{{
                           $t("app.menu.finishing")
-                        }}</a>
+                        }}</NuxtLink>
                       </div>
                     </div>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <a href="/projects" aria-label="Sidebar Item 1">{{
+                    <NuxtLink href="/projects" aria-label="Sidebar Item 1">{{
                       $t("app.menu.projects")
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <a href="/referenceprice" aria-label="Sidebar Item 1">{{
+                    <NuxtLink href="/referenceprice" aria-label="Sidebar Item 1">{{
                       $t("app.menu.referenceprice")
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <a href="/news" aria-label="Sidebar Item 1">{{
+                    <NuxtLink href="/news" aria-label="Sidebar Item 1">{{
                       $t("app.menu.news")
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <a href="/contact" aria-label="Sidebar Item 1">{{
+                    <NuxtLink href="/contact" aria-label="Sidebar Item 1">{{
                       $t("app.menu.contact")
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                 </ul>
               </div>
@@ -143,7 +147,7 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap"
               >
-                <a href="/aboutus">{{ $t("app.menu.aboutus") }}</a>
+                <NuxtLink href="/aboutus">{{ $t("app.menu.aboutus") }}</NuxtLink>
               </div>
 
               <!-- Capabilities Dropdown Menu Item -->
@@ -163,22 +167,22 @@
                           class="absolute left-0 top-full mt-1 bg-menu bg-white shadow-md rounded-md p-2 w-48 text-left z-50"
                         >
                          <li class="hover:text-orange-500 text-sm text-nowrap">
-                            <a href="/capabilities">{{ $t("app.menu.capabilities") }}</a>
+                            <NuxtLink href="/capabilities">{{ $t("app.menu.capabilities") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm text-nowrap">
-                            <a href="/capabilities/woodenfurniture">{{ $t("app.menu.woodenfurniture") }}</a>
+                            <NuxtLink href="/capabilities/woodenfurniture">{{ $t("app.menu.woodenfurniture") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a href="/capabilities/metalfurniture">{{ $t("app.menu.metalfurniture") }}</a>
+                            <NuxtLink href="/capabilities/metalfurniture">{{ $t("app.menu.metalfurniture") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a href="/capabilities/ulpholstery">{{ $t("app.menu.upholstery") }}</a>
+                            <NuxtLink href="/capabilities/ulpholstery">{{ $t("app.menu.upholstery") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a href="/capabilities/door">{{ $t("app.menu.door") }}</a>
+                            <NuxtLink href="/capabilities/door">{{ $t("app.menu.door") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <a href="/capabilities/finishing">{{ $t("app.menu.finishing") }}</a>
+                            <NuxtLink href="/capabilities/finishing">{{ $t("app.menu.finishing") }}</NuxtLink>
                           </li>
                         </ul>
                       </details>
@@ -191,22 +195,22 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <a href="/projects">{{ $t("app.menu.projects") }}</a>
+                <NuxtLink href="/projects">{{ $t("app.menu.projects") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <a href="/referenceprice">{{ $t("app.menu.referenceprice") }}</a>
+                <NuxtLink href="/referenceprice">{{ $t("app.menu.referenceprice") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <a href="/news">{{ $t("app.menu.news") }}</a>
+                <NuxtLink href="/news">{{ $t("app.menu.news") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <a href="/contact">{{ $t("app.menu.contact") }}</a>
+                <NuxtLink href="/contact">{{ $t("app.menu.contact") }}</NuxtLink>
               </div>
             </div>
           </div>
