@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -39,7 +41,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -48,19 +52,19 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/Table/Detail/table1.jpg', alt: 'table1'},
-    {src: '/image/ReferencePrice/Table/Detail/table2.jpg', alt: 'table2'},
-    {src: '/image/ReferencePrice/Table/Detail/table3.jpg', alt: 'table3'},
-    {src: '/image/ReferencePrice/Table/Detail/table4.jpg', alt: 'table4'},
-    {src: '/image/ReferencePrice/Table/Detail/table5.jpg', alt: 'table5'},
-    {src: '/image/ReferencePrice/Table/Detail/table6.jpg', alt: 'table6'},
+    {src: '/image/ReferencePrice/Table/Detail/table1.jpg', alt: 'table1',id:'table1'},
+    {src: '/image/ReferencePrice/Table/Detail/table2.jpg', alt: 'table2',id:'table2'},
+    {src: '/image/ReferencePrice/Table/Detail/table3.jpg', alt: 'table3',id:'table3'},
+    {src: '/image/ReferencePrice/Table/Detail/table4.jpg', alt: 'table4',id:'table4'},
+    {src: '/image/ReferencePrice/Table/Detail/table5.jpg', alt: 'table5',id:'table5'},
+    {src: '/image/ReferencePrice/Table/Detail/table6.jpg', alt: 'table6',id:'table6'},
 ]
 const cabinet = [
-    {src: '/image/ReferencePrice/Table/Detail/desk1.jpg', alt: 'desk1'},
-    {src: '/image/ReferencePrice/Table/Detail/desk2.jpg', alt: 'desk2'},
-    {src: '/image/ReferencePrice/Table/Detail/desk3.jpg', alt: 'desk3'},
-    {src: '/image/ReferencePrice/Table/Detail/desk4.jpg', alt: 'desk4'},
-    {src: '/image/ReferencePrice/Table/Detail/desk5.jpg', alt: 'desk5'},
+    {src: '/image/ReferencePrice/Table/Detail/desk1.jpg', alt: 'desk1',id:'desk1'},
+    {src: '/image/ReferencePrice/Table/Detail/desk2.jpg', alt: 'desk2',id:'desk2'},
+    {src: '/image/ReferencePrice/Table/Detail/desk3.jpg', alt: 'desk3',id:'desk3'},
+    {src: '/image/ReferencePrice/Table/Detail/desk4.jpg', alt: 'desk4',id:'desk4'},
+    {src: '/image/ReferencePrice/Table/Detail/desk5.jpg', alt: 'desk5',id:'desk5'},
 ]
 </script>
 

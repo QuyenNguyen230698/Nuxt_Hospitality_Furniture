@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,18 +40,18 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1.jpg', alt: 'cabinet1'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2.jpg', alt: 'cabinet2'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3.jpg', alt: 'cabinet3'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4.jpg', alt: 'cabinet4'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5.jpg', alt: 'cabinet5'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6.jpg', alt: 'cabinet6'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7.jpg', alt: 'cabinet7'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8.jpg', alt: 'cabinet8'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9.jpg', alt: 'cabinet9'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10.jpg', alt: 'cabinet10'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11.jpg', alt: 'cabinet11'},
-    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12.jpg', alt: 'cabinet12'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1.jpg', alt: 'cabinet1',id:'cabinet1'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2.jpg', alt: 'cabinet2',id:'cabinet2'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3.jpg', alt: 'cabinet3',id:'cabinet3'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4.jpg', alt: 'cabinet4',id:'cabinet4'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5.jpg', alt: 'cabinet5',id:'cabinet5'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6.jpg', alt: 'cabinet6',id:'cabinet6'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7.jpg', alt: 'cabinet7',id:'cabinet7'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8.jpg', alt: 'cabinet8',id:'cabinet8'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9.jpg', alt: 'cabinet9',id:'cabinet9'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10.jpg', alt: 'cabinet10',id:'cabinet10'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11.jpg', alt: 'cabinet11',id:'cabinet11'},
+    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12.jpg', alt: 'cabinet12',id:'cabinet12'},
 ]
 </script>
 

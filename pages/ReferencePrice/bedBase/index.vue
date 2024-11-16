@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -39,7 +41,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -49,7 +53,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -58,32 +64,32 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/BedBase/Detail/king1.jpg', alt: 'king1'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king2.jpg', alt: 'king2'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king3.jpg', alt: 'king3'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king4.jpg', alt: 'king4'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king5.jpg', alt: 'king5'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king6.jpg', alt: 'king6'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king7.jpg', alt: 'king7'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king8.jpg', alt: 'king8'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king9.jpg', alt: 'king9'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king10.jpg', alt: 'king10'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king11.jpg', alt: 'king11'},
-    {src: '/image/ReferencePrice/BedBase/Detail/king12.jpg', alt: 'king12'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king1.jpg', alt: 'king1',id:'king1'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king2.jpg', alt: 'king2',id:'king2'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king3.jpg', alt: 'king3',id:'king3'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king4.jpg', alt: 'king4',id:'king4'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king5.jpg', alt: 'king5',id:'king5'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king6.jpg', alt: 'king6',id:'king6'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king7.jpg', alt: 'king7',id:'king7'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king8.jpg', alt: 'king8',id:'king8'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king9.jpg', alt: 'king9',id:'king9'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king10.jpg', alt: 'king10',id:'king10'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king11.jpg', alt: 'king11',id:'king11'},
+    {src: '/image/ReferencePrice/BedBase/Detail/king12.jpg', alt: 'king12',id:'king12'},
 ]
 const cabinet = [
-    {src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg', alt: 'queen1'},
-    {src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg', alt: 'queen2'},
-    {src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg', alt: 'queen3'},
-    {src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg', alt: 'queen4'},
-    {src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg', alt: 'queen5'},
-    {src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg', alt: 'queen6'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg', alt: 'queen1',id:'queen1'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg', alt: 'queen2',id:'queen2'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg', alt: 'queen3',id:'queen3'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg', alt: 'queen4',id:'queen4'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg', alt: 'queen5',id:'queen5'},
+    {src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg', alt: 'queen6',id:'queen6'},
 ]
 const closet = [
-    {src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg', alt: 'bed1'},
-    {src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg', alt: 'bed2'},
-    {src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg', alt: 'bed3'},
-    {src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg', alt: 'bed4'},
+    {src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg', alt: 'bed1',id:'bed1'},
+    {src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg', alt: 'bed2',id:'bed2'},
+    {src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg', alt: 'bed3',id:'bed3'},
+    {src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg', alt: 'bed4',id:'bed4'},
 ]
 </script>
 

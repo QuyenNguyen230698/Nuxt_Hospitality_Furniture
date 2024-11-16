@@ -1,11 +1,11 @@
 <template>
     <div class="w-full h-full bg-image-member">
-      <div class="grid grid-cols-2 md:grid-cols-4 w-full text-center gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 w-full text-center gap-4 p-2">
                 <div class="flex flex-col items-center justify-center color-section lg:py-5">
                   <i aria-hidden="true" class="fas fa-business-time text-4xl icon-section hover:scale-110 duration-300"></i>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.23years') }}</h3>
                   <div >
-                    <p class="text-sm ">
+                    <p class="text-xs md:text-sm ">
                       {{ $t('app.section.ofsatisfying') }}
                       <br>
                       {{ $t('app.section.customerswithour') }}
@@ -18,7 +18,7 @@
                   <i aria-hidden="true" class="fas fa-warehouse text-4xl icon-section hover:scale-110 duration-300"></i>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.2factories') }}</h3>
                   <div >
-                    <p class="text-sm">
+                    <p class="text-xs md:text-sm ">
                       {{ $t('app.section.120000m2') }}
                       <br>
                       {{ $t('app.section.2000employees') }}
@@ -35,7 +35,7 @@
                   </svg>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.technology') }}</h3>
                   <div >
-                    <p class="text-sm">
+                    <p class="text-xs md:text-sm ">
                       {{ $t('app.section.newestmachines') }}
                       <br>
                       {{ $t('app.section.innovationtechnology') }}
@@ -48,7 +48,7 @@
                   <i aria-hidden="true" class="fas fa-globe-americas text-5xl md:text-4xl icon-section hover:scale-110 duration-300"></i>
                   <h3 class="text-base text-white font-bold uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.400projects') }}</h3>
                   <div >
-                    <p class="text-sm">
+                    <p class="text-xs md:text-sm ">
                       {{ $t('app.section.inusandnowexpanding') }}
                       <br>
                       {{ $t('app.section.ourglobalreach') }}

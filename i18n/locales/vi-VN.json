@@ -246,7 +246,8 @@
   "button": "DỰ ÁN CỦA BẠN ➟",
   "trans": "Tranducfurnishings đã tham gia vào dự án cải tạo với vai trò là nhà sản xuất nội thất khách sạn. Với 20 năm kinh nghiệm, chúng tôi đã cống hiến hết mình cho quá trình sản xuất. Từ mẫu thử đến sản xuất hàng loạt, tất cả đều được thực hiện bởi những công nhân lành nghề cùng kiểm soát chất lượng nghiêm ngặt và các máy móc hiện đại. Cảm ơn các khách hàng đã cho chúng tôi cơ hội đóng vai trò trong các dự án.",
   "we": "Chúng tôi tự hào góp phần cung cấp nội thất khách sạn đạt tiêu chuẩn cao cấp cho ngành công nghiệp dịch vụ. Chúng tôi luôn chú ý cao đến từng sản phẩm với quy trình kiểm soát chất lượng chuyên nghiệp. Sứ mệnh của chúng tôi là cung cấp giải pháp trọn gói trong sản xuất nội thất khách sạn, với mục tiêu mang thiết kế nội thất đặt riêng trở thành hiện thực trong ngành công nghiệp khách sạn.",
-  "relative": "Dự án liên quan"
+  "relative": "Dự án liên quan",
+  "noProduct":"Chưa có thông tin sản phẩm, vui lòng đợi..."
 }
 },
   "notificationQR": "Mã QR đang được tạo. Xin vui lòng đợi trong giây lát!",

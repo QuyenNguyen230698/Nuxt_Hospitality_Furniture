@@ -49,7 +49,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -62,7 +64,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -75,7 +79,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -88,7 +94,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -101,7 +109,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -114,7 +124,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -127,7 +139,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
@@ -155,46 +169,46 @@ const bedBase = [
     {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bedbase4',id:'king4'},
 ]
 const cabinet = [
-    {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet2.jpg', alt: 'cabinet2'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet3.jpg', alt: 'cabinet3'},
-    {src: '/image/ReferencePrice/Cabinet/cabinet4.jpg', alt: 'cabinet4'},
+    {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1',id:'cabinet1'},
+    {src: '/image/ReferencePrice/Cabinet/cabinet2.jpg', alt: 'cabinet2',id:'cabinet2'},
+    {src: '/image/ReferencePrice/Cabinet/cabinet3.jpg', alt: 'cabinet3',id:'cabinet3'},
+    {src: '/image/ReferencePrice/Cabinet/cabinet4.jpg', alt: 'cabinet4',id:'cabinet4'},
 ]
 const closet = [
-    {src: '/image/ReferencePrice/Closets/closet1.jpg', alt: 'closet1'},
-    {src: '/image/ReferencePrice/Closets/closet2.jpg', alt: 'closet2'},
-    {src: '/image/ReferencePrice/Closets/closet3.jpg', alt: 'closet3'},
-    {src: '/image/ReferencePrice/Closets/closet4.jpg', alt: 'closet4'},
+    {src: '/image/ReferencePrice/Closets/closet1.jpg', alt: 'closet1',id:'closet1'},
+    {src: '/image/ReferencePrice/Closets/closet2.jpg', alt: 'closet2',id:'closet2'},
+    {src: '/image/ReferencePrice/Closets/closet3.jpg', alt: 'closet3',id:'closet3'},
+    {src: '/image/ReferencePrice/Closets/closet4.jpg', alt: 'closet4',id:'closet4'},
 ]
 const tv = [
-    {src: '/image/ReferencePrice/TVunits/unit1.jpg', alt: 'tv1'},
-    {src: '/image/ReferencePrice/TVunits/unit2.jpg', alt: 'tv2'},
-    {src: '/image/ReferencePrice/TVunits/unit3.jpg', alt: 'tv3'},
-    {src: '/image/ReferencePrice/TVunits/unit4.jpg', alt: 'tv4'},
+    {src: '/image/ReferencePrice/TVunits/unit1.jpg', alt: 'tv1',id:'tv1'},
+    {src: '/image/ReferencePrice/TVunits/unit2.jpg', alt: 'tv2',id:'tv2'},
+    {src: '/image/ReferencePrice/TVunits/unit3.jpg', alt: 'tv3',id:'tv3'},
+    {src: '/image/ReferencePrice/TVunits/unit4.jpg', alt: 'tv4',id:'tv4'},
 ]
 const nightstand = [
-    {src: '/image/ReferencePrice/NightStands/Detail/night1.jpg', alt: 'nightstand1'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night2.jpg', alt: 'nightstand2'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night3.jpg', alt: 'nightstand3'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'nightstand4'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night1.jpg', alt: 'nightstand1',id:'night1'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night2.jpg', alt: 'nightstand2',id:'night2'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night3.jpg', alt: 'nightstand3',id:'night3'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'nightstand4',id:'night4'},
 ]
 const table = [
-    {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1'},
-    {src: '/image/ReferencePrice/Table/table2.jpg', alt: 'table2'},
-    {src: '/image/ReferencePrice/Table/table3.jpg', alt: 'table3'},
-    {src: '/image/ReferencePrice/Table/table4.jpg', alt: 'table4'},
+    {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1',id:'table1'},
+    {src: '/image/ReferencePrice/Table/table2.jpg', alt: 'table2',id:'table2'},
+    {src: '/image/ReferencePrice/Table/table3.jpg', alt: 'table3',id:'table3'},
+    {src: '/image/ReferencePrice/Table/table4.jpg', alt: 'table4',id:'table4'},
 ]
 const sofas = [
-    {src: '/image/ReferencePrice/Sofa/sofa1.jpg', alt: 'sofa1'},
-    {src: '/image/ReferencePrice/Sofa/sofa2.jpg', alt: 'sofa2'},
-    {src: '/image/ReferencePrice/Sofa/sofa3.jpg', alt: 'sofa3'},
-    {src: '/image/ReferencePrice/Sofa/sofa4.jpg', alt: 'sofa4'},
+    {src: '/image/ReferencePrice/Sofa/sofa1.jpg', alt: 'sofa1',id:'sofa1'},
+    {src: '/image/ReferencePrice/Sofa/sofa2.jpg', alt: 'sofa2',id:'sofa2'},
+    {src: '/image/ReferencePrice/Sofa/sofa3.jpg', alt: 'sofa3',id:'sofa3'},
+    {src: '/image/ReferencePrice/Sofa/sofa4.jpg', alt: 'sofa4',id:'sofa4'},
 ]
 const vanities = [
-    {src: '/image/ReferencePrice/Vanitis/vaniti1.jpg', alt: 'vanity1'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti2.jpg', alt: 'vanity2'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti3.jpg', alt: 'vanity3'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti4.jpg', alt: 'vanity4'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti1.jpg', alt: 'vanity1',id:'vanity1'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti2.jpg', alt: 'vanity2',id:'vanity2'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti3.jpg', alt: 'vanity3',id:'vanity3'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti4.jpg', alt: 'vanity4',id:'vanity4'},
 ]
 </script>
 

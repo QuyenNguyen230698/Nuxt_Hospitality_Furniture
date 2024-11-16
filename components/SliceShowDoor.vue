@@ -1,7 +1,9 @@
 <template>
     <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden h-60 md:h-80 lg:h-96">
-        <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
-            <div class="absolute inset-0 bg-slice" :class="{ 'animate-scale': scaleAnimate }" :style="{ backgroundImage: `url(${currentImage.src})` }"></div>
+      <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
+            <div class="absolute inset-0" :class="imageClass">
+              <NuxtImg :src="currentImage.src" alt="Slide Image" quality="75" loading="eager" :class="imageClass" class="w-full h-full object-cover scale-100" />
+            </div>
             <div class="flex w-full h-full relative z-40">
               <div class="flex justify-center items-center text-white container m-8 mx-auto">
                 <h2 class=" font-black text-center leading-snug tracking-widest uppercase" >
@@ -21,44 +23,34 @@ const slideImage = [
   { src: '/image/capability/Door/slide2.jpg' },
   { src: '/image/capability/Door/slide3.jpg' }
 ]
-//#region QuyenNC ( khởi tạo các biến )
-const scaleAnimate = ref(true)
-const currentImage = ref(slideImage[0])
 const showVideo = ref(false);
-let currentIndex = 0
-const offScale = () => {
-  scaleAnimate.value = false
-}
-//#endregion
   // Function to close video and pause playback
   function closeVideo() {
     showVideo.value = false;
     const videoPlayer = document.querySelector('video');
     if (videoPlayer) videoPlayer.pause();
   }
-// Khởi tạo hàm để thay đổi hình ảnh
-function changeImage() {
-  currentIndex = (currentIndex + 1) % slideImage.length
-  currentImage.value = slideImage[currentIndex]
-  scaleAnimate.value = true
-}
-// setInterval để thay đổi hình ảnh và tắt/ bật animation
-onMounted(() => {
-    setInterval(changeImage, 3000)
-    setInterval(offScale, 2990)
+  const positionStore = usePositionStore();
 
-})
+  const currentIndex = ref(0);
+  const currentImage = ref(slideImage[currentIndex.value]);
+  const imageClass = ref('scale-animation');
+
+  function toggleAutoSlide() {
+      positionStore.setAutoSlide(!positionStore.autoSlide);
+      if (positionStore.autoSlide === true) {
+          currentIndex.value = (currentIndex.value + 1) % slideImage.length;
+          currentImage.value = slideImage[currentIndex.value];
+          imageClass.value = 'scale-animation';
+      }
+  }
+
+  onMounted(() => {
+      setInterval(toggleAutoSlide, 1500);
+  });
 </script>
 
 <style scoped>
-.bg-slice {
-  background-size: cover;
-  background-position: center;
-}
-/* Tự động scale trong 3 giây */
-.animate-scale {
-  animation: scaleUp 3s ease-in-out forwards; 
-}
 .bg-slice-2 {
   background-color: #1b1b24;
   opacity: 0.76;
@@ -84,12 +76,18 @@ onMounted(() => {
     width: 100%;
     height: 100%;
   }
-@keyframes scaleUp {
+  @keyframes scaleUp {
   0% {
-    transform: scale(1); /* Kích thước ban đầu */
+    transform: scale(1);
+  }
+  98% {
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1.2); /* Phóng to 1.2 lần */
+    transform: scale(1);
   }
+}
+.scale-animation {
+    animation: scaleUp 3s infinite forwards; 
 }
 </style>

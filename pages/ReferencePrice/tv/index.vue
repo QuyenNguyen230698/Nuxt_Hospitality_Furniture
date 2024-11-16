@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,12 +40,12 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/TVunits/Detail/tv1.jpg', alt: 'tv1'},
-    {src: '/image/ReferencePrice/TVunits/Detail/tv2.jpg', alt: 'tv2'},
-    {src: '/image/ReferencePrice/TVunits/Detail/tv3.jpg', alt: 'tv3'},
-    {src: '/image/ReferencePrice/TVunits/Detail/tv4.jpg', alt: 'tv4'},
-    {src: '/image/ReferencePrice/TVunits/Detail/tv5.jpg', alt: 'tv5'},
-    {src: '/image/ReferencePrice/TVunits/Detail/tv6.jpg', alt: 'tv6'}
+    {src: '/image/ReferencePrice/TVunits/Detail/tv1.jpg', alt: 'tv1',id:'tv1'},
+    {src: '/image/ReferencePrice/TVunits/Detail/tv2.jpg', alt: 'tv2',id:'tv2'},
+    {src: '/image/ReferencePrice/TVunits/Detail/tv3.jpg', alt: 'tv3',id:'tv3'},
+    {src: '/image/ReferencePrice/TVunits/Detail/tv4.jpg', alt: 'tv4',id:'tv4'},
+    {src: '/image/ReferencePrice/TVunits/Detail/tv5.jpg', alt: 'tv5',id:'tv5'},
+    {src: '/image/ReferencePrice/TVunits/Detail/tv6.jpg', alt: 'tv6',id:'tv6'}
 ]
 </script>
 

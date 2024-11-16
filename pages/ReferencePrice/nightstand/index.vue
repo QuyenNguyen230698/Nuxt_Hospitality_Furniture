@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,20 +40,20 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/NightStands/Detail/night1.jpg', alt: 'night1'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night2.jpg', alt: 'night2'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night3.jpg', alt: 'night3'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'night4'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night5.jpg', alt: 'night5'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night6.jpg', alt: 'night6'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night7.jpg', alt: 'night7'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night8.jpg', alt: 'night8'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night9.jpg', alt: 'night9'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night10.jpg', alt: 'night10'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night11.jpg', alt: 'night11'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night12.jpg', alt: 'night12'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night13.jpg', alt: 'night13'},
-    {src: '/image/ReferencePrice/NightStands/Detail/night14.jpg', alt: 'night14'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night1.jpg', alt: 'night1',id:'night1'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night2.jpg', alt: 'night2',id:'night2'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night3.jpg', alt: 'night3',id:'night3'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'night4',id:'night4'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night5.jpg', alt: 'night5',id:'night5'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night6.jpg', alt: 'night6',id:'night6'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night7.jpg', alt: 'night7',id:'night7'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night8.jpg', alt: 'night8',id:'night8'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night9.jpg', alt: 'night9',id:'night9'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night10.jpg', alt: 'night10',id:'night10'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night11.jpg', alt: 'night11',id:'night11'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night12.jpg', alt: 'night12',id:'night12'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night13.jpg', alt: 'night13',id:'night13'},
+    {src: '/image/ReferencePrice/NightStands/Detail/night14.jpg', alt: 'night14',id:'night14'},
 ]
 </script>
 

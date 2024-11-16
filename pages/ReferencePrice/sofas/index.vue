@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,13 +40,13 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa1.jpg', alt: 'sofa1'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa2.jpg', alt: 'sofa2'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa3.jpg', alt: 'sofa3'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa4.jpg', alt: 'sofa4'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa5.jpg', alt: 'sofa5'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa6.jpg', alt: 'sofa6'},
-    {src: '/image/ReferencePrice/Sofa/Detail/sofa7.jpg', alt: 'sofa7'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa1.jpg', alt: 'sofa1',id:'sofa1'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa2.jpg', alt: 'sofa2',id:'sofa2'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa3.jpg', alt: 'sofa3',id:'sofa3'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa4.jpg', alt: 'sofa4',id:'sofa4'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa5.jpg', alt: 'sofa5',id:'sofa5'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa6.jpg', alt: 'sofa6',id:'sofa6'},
+    {src: '/image/ReferencePrice/Sofa/Detail/sofa7.jpg', alt: 'sofa7',id:'sofa7'},
 ]
 </script>
 

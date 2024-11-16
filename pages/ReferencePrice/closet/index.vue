@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,15 +40,15 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/Closets/Detail/closet1.jpg', alt: 'closet1'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet2.jpg', alt: 'closet2'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet3.jpg', alt: 'closet3'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet4.jpg', alt: 'closet4'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet5.jpg', alt: 'closet5'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet6.jpg', alt: 'closet6'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet7.jpg', alt: 'closet7'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet8.jpg', alt: 'closet8'},
-    {src: '/image/ReferencePrice/Closets/Detail/closet9.jpg', alt: 'closet9'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet1.jpg', alt: 'closet1',id:'closet1'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet2.jpg', alt: 'closet2',id:'closet2'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet3.jpg', alt: 'closet3',id:'closet3'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet4.jpg', alt: 'closet4',id:'closet4'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet5.jpg', alt: 'closet5',id:'closet5'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet6.jpg', alt: 'closet6',id:'closet6'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet7.jpg', alt: 'closet7',id:'closet7'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet8.jpg', alt: 'closet8',id:'closet8'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet9.jpg', alt: 'closet9',id:'closet9'},
 ]
 </script>
 

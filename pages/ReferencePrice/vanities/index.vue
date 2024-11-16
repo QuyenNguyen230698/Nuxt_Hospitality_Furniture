@@ -29,7 +29,9 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                        <NuxtImg quality="75" loading="eager" :src="item.src" :alt="item.alt" class="w-full h-full object-cover" />
+                    </NuxtLink>
                 </div>
             </div>
         </section>
@@ -38,11 +40,11 @@
 
 <script setup>
 const bedBase = [
-    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1.jpg', alt: 'vanitie1'},
-    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2.jpg', alt: 'vanitie2'},
-    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3.jpg', alt: 'vanitie3'},
-    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4.jpg', alt: 'vanitie4'},
-    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5.jpg', alt: 'vanitie5'},
+    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1.jpg', alt: 'vanitie1',id:'vanitie1'},
+    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2.jpg', alt: 'vanitie2',id:'vanitie2'},
+    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3.jpg', alt: 'vanitie3',id:'vanitie3'},
+    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4.jpg', alt: 'vanitie4',id:'vanitie4'},
+    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5.jpg', alt: 'vanitie5',id:'vanitie5'},
 ]
 </script>
 
