@@ -1,7 +1,6 @@
 <template>
-    <div class="p-2 w-full h-full bg-image-member">
-            <div class="w-full">
-              <div class="grid grid-cols-2 md:grid-cols-4 w-full text-center gap-4">
+    <div class="w-full h-full bg-image-member">
+      <div class="grid grid-cols-2 md:grid-cols-4 w-full text-center gap-4">
                 <div class="flex flex-col items-center justify-center color-section lg:py-5">
                   <i aria-hidden="true" class="fas fa-business-time text-4xl icon-section hover:scale-110 duration-300"></i>
                   <h3 class="text-base text-white font-black uppercase tracking-widest mb-2 lg:mb-2 lg:text-2xl">{{ $t('app.section.23years') }}</h3>
@@ -59,8 +58,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+    </div>
 </template>
 
 <script setup>

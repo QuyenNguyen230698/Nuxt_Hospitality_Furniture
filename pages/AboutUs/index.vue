@@ -5,7 +5,7 @@
         <div class="flex flex-col w-full h-full items-center justify-center bg-black">
             <div class="flex flex-col items-center justify-center md:container py-10">
                 <div class="py-2 px-10 md:px-0">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">{{ $t("app.aboutUs.ourStory") }}</h2>
+                    <h2 class="text-center text-xl lg:text-4xl font-bold p-6 text-white">{{ $t("app.aboutUs.ourStory") }}</h2>
                     <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
@@ -25,10 +25,10 @@
             </div>
         </div>
         <!-- Philosophy -->
-        <div class="flex flex-col w-full h-full items-center justify-center bg-philosophy bg-fixed group">
+        <div class="w-full h-full bg-philosophy bg-fixed group">
             <div class="flex flex-col items-center justify-center md:container py-10">
                 <div class="py-2 px-10 md:px-0">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">{{ $t("app.aboutUs.philosophy") }}</h2>
+                    <h2 class="text-center text-xl lg:text-4xl font-bold p-6 text-white">{{ $t("app.aboutUs.philosophy") }}</h2>
                     <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
@@ -49,7 +49,7 @@
         <div class="flex flex-col w-full h-full items-center justify-center bg-black">
             <div class="flex flex-col items-center justify-center md:container py-10">
                 <div class="py-2 px-10 md:px-0">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">{{ $t("app.aboutUs.technology") }}</h2>
+                    <h2 class="text-center text-xl lg:text-4xl font-bold p-6 text-white">{{ $t("app.aboutUs.technology") }}</h2>
                     <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
                 </div>
                 <div class="flex flex-col md:flex-row justify-center gap-10 p-4 md:p-0">
@@ -84,9 +84,8 @@
             </div>
         </div>
         <!-- Offering -->
-        <div class="flex flex-col w-full h-full items-center justify-center bg-offering bg-fixed">
-            <div class="flex flex-col items-center justify-center md:container py-20">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-5 p-6 md:p-0">
+        <div class="bg-offering bg-fixed w-full h-full  py-20">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-5 p-6 md:p-0 md:container">
                     <div class="w-full md:w-1/2 order-3 ">
                         <ul class="text-base color-text text-justify leading-loose">
                             <li>{{ $t("app.aboutUs.days") }}</li>
@@ -100,12 +99,11 @@
                     </div>
                     <div class="h-60 bg-orange-500 ml-10 mr-4 order-2 hidden md:block" style="width: 1px;"></div>
                     <div class="w-full md:w-1/3 order-1">
-                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white uppercase leading-snug">{{ $t("app.aboutUs.offering") }}</h2>
+                        <h2 class="text-center text-xl lg:text-4xl font-bold p-6 text-white uppercase leading-snug">{{ $t("app.aboutUs.offering") }}</h2>
                         <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5 md:hidden" style="height: 1px"></div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </template>
 
