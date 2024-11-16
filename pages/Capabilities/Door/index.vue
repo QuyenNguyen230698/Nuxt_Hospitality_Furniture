@@ -169,6 +169,22 @@ onUnmounted(() => {
   clearInterval(intervalIdDressers);
   clearInterval(intervalIdTables);
 });
+useSeoMeta({
+    title: 'Door - Hospitality Furniture',
+    ogTitle: 'Door - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/capabilities/door',
+    ogType: 'event',
+    ogSiteName: 'Door - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Door - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Door, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

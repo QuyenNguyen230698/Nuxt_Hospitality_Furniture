@@ -127,6 +127,22 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(intervalId);
 });
+useSeoMeta({
+    title: 'Ritz Carlton - Hospitality Furniture',
+    ogTitle: 'Ritz Carlton - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/projects/ritzcarlton',
+    ogType: 'event',
+    ogSiteName: 'Ritz Carlton - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Ritz Carlton - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Ritz Carlton, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

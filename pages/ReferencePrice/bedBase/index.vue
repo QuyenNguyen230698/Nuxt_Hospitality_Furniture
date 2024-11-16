@@ -91,6 +91,22 @@ const closet = [
     {src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg', alt: 'bed3',id:'bed3'},
     {src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg', alt: 'bed4',id:'bed4'},
 ]
+useSeoMeta({
+    title: 'Bed Base - Hospitality Furniture',
+    ogTitle: 'Bed Base - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/referenceprice/bedBase',
+    ogType: 'event',
+    ogSiteName: 'Bed Base - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Bed Base - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Bed Base, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

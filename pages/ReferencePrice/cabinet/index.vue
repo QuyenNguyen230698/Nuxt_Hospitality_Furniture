@@ -53,6 +53,22 @@ const bedBase = [
     {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11.jpg', alt: 'cabinet11',id:'cabinet11'},
     {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12.jpg', alt: 'cabinet12',id:'cabinet12'},
 ]
+useSeoMeta({
+    title: 'Cabinet - Hospitality Furniture',
+    ogTitle: 'Cabinet - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/referenceprice/cabinet',
+    ogType: 'event',
+    ogSiteName: 'Cabinet - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Cabinet - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Cabinet, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

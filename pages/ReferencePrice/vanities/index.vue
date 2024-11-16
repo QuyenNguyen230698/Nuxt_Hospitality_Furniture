@@ -46,6 +46,22 @@ const bedBase = [
     {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4.jpg', alt: 'vanitie4',id:'vanitie4'},
     {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5.jpg', alt: 'vanitie5',id:'vanitie5'},
 ]
+useSeoMeta({
+    title: 'Vanities - Hospitality Furniture',
+    ogTitle: 'Vanities - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/referenceprice/vanities',
+    ogType: 'event',
+    ogSiteName: 'Vanities - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Vanities - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Vanities, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

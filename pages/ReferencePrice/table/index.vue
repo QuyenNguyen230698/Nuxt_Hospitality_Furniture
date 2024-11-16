@@ -66,6 +66,22 @@ const cabinet = [
     {src: '/image/ReferencePrice/Table/Detail/desk4.jpg', alt: 'desk4',id:'desk4'},
     {src: '/image/ReferencePrice/Table/Detail/desk5.jpg', alt: 'desk5',id:'desk5'},
 ]
+useSeoMeta({
+    title: 'Table - Hospitality Furniture',
+    ogTitle: 'Table - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/referenceprice/table',
+    ogType: 'event',
+    ogSiteName: 'Table - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Table - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Table, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

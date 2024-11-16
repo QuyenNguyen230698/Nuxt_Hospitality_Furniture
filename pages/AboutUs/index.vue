@@ -108,7 +108,22 @@
 </template>
 
 <script setup>
-
+useSeoMeta({
+    title: 'About Us - Hospitality Furniture',
+    ogTitle: 'About Us - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/aboutus',
+    ogType: 'event',
+    ogSiteName: 'About Us - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'About Us - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'About Us, Hospitality Furniture',
+})
 </script>
 
 <style scoped>

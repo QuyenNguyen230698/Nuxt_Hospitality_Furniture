@@ -125,6 +125,22 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(intervalId);
 });
+useSeoMeta({
+    title: 'Detail Products - Hospitality Furniture',
+    ogTitle: 'Detail Products - Hospitality Furniture',
+    description: 'Description',
+    ogDescription: 'Description',
+    ogImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    ogUrl: 'https://nuxt-hospitality-furniture.vercel.app/projects/detail-products',
+    ogType: 'event',
+    ogSiteName: 'Detail Products - Hospitality Furniture',
+    ogLocale: 'en_US',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Detail Products - Hospitality Furniture',
+    twitterDescription: 'Description',
+    twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
+    keywords: 'Detail Products, Hospitality Furniture',
+})
 </script>
 
 <style scoped>
