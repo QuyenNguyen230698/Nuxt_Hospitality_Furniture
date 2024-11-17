@@ -149,7 +149,7 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap"
               >
-                <NuxtLink aria-label="aboutus" to="aboutus" @click="closeDropdown">{{ $t("app.menu.aboutus") }}</NuxtLink>
+                <NuxtLink aria-label="aboutus" to="/aboutus" @click="closeDropdown">{{ $t("app.menu.aboutus") }}</NuxtLink>
               </div>
 
               <!-- Capabilities Dropdown Menu Item -->
