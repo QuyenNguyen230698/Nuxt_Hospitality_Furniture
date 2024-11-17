@@ -26,7 +26,7 @@
           </p>
           <button
             aria-label="moredetails"
-            class="bg-none button-solution text-base px-5 py-1 rounded-md"
+            class="bg-none button-solution text-base px-5 py-3 rounded-md mt-2"
           >
             <NuxtLink href="/aboutus">{{ $t('app.solution.moredetails') }}</NuxtLink>
           </button>

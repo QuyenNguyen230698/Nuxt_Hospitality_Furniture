@@ -12,9 +12,9 @@
                   <span class="text-3xl lg:text-5xl">{{ $t('app.sliceShow.inVietnam') }}</span>
                 </h2>
               </div>
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full">
-                <button @click="showVideo=true" aria-label="factorytour" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
-                <button aria-label="capabilityprofile" class="transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-md leading-none btn-hover2 rounded-md uppercase"><NuxtLink href="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</NuxtLink></button>
+              <div class="flex flex-col md:flex-row justify-center items-center gap-6 w-full">
+                <button @click="showVideo=true" aria-label="factorytour" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-3/5 md:w-1/3 lg:w-1/4 h-12 lg:h-14 text-lg leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
+                <button aria-label="capabilityprofile" class="transition-colors duration-300 border-2 w-3/5 md:w-1/3 lg:w-1/4 h-12 lg:h-14 text-lg leading-none btn-hover2 rounded-md uppercase"><NuxtLink href="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</NuxtLink></button>
               </div>
             </div>
             <!-- video show -->

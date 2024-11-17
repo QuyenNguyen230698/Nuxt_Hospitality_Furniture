@@ -37,7 +37,8 @@
                     <video 
                     ref="video" preload="auto" webkit-playsinline="true" playsinline="true" autoplay="false" muted loop controls
                     class="object-contain w-full h-96 " src="https://api.tranduc.com/api/video/TDF_Factory.mp4" title="Video TranDuc Corporation"
-                    alt="Video">
+                    aria-label="Video">
+                    <track kind="captions" src="captions.vtt" srclang="en" />
                 </video>
                 </div>
             </div>     
