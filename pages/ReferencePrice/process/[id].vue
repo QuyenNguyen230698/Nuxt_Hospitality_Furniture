@@ -1,6 +1,9 @@
 <template>
     <div class="w-full h-96 bg-black text-gray-300 flex justify-center items-center">
-        <h1 class="text-base md:text-2xl lg:text-4xl font-bold text-justify">{{ $t('app.ritz.noProduct') }}</h1>
+        <h1 class="text-base md:text-2xl lg:text-4xl font-bold text-justify">
+          {{ $t('app.ritz.noProduct') }}
+          <nuxt-link to="/" aria-label="goHome" class="text-orange-500 border-b border-orange-500">{{ $t('app.ritz.goHome') }}</nuxt-link>
+        </h1>
     </div>
 </template>
 
