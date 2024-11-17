@@ -94,7 +94,7 @@
                     <h2 class="text-2xl lg:text-3xl font-extrabold py-6">{{ $t('app.contact.representative') }}</h2>
                     <p class="text-gray-400">{{ $t('app.contact.sale') }}</p>
                     <p class="text-gray-400">(+84-274) 3 718 111</p>
-                    <p class="text-orange-500"><NuxtLink aria-label="email" href="mailto:sales@tranducfurnishings.com">sales@tranducfurnishings.com</NuxtLink></p>
+                    <p class="text-orange-500"><NuxtLink aria-label="email" to="mailto:sales@tranducfurnishings.com">sales@tranducfurnishings.com</NuxtLink></p>
                 </div>
                 <div class="flex flex-col text-center w-full lg:w-1/4 h-full">
                     <h2 class="text-2xl lg:text-3xl font-extrabold py-6">{{ $t('app.contact.workingHours') }}</h2>
@@ -116,16 +116,16 @@
                 </div>
                 <div class="flex flex-row w-full h-full items-center justify-center py-4 gap-10">
                     <span>
-                        <NuxtLink href="https://www.facebook.com/TranDucFurnishings" target="_blank" aria-label="facebook"><i class="fab fa-facebook-f hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
+                        <NuxtLink to="https://www.facebook.com/TranDucFurnishings" target="_blank" aria-label="facebook"><i class="fab fa-facebook-f hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
                     </span>
                     <span>
-                        <NuxtLink href="https://www.youtube.com/@TranDucCorporation" target="_blank" aria-label="youtube"><i class="fab fa-youtube hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
+                        <NuxtLink to="https://www.youtube.com/@TranDucCorporation" target="_blank" aria-label="youtube"><i class="fab fa-youtube hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
                     </span>
                     <span>
-                        <NuxtLink href="https://www.instagram.com/tranducfurnishings/" target="_blank" aria-label="instagram"><i class="fab fa-instagram hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
+                        <NuxtLink to="https://www.instagram.com/tranducfurnishings/" target="_blank" aria-label="instagram"><i class="fab fa-instagram hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
                     </span>
                     <span>
-                        <NuxtLink href="https://www.linkedin.com/company/tranduc/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
+                        <NuxtLink to="https://www.linkedin.com/company/tranduc/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin hover:text-orange-500 text-gray-400 text-xl hover:scale-125 transition-transform duration-300 ease-in-out" aria-hidden="true"></i></NuxtLink>
                     </span>
                 </div>
             </div>

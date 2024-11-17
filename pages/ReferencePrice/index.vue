@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -202,7 +202,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" to="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
     </div>

@@ -52,8 +52,8 @@
                 </div>
                 </div>
                 <div class="flex w-full justify-center gap-2 py-2">
-                <NuxtLink aria-label="item1" href="#item1" class="btn btn-circle">1</NuxtLink>
-                <NuxtLink aria-label="item2" href="#item2" class="btn btn-circle">2</NuxtLink>
+                <NuxtLink aria-label="item1" to="#item1" class="btn btn-circle">1</NuxtLink>
+                <NuxtLink aria-label="item2" to="#item2" class="btn btn-circle">2</NuxtLink>
             </div>
         </div>
     </div>

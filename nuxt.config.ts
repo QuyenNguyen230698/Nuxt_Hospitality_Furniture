@@ -92,11 +92,15 @@ export default defineNuxtConfig({
         file: 'en-US.json'
       }
     ],
+    detectBrowserLanguage: {
+      useCookie: false,
+      cookieKey: "i18n_redirected",
+    },
     defaultLocale: 'en-US',
     strategy: 'no_prefix',
     lazy: true,
     langDir: 'locales',
-    vueI18n: './i18n.config.ts'
+    vueI18n: './i18n/i18n.config.ts'
   },
   imports: {
     dirs: ["store"],

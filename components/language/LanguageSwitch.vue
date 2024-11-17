@@ -42,7 +42,7 @@ function selectLanguage(lang) {
 function setLanguage(lang) {
   locale.value = lang
   localStorage.setItem('preferredLanguage', lang)
-  isVietnamese.value = lang === 'vi-VN'
+  isVietnamese.value = lang === 'en-US'
 }
 
 function closeDropdown() {

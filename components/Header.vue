@@ -6,7 +6,7 @@
         <div
           class="w-1/3 md:w-1/5 lg:w-1/4 h-12 md:h-fit flex flex-start md:justify-evenly lg:justify-center "
         >
-          <NuxtLink aria-label="logo" href="/">
+          <NuxtLink aria-label="logo" to="/" @click="closeDropdown">
             <NuxtImg
               quality="75"
               loading="eager"
@@ -56,7 +56,7 @@
                   class="menu bg-menu text-base min-h-full w-4/5 p-4"
                 >
                   <!-- Sidebar content here -->
-                   <li class="border-b border-orange-500 p-3"><NuxtLink aria-label="logo" href="/" @click="closeDrawer">
+                   <li class="border-b border-orange-500 p-3"><NuxtLink aria-label="logo" to="/" @click="closeDrawer">
                       <NuxtImg
                         quality="75"
                         loading="eager"
@@ -68,7 +68,7 @@
                     </NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <NuxtLink href="/aboutus" aria-label="Sidebar Item 1" @click="closeDrawer">{{
+                    <NuxtLink to="/aboutus" aria-label="Sidebar Item 1" @click="closeDrawer">{{
                       $t("app.menu.aboutus")
                     }}</NuxtLink>
                   </li>
@@ -93,44 +93,44 @@
                         class="collapse-content p-0 min-h-0 flex flex-col gap-4"
                         v-show="isCollapseOpen"
                       >
-                      <NuxtLink aria-label="capabilities" href="/capabilities" class=" py-2 text-nowrap" @click="closeDrawer">{{
+                      <NuxtLink aria-label="capabilities" to="/capabilities" class=" py-2 text-nowrap" @click="closeDrawer">{{
                           $t("app.menu.capabilities")
                         }}</NuxtLink>
-                        <NuxtLink aria-label="woodenfurniture" href="/capabilities/woodenfurniture" @click="closeDrawer" class=" py-2 text-nowrap">{{
+                        <NuxtLink aria-label="woodenfurniture" to="/capabilities/woodenfurniture" @click="closeDrawer" class=" py-2 text-nowrap">{{
                           $t("app.menu.woodenfurniture")
                         }}</NuxtLink>
-                        <NuxtLink aria-label="metalfurniture" href="/capabilities/metalfurniture" @click="closeDrawer" class=" py-2 text-nowrap">{{
+                        <NuxtLink aria-label="metalfurniture" to="/capabilities/metalfurniture" @click="closeDrawer" class=" py-2 text-nowrap">{{
                           $t("app.menu.metalfurniture")
                         }}</NuxtLink>
-                        <NuxtLink aria-label="upholstery" href="/capabilities/ulpholstery" @click="closeDrawer" class=" py-2 text-nowrap">{{
+                        <NuxtLink aria-label="upholstery" to="/capabilities/ulpholstery" @click="closeDrawer" class=" py-2 text-nowrap">{{
                           $t("app.menu.upholstery")
                         }}</NuxtLink>
-                        <NuxtLink aria-label="door" href="/capabilities/door" class="py-2 text-nowrap" @click="closeDrawer">{{
+                        <NuxtLink aria-label="door" to="/capabilities/door" class="py-2 text-nowrap" @click="closeDrawer">{{
                           $t("app.menu.door")
                         }}</NuxtLink>
-                        <NuxtLink aria-label="finishing" href="/capabilities/finishing" class=" py-2 text-nowrap" @click="closeDrawer">{{
+                        <NuxtLink aria-label="finishing" to="/capabilities/finishing" class=" py-2 text-nowrap" @click="closeDrawer">{{
                           $t("app.menu.finishing")
                         }}</NuxtLink>
                       </div>
                     </div>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <NuxtLink aria-label="projects" href="/projects" @click="closeDrawer">{{
+                    <NuxtLink aria-label="projects" to="/projects" @click="closeDrawer">{{
                       $t("app.menu.projects")
                     }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <NuxtLink aria-label="referenceprice" href="/referenceprice" @click="closeDrawer">{{
+                    <NuxtLink aria-label="referenceprice" to="/referenceprice" @click="closeDrawer">{{
                       $t("app.menu.referenceprice")
                     }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <NuxtLink aria-label="news" href="/news" @click="closeDrawer">{{
+                    <NuxtLink aria-label="news" to="/news" @click="closeDrawer">{{
                       $t("app.menu.news")
                     }}</NuxtLink>
                   </li>
                   <li class=" py-2 text-nowrap">
-                    <NuxtLink aria-label="contact" href="/contact" @click="closeDrawer">{{
+                    <NuxtLink aria-label="contact" to="/contact" @click="closeDrawer">{{
                       $t("app.menu.contact")
                     }}</NuxtLink>
                   </li>
@@ -149,7 +149,7 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap"
               >
-                <NuxtLink aria-label="aboutus" href="/aboutus">{{ $t("app.menu.aboutus") }}</NuxtLink>
+                <NuxtLink aria-label="aboutus" to="aboutus" @click="closeDropdown">{{ $t("app.menu.aboutus") }}</NuxtLink>
               </div>
 
               <!-- Capabilities Dropdown Menu Item -->
@@ -159,7 +159,7 @@
                 >
                   <ul class="menu">
                     <li>
-                      <details>
+                      <details :open="isDropdownOpen" @toggle="handleToggle">
                         <summary
                           class="lg:text-sm xl:text-base text-center cursor-pointer"
                         >
@@ -169,22 +169,22 @@
                           class="absolute left-0 top-full mt-1 bg-menu bg-white shadow-md rounded-md p-2 w-48 text-left z-50"
                         >
                          <li class="hover:text-orange-500 text-sm text-nowrap">
-                            <NuxtLink aria-label="capabilities" href="/capabilities">{{ $t("app.menu.capabilities") }}</NuxtLink>
+                            <NuxtLink aria-label="capabilities" to="/capabilities" @click="closeDropdown">{{ $t("app.menu.capabilities") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm text-nowrap">
-                            <NuxtLink aria-label="woodenfurniture" href="/capabilities/woodenfurniture">{{ $t("app.menu.woodenfurniture") }}</NuxtLink>
+                            <NuxtLink aria-label="woodenfurniture" to="/capabilities/woodenfurniture" @click="closeDropdown">{{ $t("app.menu.woodenfurniture") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <NuxtLink aria-label="metalfurniture" href="/capabilities/metalfurniture">{{ $t("app.menu.metalfurniture") }}</NuxtLink>
+                            <NuxtLink aria-label="metalfurniture" to="/capabilities/metalfurniture" @click="closeDropdown">{{ $t("app.menu.metalfurniture") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <NuxtLink aria-label="upholstery" href="/capabilities/ulpholstery">{{ $t("app.menu.upholstery") }}</NuxtLink>
+                            <NuxtLink aria-label="upholstery" to="/capabilities/ulpholstery" @click="closeDropdown">{{ $t("app.menu.upholstery") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <NuxtLink aria-label="door" href="/capabilities/door">{{ $t("app.menu.door") }}</NuxtLink>
+                            <NuxtLink aria-label="door" to="/capabilities/door" @click="closeDropdown">{{ $t("app.menu.door") }}</NuxtLink>
                           </li>
                           <li class="hover:text-orange-500 text-sm">
-                            <NuxtLink aria-label="finishing" href="/capabilities/finishing">{{ $t("app.menu.finishing") }}</NuxtLink>
+                            <NuxtLink aria-label="finishing" to="/capabilities/finishing" @click="closeDropdown">{{ $t("app.menu.finishing") }}</NuxtLink>
                           </li>
                         </ul>
                       </details>
@@ -197,22 +197,22 @@
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <NuxtLink aria-label="projects" href="/projects">{{ $t("app.menu.projects") }}</NuxtLink>
+                <NuxtLink aria-label="projects" to="/projects" @click="closeDropdown">{{ $t("app.menu.projects") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <NuxtLink aria-label="referenceprice" href="/referenceprice">{{ $t("app.menu.referenceprice") }}</NuxtLink>
+                <NuxtLink aria-label="referenceprice" to="/referenceprice" @click="closeDropdown">{{ $t("app.menu.referenceprice") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <NuxtLink aria-label="news" href="/news">{{ $t("app.menu.news") }}</NuxtLink>
+                <NuxtLink aria-label="news" to="/news" @click="closeDropdown">{{ $t("app.menu.news") }}</NuxtLink>
               </div>
               <div
                 class="hover:border-orange-500 hover:border-b py-2 text-nowrap cursor-pointer"
               >
-                <NuxtLink aria-label="contact" href="/contact">{{ $t("app.menu.contact") }}</NuxtLink>
+                <NuxtLink aria-label="contact" to="/contact" @click="closeDropdown">{{ $t("app.menu.contact") }}</NuxtLink>
               </div>
             </div>
           </div>
@@ -223,16 +223,26 @@
 
 <script setup>
 import { ref } from 'vue';
-
+const localePath = useLocalePath()
 // Trạng thái cho menu collapse
 const isCollapseOpen = ref(false);
 // Trạng thái mở/đóng của drawer
 const isDrawerOpen = ref(false);
+// Biến quản lý trạng thái mở/tắt dropdown
+const isDropdownOpen = ref(false);
+// Hàm xử lý khi toggle trạng thái của dropdown
+const handleToggle = (event) => {
+  isDropdownOpen.value = event.target.open;
+};
 
 // Hàm để đóng drawer
 function closeDrawer() {
   isDrawerOpen.value = false;
 }
+// Hàm đóng dropdown (khi click vào NuxtLink)
+const closeDropdown = () => {
+  isDropdownOpen.value = false;
+};
 </script>
 
 

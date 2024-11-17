@@ -24,7 +24,7 @@
           <p class="text-sm color-text text-justify mb-5 leading-loose">
             {{ $t('app.solution.established') }}
           </p>
-          <NuxtLink href="/aboutus"  aria-label="moredetails" class="bg-none button-solution text-base px-5 py-3 rounded-md mt-2">{{ $t('app.solution.moredetails') }}</NuxtLink>
+          <NuxtLink to="/aboutus"  aria-label="moredetails" class="bg-none button-solution text-base px-5 py-3 rounded-md mt-2">{{ $t('app.solution.moredetails') }}</NuxtLink>
         </div>
       </div>
       </div>
