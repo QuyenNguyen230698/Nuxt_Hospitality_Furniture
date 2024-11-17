@@ -9,7 +9,7 @@
                         {{ $t("app.referenceprice.categories") }}
                     </h2>
                     <div class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5" style="height: 1px"></div>
-                    <p class="text-xs md:text-base color-section md:w-3/4 lg:w-1/2 text-justify leading-loose text-slate-400">{{ $t("app.referenceprice.cateDescription") }}</p>
+                    <p class="text-xs md:text-base color-div md:w-3/4 lg:w-1/2 text-justify leading-loose text-slate-400">{{ $t("app.referenceprice.cateDescription") }}</p>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full h-full gap-4 lg:container mx-auto p-4">
@@ -35,7 +35,7 @@
             </div>
          </div>
         <!-- See more -->
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.headboard') }}</h2>
             </div>
@@ -58,9 +58,9 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto mt-20">
-            <div class="w-full h-full border-y border-orange-500 ">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
+            <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.dresser') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
@@ -82,9 +82,9 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto mt-20">
-            <div class="w-full h-full border-y border-orange-500 ">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
+            <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.closets') }}</h2>
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
@@ -106,8 +106,8 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tv') }}</h2>
             </div>
@@ -130,8 +130,8 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.nightstands') }}</h2>
             </div>
@@ -154,8 +154,8 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tables') }}</h2>
             </div>
@@ -178,8 +178,8 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.sofas') }}</h2>
             </div>
@@ -202,8 +202,8 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+        </div>
+        <div class="flex flex-col items-center justify-center w-full h-full container mx-auto">
             <div class="w-full h-full border-y border-orange-500 mt-20">
                 <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.vanities') }}</h2>
             </div>
@@ -226,7 +226,7 @@
             <div class="flex items-center justify-center w-full h-full py-2">
                 <NuxtLink aria-label="seeMore" to="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
-        </section>
+        </div>
     </div>
 </template>
 
