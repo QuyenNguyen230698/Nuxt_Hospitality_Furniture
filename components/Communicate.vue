@@ -18,6 +18,7 @@
               :src="item.src"
               :alt="`client-${index}`"
               aria-label="client"
+              :srcset="`${item.src}?w=640 640w, ${item.src}?w=1024 1024w, ${item.src}?w=1280 1280w`"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               class="w-2/3 max-h-20 min-h-20 md:w-1/2 h-auto col-span-1 object-contain hover:scale-110 transition-all duration-300"
             ></NuxtImg>
