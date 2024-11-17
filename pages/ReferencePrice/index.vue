@@ -20,9 +20,7 @@
                         :src="item.src" 
                         :alt="item.alt" 
                         aria-label="cateimage"
-                        width="100%" 
-                        class="h-full"
-                        object="cover" 
+                        class="h-60 w-full md:h-full" 
                     />
                     <div class="text-xl lg:text-2xl text-white mb-2 absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 flex items-center justify-center hover:hidden">{{ item.alt }}</div>
                     <div class="absolute top-0 left-0 w-full h-full bg-orange-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
