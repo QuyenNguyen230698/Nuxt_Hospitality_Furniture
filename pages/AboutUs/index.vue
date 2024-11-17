@@ -19,7 +19,7 @@
                     </p>
                     </div>
                     <div class="w-full md:w-1/2 order-2">
-                        <NuxtImg quality="75" loading="eager" src="/image/about/about1.jpg" alt="about-us-1" class="w-full h-full object-cover"></NuxtImg>
+                        <NuxtImg quality="75" loading="eager" src="/image/about/about1.jpg" alt="about-us-1" aria-label="aboutus1" class="w-full h-full object-cover"></NuxtImg>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     </p>
                     </div>
                     <div class="w-full md:w-1/2 order-1 overflow-hidden">
-                        <NuxtImg quality="75" loading="eager" src="/image/about/about2.jpg" alt="about-us-2" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"></NuxtImg>
+                        <NuxtImg quality="75" loading="eager" src="/image/about/about2.jpg" alt="about-us-2" aria-label="aboutus2" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"></NuxtImg>
                     </div>
                 </div>
             </div>
@@ -64,19 +64,19 @@
                     </div>
                     <div class="w-full md:w-1/2 order-2 grid grid-cols-2 gap-2">
                         <div class="relative">
-                            <NuxtImg quality="75" loading="eager" src="/image/about/about3.jpg" class="w-full h-full object-cover"></NuxtImg>
+                            <NuxtImg quality="75" loading="eager" src="/image/about/about3.jpg" aria-label="aboutus3" alt="aboutus3" class="w-full h-full object-cover"></NuxtImg>
                             <div class="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-1000"></div>
                         </div>
                         <div class="relative">
-                            <NuxtImg quality="75" loading="eager" src="/image/about/about4.jpg" class="w-full h-full object-cover"></NuxtImg>
+                            <NuxtImg quality="75" loading="eager" src="/image/about/about4.jpg" aria-label="aboutus4" alt="aboutus4" class="w-full h-full object-cover"></NuxtImg>
                             <div class="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-1000"></div>
                         </div>
                         <div class="relative">
-                            <NuxtImg quality="75" loading="eager" src="/image/about/about5.jpg" class="w-full h-full object-cover"></NuxtImg>
+                            <NuxtImg quality="75" loading="eager" src="/image/about/about5.jpg" aria-label="aboutus5" alt="aboutus5" class="w-full h-full object-cover"></NuxtImg>
                             <div class="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-1000"></div>
                         </div>
                         <div class="relative">
-                            <NuxtImg quality="75" loading="eager" src="/image/about/about6.jpg" class="w-full h-full object-cover"></NuxtImg>
+                            <NuxtImg quality="75" loading="eager" src="/image/about/about6.jpg" aria-label="aboutus6" alt="aboutus6" class="w-full h-full object-cover"></NuxtImg>
                             <div class="absolute inset-0 bg-black opacity-0 hover:opacity-40 transition-opacity duration-1000"></div>
                         </div>
                     </div>

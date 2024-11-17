@@ -19,16 +19,17 @@
               :key="idx"
               :src="image.src"
               alt="Slide image"
+              aria-label="slideimage"
               class="w-1/6 max-h-8 md:max-h-10 lg:max-h-14 min-h-10 md:min-h-12 lg:min-h-14 object-contain"
             />
           </div>
         </div>
         <!-- Previous and Next Buttons -->
         <div class="absolute inset-y-1/2 left-1 flex items-center">
-          <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+          <button @click="prevSlide" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
         </div>
         <div class="absolute inset-y-1/2 right-1 flex items-center">
-          <button @click="nextSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+          <button @click="nextSlide" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
         </div>
       </div>
       <div class="text-center font-thin color-title text-xs md:text-base">We have dedicated over 400 hotel furniture projects for 23 years. Under intesive effort, our mission is to reach client sactifaction.</div>
@@ -41,7 +42,7 @@
                     v-for="project in test?.data" 
                     :key="project.title">
                 <div class="relative">
-                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" loading="eager" quality="75"/>
+                    <NuxtImg :src="project.src" alt="Project image" aria-label="projectimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
                     <div class="absolute inset-0 bg-black opacity-30"></div>
                 </div>
                 <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">
@@ -49,7 +50,7 @@
                 </div>
                 <div class="absolute inset-0 hidden group-hover:flex justify-center items-center p-4 bg-black bg-opacity-50 transition-all duration-1000 ease-in-out">
                     <h3 class="hover:text-orange-500 cursor-pointer transition-all duration-500 ease-in-out text-xl">
-                      <nuxt-link to="/news">{{ $t("app.referenceprice.detail") }}</nuxt-link>
+                      <nuxt-link aria-label="detail" to="/news">{{ $t("app.referenceprice.detail") }}</nuxt-link>
                     </h3>
                 </div>
                 </div>
@@ -61,7 +62,7 @@
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
                  v-for="project in test?.data2" :key="project.title">
                 <div class="relative">
-                    <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" loading="eager" quality="75"/>
+                    <NuxtImg :src="project.src" alt="Project image" aria-label="projectimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
                     <div class="absolute inset-0 bg-black opacity-30"></div>
                 </div>
                 <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">
@@ -76,8 +77,8 @@
         </div>
         <!-- button -->
         <div class="flex w-full justify-center gap-2 pb-2">
-        <NuxtLink href="#item1" class="btn btn-circle">1</NuxtLink>
-        <NuxtLink href="#item2" class="btn btn-circle">2</NuxtLink>
+        <NuxtLink aria-label="item1" href="#item1" class="btn btn-circle">1</NuxtLink>
+        <NuxtLink aria-label="item2" href="#item2" class="btn btn-circle">2</NuxtLink>
         </div>
     </div>
   </template>

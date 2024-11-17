@@ -13,13 +13,13 @@
                 class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideDesks * 100}%)` }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full" ></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" aria-label="slideimage" class="w-full" ></NuxtImg>
             </div>
             <div class="absolute inset-y-1/2 left-5 flex items-center">
-                <button @click="prevSlideDesks" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+                <button @click="prevSlideDesks" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
             </div>
             <div class="absolute inset-y-1/2 right-5 flex items-center">
-                <button @click="nextSlideDesks" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+                <button @click="nextSlideDesks" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
             </div>
             </div>
 

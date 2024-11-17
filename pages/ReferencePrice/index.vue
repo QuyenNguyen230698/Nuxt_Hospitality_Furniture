@@ -19,6 +19,7 @@
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="cateimage"
                         width="100%" 
                         class="h-full"
                         object="cover" 
@@ -28,7 +29,7 @@
                         <div class="text-center">
                             <div class="text-xl lg:text-2xl text-white mb-2">{{ item.alt }}</div>
                             <button class="border border-white text-slate-100 px-4 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300">
-                                <NuxtLink :to="item.link">{{ $t('app.referenceprice.detail') }}</NuxtLink>
+                                <NuxtLink aria-label="detail" :to="item.link">{{ $t('app.referenceprice.detail') }}</NuxtLink>
                             </button>
                         </div>
                     </div>
@@ -42,12 +43,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="bedbaseimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -56,7 +58,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -65,12 +67,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="cabinetimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -79,7 +82,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -88,12 +91,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="closetimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -102,7 +106,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -111,12 +115,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="tvimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -125,7 +130,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -134,12 +139,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="nightstandimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -148,7 +154,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -157,12 +163,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="tableimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -171,7 +178,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -180,12 +187,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="sofaimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -194,7 +202,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
         <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
@@ -203,12 +211,13 @@
             </div>
             <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
                 <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink :to="`/referenceprice/process/${item.id}`">
+                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
                         <NuxtImg 
                         quality="75" 
                         loading="eager" 
                         :src="item.src" 
                         :alt="item.alt" 
+                        aria-label="vanityimage"
                         width="100%" 
                         height="100%" 
                         object="cover" 
@@ -217,7 +226,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                <NuxtLink aria-label="seeMore" href="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
             </div>
         </section>
     </div>

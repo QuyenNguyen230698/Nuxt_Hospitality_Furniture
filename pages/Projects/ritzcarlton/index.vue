@@ -7,13 +7,13 @@
                 <div class="carousel w-full md:w-1/2 relative overflow-hidden">
                     <div v-for="(slide, index) in solution" :key="index" class="carousel-item w-full transition-transform duration-700" 
                     :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
-                    <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full"></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" aria-label="slideimage" class="w-full"></NuxtImg>
                     </div>
                     <div class="absolute inset-y-1/2 left-5 flex items-center">
-                    <button @click="prevSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+                    <button @click="prevSlide" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
                     </div>
                     <div class="absolute inset-y-1/2 right-5 flex items-center">
-                    <button @click="nextSlide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+                    <button @click="nextSlide" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
                     </div>
                 </div>
                 <!-- Content -->
@@ -47,7 +47,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="bg-none button-solution text-base px-5 py-1 rounded-md"><nuxt-link to="/contact">{{ $t('app.ritz.button') }}</nuxt-link></button>
+                        <button aria-label="button" class="bg-none button-solution text-base px-5 py-1 rounded-md"><nuxt-link to="/contact">{{ $t('app.ritz.button') }}</nuxt-link></button>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                         v-for="project in test?.data.slice(0, 4)" 
                         :key="project.title">
                         <div class="relative">
-                            <NuxtImg :src="project.src" alt="Project image" class="w-full h-auto object-contain" loading="eager" quality="75"/>
+                            <NuxtImg :src="project.src" alt="Project image" aria-label="projectimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
                             <div class="absolute inset-0 bg-black opacity-30"></div>
                         </div>
                         <div class="absolute bottom-10 container mx-auto p-4 h-1/5 transition-all duration-1000 ease-in-out">
@@ -73,7 +73,7 @@
                         </div>
                         <div class="absolute inset-0 hidden group-hover:flex justify-center items-center p-4 bg-black bg-opacity-50 transition-all duration-1000 ease-in-out">
                             <h3 class="hover:text-orange-500 cursor-pointer transition-all duration-500 ease-in-out text-xl">
-                            <nuxt-link to="/news">{{ $t("app.referenceprice.detail") }}</nuxt-link>
+                            <nuxt-link aria-label="detail" to="/news">{{ $t("app.referenceprice.detail") }}</nuxt-link>
                             </h3>
                         </div>
                     </div>

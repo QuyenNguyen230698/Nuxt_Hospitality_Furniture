@@ -2,7 +2,7 @@
     <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden h-60 md:h-80 lg:h-96">
       <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
             <div class="absolute inset-0" :class="imageClass">
-              <NuxtImg :src="currentImage.src" alt="Slide Image" quality="75" loading="eager" :class="imageClass" class="w-full h-full object-cover scale-100" />
+              <NuxtImg :src="currentImage.src" alt="Slide Image" aria-label="slideimage" quality="75" loading="eager" :class="imageClass" class="w-full h-full object-cover scale-100" />
             </div>
             <div class="flex w-full h-full relative z-40">
               <div class="flex justify-center items-center text-white container m-8 mx-auto">

@@ -5,7 +5,7 @@
             <!-- Wooden Furniture -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5">
-                    <NuxtImg quality="75" loading="eager" src="/image/capability/capWooden.jpg" class="w-full h-fit object-cover "></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" aria-label="capwooden" alt="capwooden" src="/image/capability/capWooden.jpg" class="w-full h-fit object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -35,13 +35,13 @@
                     </p>
                 </div>
                 <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" src="/image/capability/cap5.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" aria-label="capmetal" alt="capmetal" src="/image/capability/cap5.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
             </div>
             <!-- Ulpholstery -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" src="/image/capability/capUlpho.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" aria-label="capupholstery" alt="capupholstery" src="/image/capability/capUlpho.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -71,13 +71,13 @@
                     </p>
                 </div>
                 <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" src="/image/capability/capDoor.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" aria-label="capdoor" alt="capdoor" src="/image/capability/capDoor.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
             </div>
             <!-- Finishing -->
             <div class="flex flex-col md:flex-row h-full w-full bg-black">
                 <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" src="/image/capability/capFinishing.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    <NuxtImg quality="75" loading="eager" aria-label="capfinishing" alt="capfinishing" src="/image/capability/capFinishing.jpg" class="w-full h-full object-cover "></NuxtImg>
                 </div>
                 <div class="w-full md:w-2/5 flex flex-col p-10">
                     <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
@@ -108,7 +108,7 @@
                         :key="index"
                         class="carousel-item w-full transition-all duration-300 ease-in-out"
                     >
-                        <NuxtImg quality="75" loading="eager" :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
+                        <NuxtImg quality="75" loading="eager" aria-label="capabilityimage" alt="capabilityimage" :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
                     </div>
                 </div>
             </div>

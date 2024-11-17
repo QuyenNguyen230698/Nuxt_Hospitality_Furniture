@@ -14,13 +14,13 @@
                 class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideDesks * 100}%)` }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" aria-label="slideimage" class="w-full"></NuxtImg>
             </div>
             <div class="absolute inset-y-1/2 left-5 flex items-center">
-                <button @click="prevSlideDesks" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+                <button @click="prevSlideDesks" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
             </div>
             <div class="absolute inset-y-1/2 right-5 flex items-center">
-                <button @click="nextSlideDesks" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+                <button @click="nextSlideDesks" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
             </div>
             </div>
 
@@ -33,7 +33,7 @@
                 class="w-20 h-20 border-2 cursor-pointer overflow-hidden"
                 :class="{ 'border-orange-500': currentSlideDesks === index, 'border-transparent': currentSlideDesks !== index }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" class="w-full h-full object-cover"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" aria-label="thumbnail" class="w-full h-full object-cover"></NuxtImg>
             </div>
             </div>
           </div>
@@ -62,13 +62,13 @@
                 class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideDressers * 100}%)` }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" aria-label="slideimage" class="w-full"></NuxtImg>
             </div>
             <div class="absolute inset-y-1/2 left-5 flex items-center">
-                <button @click="prevSlideDressers" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+                <button @click="prevSlideDressers" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
             </div>
             <div class="absolute inset-y-1/2 right-5 flex items-center">
-                <button @click="nextSlideDressers" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+                <button @click="nextSlideDressers" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
             </div>
             </div>
 
@@ -81,7 +81,7 @@
                 class="w-20 h-20 border-2 cursor-pointer overflow-hidden"
                 :class="{ 'border-orange-500': currentSlideDressers === index, 'border-transparent': currentSlideDressers !== index }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" class="w-full h-full object-cover"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" aria-label="thumbnail" class="w-full h-full object-cover"></NuxtImg>
             </div>
             </div>
           </div>
@@ -111,13 +111,13 @@
                 class="carousel-item w-fit h-48 md:h-72 lg:h-96 transition-transform duration-700"
                 :style="{ transform: `translateX(-${currentSlideTables * 100}%)` }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" class="w-full"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Slide image" aria-label="slideimage" class="w-full"></NuxtImg>
             </div>
             <div class="absolute inset-y-1/2 left-5 flex items-center">
-                <button @click="prevSlideTables" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
+                <button @click="prevSlideTables" aria-label="prevslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❮</button>
             </div>
             <div class="absolute inset-y-1/2 right-5 flex items-center">
-                <button @click="nextSlideTables" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
+                <button @click="nextSlideTables" aria-label="nextslide" class="btn btn-circle bg-transparent border-none text-white text-2xl hover:bg-transparent">❯</button>
             </div>
             </div>
 
@@ -130,7 +130,7 @@
                 class="w-20 h-20 border-2 cursor-pointer overflow-hidden"
                 :class="{ 'border-orange-500': currentSlideTables === index, 'border-transparent': currentSlideTables !== index }"
             >
-                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" class="w-full h-full object-cover"></NuxtImg>
+                <NuxtImg quality="75" loading="eager" :src="slide.src" alt="Thumbnail" aria-label="thumbnail" class="w-full h-full object-cover"></NuxtImg>
             </div>
             </div>
           </div>

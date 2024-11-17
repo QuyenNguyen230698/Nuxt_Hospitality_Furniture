@@ -2,7 +2,7 @@
     <div class="py-10 md:py-14 border-b border-b-orange-500 relative overflow-hidden">
       <div class="absolute inset-0 h-full bg-slice-2 pointer-events-none z-30"></div>
             <div class="absolute inset-0" :class="imageClass">
-              <NuxtImg :src="currentImage.src" alt="Slide Image" quality="75" loading="eager" :class="imageClass" class="w-full h-full object-cover scale-100" />
+              <NuxtImg :src="currentImage.src" alt="Slide Image" aria-label="slideimage" quality="75" loading="eager" :class="imageClass" class="w-full h-full object-cover scale-100" />
             </div>
             <div class="flex flex-col w-full h-full justify-center items-center relative z-40">
               <div class="flex flex-col justify-center items-center text-white container m-2 md:m-4 lg:m-8 mx-auto">
@@ -15,8 +15,8 @@
                 <div class="text-base md:text-xl lg:text-2xl font-thin text-gray-300">Hotel Furniture Projects</div>
               </div>
               <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 w-full">
-                <button @click="showVideo=true" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-sm md:text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
-                <button class="transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-sm md:text-md leading-none btn-hover2 rounded-md uppercase"><NuxtLink href="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</NuxtLink></button>
+                <button @click="showVideo=true" aria-label="factorytour" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-sm md:text-md leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
+                <button aria-label="capabilityprofile" class="transition-colors duration-300 border-2 w-2/5 md:w-2/6 lg:w-1/5 h-10 lg:h-12 text-sm md:text-md leading-none btn-hover2 rounded-md uppercase"><NuxtLink href="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</NuxtLink></button>
               </div>
             </div>
             <!-- video show -->
