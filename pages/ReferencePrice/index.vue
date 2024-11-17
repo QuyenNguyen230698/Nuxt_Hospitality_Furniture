@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black text-white">
+    <div class="bg-black text-white flex flex-col w-full h-full">
         <TitleRef />
         <!-- Categories -->
          <div class="flex flex-col w-full h-full items-center justify-center bg-black bg-cate">
@@ -35,198 +35,184 @@
             </div>
          </div>
         <!-- See more -->
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.headboard') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in bedBase" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="bedbaseimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+        <div class="flex flex-col w-full h-full items-center justify-center gap-2">
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.headboard') }}</h2>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.dresser') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in cabinet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="cabinetimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in bedBase" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="bedbaseimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.closets') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in closet" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="closetimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/bedBase" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tv') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in tv" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="tvimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.dresser') }}</h2>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.nightstands') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in nightstand" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="nightstandimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in cabinet" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="cabinetimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tables') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in table" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="tableimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/cabinet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.sofas') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in sofas" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="sofaimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto ">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.closets') }}</h2>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
-        <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
-            <div class="w-full h-full border-y border-orange-500 mt-20">
-                <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.vanities') }}</h2>
-            </div>
-            <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
-                <div v-for="item in vanities" :key="item.src" class="w-full h-40 md:h-60 lg:h-80">
-                    <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
-                        <NuxtImg 
-                        quality="75" 
-                        loading="eager" 
-                        :src="item.src" 
-                        :alt="item.alt" 
-                        aria-label="vanityimage"
-                        width="100%" 
-                        height="100%" 
-                        object="cover" 
-                    />
-                    </NuxtLink>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in closet" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="closetimage"
+                            class="w-full h-full object-cover"  
+                        />
+                        </NuxtLink>
+                    </div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center w-full h-full py-2">
-                <NuxtLink aria-label="seeMore" to="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
-            </div>
-        </section>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/closet" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tv') }}</h2>
+                </div>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in tv" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="tvimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/tv" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.nightstands') }}</h2>
+                </div>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in nightstand" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="nightstandimage"
+                            class="w-full h-full object-cover"  
+                        />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/nightstand" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.tables') }}</h2>
+                </div>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in table" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="tableimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/table" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.sofas') }}</h2>
+                </div>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in sofas" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="sofaimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/sofas" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+            <section class="flex flex-col items-center justify-center w-full h-full container mx-auto">
+                <div class="w-full h-full border-y border-orange-500 mt-20">
+                    <h2 class="py-2 text-center text-xl lg:text-4xl font-extrabold">{{ $t('app.referenceprice.vanities') }}</h2>
+                </div>
+                <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5 w-full h-full">
+                    <div v-for="item in vanities" :key="item.src" class="w-full col-span-1 h-40 md:h-60 lg:h-80 overflow-hidden">
+                        <NuxtLink aria-label="detail" :to="`/referenceprice/process/${item.id}`">
+                            <NuxtImg 
+                            quality="75" 
+                            loading="eager" 
+                            :src="item.src" 
+                            :alt="item.alt" 
+                            aria-label="vanityimage"
+                            class="w-full h-full object-cover" 
+                        />
+                        </NuxtLink>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center w-full h-full py-2">
+                    <NuxtLink aria-label="seeMore" to="/referenceprice/vanities" class="text-orange-500 hover:text-white"><span>{{ $t('app.referenceprice.seeMore') }} </span><span><i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i></span></NuxtLink>
+                </div>
+            </section>
+        </div>
     </div>
 </template>
 
