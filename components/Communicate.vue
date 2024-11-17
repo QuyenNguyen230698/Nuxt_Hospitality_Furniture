@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-fixed bg-word bg-no-repeat bg-center bg-cover">
+    <div class="bg-fixed bg-word bg-opacity-100">
         <div
           class="flex flex-col md:flex-row justify-center items-center w-full gap-10"
           style="padding: 6% 10% 6% 10%"
