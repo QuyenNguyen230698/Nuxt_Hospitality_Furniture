@@ -62,7 +62,6 @@ const communicate = [
 .bg-word {
 background-image: url("/public/image/logo/The-World-Map-scaled.jpg");
 background-size: cover;
-background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
