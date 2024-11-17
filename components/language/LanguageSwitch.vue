@@ -15,7 +15,7 @@
             <span class="font-[sans-serif] text-black focus:text-white"> English</span>
           </button>
         </li>
-        <li><button @click="selectLanguage('vi-VN')" class="custorm-btn  w-full ">
+        <li><button @click="selectLanguage('vi-VN')" class="custorm-btn w-full ">
             <NuxtImg quality="75" loading="eager" alt="vietnamese" aria-label="vietnamese" class="w-8 h-8 rounded-full" src="image/header/language-vi.png" />
             <span class="font-[sans-serif] text-black "> Vietnamese</span>
           </button>
