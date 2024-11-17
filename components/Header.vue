@@ -56,14 +56,14 @@
                   class="menu bg-menu text-base min-h-full w-4/5 p-4"
                 >
                   <!-- Sidebar content here -->
-                   <li class="border-b border-orange-500"><NuxtLink aria-label="logo" href="/">
+                   <li class="border-b border-orange-500 p-3"><NuxtLink aria-label="logo" href="/">
                       <NuxtImg
                         quality="75"
                         loading="eager"
                         src="/image/logo/Tranduc-Furnishings-compress.png"
                         aria-label="logo"
                         alt="logo"
-                        class="w-40 h-auto p-3"
+                        class="w-40 h-auto object-contain"
                       ></NuxtImg>
                     </NuxtLink>
                   </li>
