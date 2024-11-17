@@ -5,7 +5,7 @@
             <div class="grid grid-cols-12 w-full h-full items-center justify-center gap-4 py-0 lg:py-4">
                 <!-- map -->
                 <div class="col-span-12 lg:col-span-6 w-full h-full">
-                    <iframe class="w-full h-full object-cover" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.689917234233!2d106.72432117546735!3d10.9867614552779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174da745643807b%3A0xc8e56f91fd61f757!2zQ8O0bmcgVHkgVHLhuqduIMSQ4bupYw!5e0!3m2!1svi!2s!4v1731330369530!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-full h-full object-cover" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.689917234233!2d106.72432117546735!3d10.9867614552779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174da745643807b%3A0xc8e56f91fd61f757!2zQ8O0bmcgVHkgVHLhuqduIMSQ4bupYw!5e0!3m2!1svi!2s!4v1731330369530!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="eager" title="TranDucLocation" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!-- form -->
                 <div class="col-span-12 lg:col-span-6 w-full h-full">
