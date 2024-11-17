@@ -63,7 +63,7 @@
                         src="/image/logo/Tranduc-Furnishings-compress.png"
                         aria-label="logo"
                         alt="logo"
-                        class="w-40 h-fit p-3"
+                        class="w-40 h-auto p-3"
                       ></NuxtImg>
                     </NuxtLink>
                   </li>
