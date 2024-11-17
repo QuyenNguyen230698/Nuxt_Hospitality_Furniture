@@ -9,6 +9,19 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
   ],
+  app:{
+    head:{
+      htmlAttrs:{
+        lang: 'en',
+      },
+      bodyAttrs:{},
+      script:[],
+      meta:[{charset:'utf-8'},{name:'viewport',content:'width=device-width, initial-scale=1'}],
+      link:[
+        {rel:'icon',type:'image/png',href:'/image/logo/Tranduc-Furnishings-compress.png'}
+      ]
+    }
+  },
   css: ['@/assets/css/main.css','@fortawesome/fontawesome-free/css/all.min.css'],
   devServer: {
     port: 3333,
