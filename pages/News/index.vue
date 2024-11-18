@@ -54,7 +54,7 @@
             <div class="flex w-full justify-end gap-2 py-2 container">
                 <div class="join">
                     <button class="join-item btn" @click="prevSlide">«</button>
-                    <button class="join-item btn">Page {{ currentSlide + 1 }}</button>
+                    <button class="join-item btn">{{ $t("app.ritz.page") }} {{ currentSlide + 1 }}</button>
                     <button class="join-item btn" @click="nextSlide">»</button>
                 </div>
             </div>
