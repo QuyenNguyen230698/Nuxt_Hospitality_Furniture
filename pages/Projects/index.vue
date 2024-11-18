@@ -36,7 +36,7 @@
       <!-- List Projects -->
       <div class="carousel w-full">
         <!-- data 1 -->
-        <div id="item1" class="carousel-item w-full">
+        <div v-if="currentPagination === 0" class="carousel-item w-full">
             <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 p-4 lg:container">
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden" 
                     v-for="project in test?.data" 
@@ -57,7 +57,7 @@
             </div>
         </div>
         <!-- data 2 -->
-        <div id="item2" class="carousel-item w-full">
+        <div v-if="currentPagination === 1" class="carousel-item w-full">
             <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 p-4 lg:container">
                 <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
                  v-for="project in test?.data2" :key="project.title">
@@ -75,10 +75,13 @@
             </div>
         </div>
         </div>
-        <!-- button -->
-        <div class="flex w-full justify-center gap-2 pb-2">
-        <NuxtLink aria-label="item1" to="#item1" class="btn btn-circle">1</NuxtLink>
-        <NuxtLink aria-label="item2" to="#item2" class="btn btn-circle">2</NuxtLink>
+        <!-- Pagination -->
+        <div class="flex w-full justify-end gap-2 py-2 container">
+                <div class="join">
+                    <button class="join-item btn" @click="prevSlidePagination">«</button>
+                    <button class="join-item btn">Page {{ currentPagination + 1 }}</button>
+                    <button class="join-item btn" @click="nextSlidePagination">»</button>
+                </div>
         </div>
     </div>
   </template>
@@ -120,8 +123,8 @@
 
   //#region slide logo communicate
 
-    // hàm slide logo communicate
-    const slideGroups = [];
+  // hàm slide logo communicate
+  const slideGroups = [];
   for (let i = 0; i < solution.length; i += 5) {
     slideGroups.push(solution.slice(i, i + 5));
   }
@@ -144,6 +147,17 @@
   let intervalId;
   //#endregion
 
+ //#region pagination
+ const currentPagination = ref(0);
+
+  const nextSlidePagination = () => {
+    currentPagination.value = (currentPagination.value + 1) % 2; // Assuming 2 slides
+  };
+
+  const prevSlidePagination = () => {
+    currentPagination.value = (currentPagination.value - 1 + 2) % 2; // Assuming 2 slides
+  };
+ //#endregion
   
   onMounted(() => {
     intervalId = setInterval(nextSlide, slideInterval);

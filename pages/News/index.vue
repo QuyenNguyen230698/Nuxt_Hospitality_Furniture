@@ -25,7 +25,7 @@
             <!-- list news -->
             <div class="carousel w-full h-full mt-10 overflow-hidden">
                 <!-- data 1 -->
-                <div id="item1" class="carousel-item w-full h-auto">
+                <div v-if="currentSlide === 0" class="carousel-item w-full h-auto">
                     <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center lg:container gap-5 overflow-hidden">
                         <div v-for="item in test?.data" :key="item.title" class="w-full h-full flex flex-col items-center justify-center">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <!-- data 2 -->
-                <div id="item2" class="carousel-item w-full h-auto">
+                <div v-if="currentSlide === 1" class="carousel-item w-full h-auto">
                     <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center lg:container gap-5 overflow-hidden">
                         <div v-for="item in test?.data2" :key="item.title" class="w-full h-full flex flex-col items-center justify-center">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
@@ -50,17 +50,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="flex w-full justify-end gap-2 py-2 container">
+                <div class="join">
+                    <button class="join-item btn" @click="prevSlide">«</button>
+                    <button class="join-item btn">Page {{ currentSlide + 1 }}</button>
+                    <button class="join-item btn" @click="nextSlide">»</button>
                 </div>
-                <div class="flex w-full justify-center gap-2 py-2">
-                <NuxtLink aria-label="item1" to="#item1" class="btn btn-circle">1</NuxtLink>
-                <NuxtLink aria-label="item2" to="#item2" class="btn btn-circle">2</NuxtLink>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
- import { ref, onMounted } from 'vue';
+ import { ref, onMounted, computed } from 'vue';
  const { locale } = useI18n();
 
  const news = ref(null);
@@ -69,6 +72,16 @@
     news.value = data
  }
  const test = computed(() => news?.value?.find(item => item.locale === locale.value));
+
+ const currentSlide = ref(0);
+
+ const nextSlide = () => {
+    currentSlide.value = (currentSlide.value + 1) % 2; // Assuming 2 slides
+};
+
+ const prevSlide = () => {
+    currentSlide.value = (currentSlide.value - 1 + 2) % 2; // Assuming 2 slides
+};
 
  onMounted(() => {
     payload();
