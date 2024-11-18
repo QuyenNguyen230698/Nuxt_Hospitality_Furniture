@@ -12,10 +12,10 @@
                 </div>
                 <div class="flex flex-col w-full md:w-1/2 h-full gap-5">
                     <div v-for="item in test?.data.slice(1, 6)" :key="item.title" class="flex flex-row w-full h-1/4 gap-4">
-                        <div class="h-full w-fit object-contain shrink">
+                        <div class="h-full w-1/4 md:w-1/3 lg:w-1/4 object-contain shrink">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full max-h-16 md:max-h-20 min-h-16 md:min-h-20 object-cover" loading="eager" quality="75"/>
                         </div>
-                        <div class="flex flex-col w-full h-full">
+                        <div class="flex flex-col w-3/4 md:w-2/3 lg:w-3/4 h-full">
                             <h2 class="text-sm md:text-base font-bold text-title-news cursor-pointer">{{ item.title }}</h2>
                             <p class="text-xs md:text-sm text-gray-400">{{ item.pdate }}</p>
                         </div>
