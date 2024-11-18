@@ -84,7 +84,7 @@
                       <label
                       @click="isCollapseOpen = !isCollapseOpen"
                         for="collapse-toggle"
-                        class="collapse-title py-1 px-0 min-h-0 text-base"
+                        class="collapse-title py-1 px-0 min-h-0 text-base font-normal"
                       >
                         {{ $t("app.menu.capabilities") }}
                         <i class="fa-solid fa-caret-down"></i>
