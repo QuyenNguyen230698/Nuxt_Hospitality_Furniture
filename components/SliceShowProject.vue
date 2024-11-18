@@ -14,7 +14,7 @@
                 <div><span class="text-3xl lg:text-5xl font-thin text-gray-300">+</span> <span class="text-3xl lg:text-5xl font-thin text-gray-300">400</span></div>
                 <div class="text-base md:text-xl lg:text-2xl font-thin text-gray-300">Hotel Furniture Projects</div>
               </div>
-              <div class="flex flex-col md:flex-row justify-center items-center gap-6 w-full">
+              <div class="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-6 w-full">
                 <button @click="showVideo=true" aria-label="factorytour" class="bg-none btn-hover hover:border-white hover:text-white transition-colors duration-300 border-2 w-3/5 md:w-1/3 lg:w-1/4 h-12 lg:h-14 text-lg leading-none border-orange-500 text-orange-500 rounded-md uppercase">{{ $t('app.sliceShow.factorytour') }}</button>
                 <button aria-label="capabilityprofile" class="transition-colors duration-300 border-2 w-3/5 md:w-1/3 lg:w-1/4 h-12 lg:h-14 text-lg leading-none btn-hover2 rounded-md uppercase"><NuxtLink to="/capabilityprofile">{{ $t('app.sliceShow.capabilityprofile') }}</NuxtLink></button>
               </div>
