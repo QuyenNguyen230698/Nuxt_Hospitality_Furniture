@@ -12,7 +12,7 @@
                 </div>
                 <div class="flex flex-col w-full md:w-1/2 h-full gap-5">
                     <div v-for="item in test?.data.slice(1, 6)" :key="item.title" class="flex flex-row w-full h-1/4 gap-4">
-                        <div class="h-full">
+                        <div class="h-full w-fit object-contain shrink">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full max-h-16 md:max-h-20 min-h-16 md:min-h-20 object-cover" loading="eager" quality="75"/>
                         </div>
                         <div class="flex flex-col w-full h-full">
