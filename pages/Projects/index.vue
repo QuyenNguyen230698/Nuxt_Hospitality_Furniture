@@ -76,11 +76,14 @@
         </div>
         </div>
         <!-- Pagination -->
-        <div class="flex w-full justify-end gap-2 py-2 container">
-                <div class="join">
-                    <button class="join-item btn" @click="prevSlidePagination">«</button>
-                    <button class="join-item btn">{{ $t("app.ritz.page") }} {{ currentPagination + 1 }}</button>
-                    <button class="join-item btn" @click="nextSlidePagination">»</button>
+        <div class="flex w-full justify-end gap-2 py-2 container ">
+                <div class="join bg-white">
+                    <button class="join-item btn btn-sm btn-outline" @click="prevSlidePagination" aria-label="prevslidepagination" :disabled="currentPagination === 0">«</button>
+                    <select class="join-item btn btn-sm btn-outline" v-model="currentPagination" @change="scrollToTop" aria-label="pagination">
+                        <option :value="0">{{ $t("app.ritz.page") }} 1</option>
+                        <option :value="1">{{ $t("app.ritz.page") }} 2</option>
+                    </select>
+                    <button class="join-item btn btn-sm btn-outline" @click="nextSlidePagination" aria-label="nextslidepagination" :disabled="currentPagination === 1">»</button>
                 </div>
         </div>
     </div>
@@ -152,20 +155,32 @@
 
   const nextSlidePagination = () => {
     currentPagination.value = (currentPagination.value + 1) % 2; // Assuming 2 slides
+    scrollToTop();
   };
 
   const prevSlidePagination = () => {
     currentPagination.value = (currentPagination.value - 1 + 2) % 2; // Assuming 2 slides
+    scrollToTop();
   };
  //#endregion
-  
+
+ const isVisible = ref(false)
+ const checkScroll = () => {
+  isVisible.value = window.pageYOffset > 300
+ }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   onMounted(() => {
     intervalId = setInterval(nextSlide, slideInterval);
     payload();
+    window.addEventListener('scroll', checkScroll)
   });
   
   onUnmounted(() => {
     clearInterval(intervalId);
+    window.removeEventListener('scroll', checkScroll)
   });
   useSeoMeta({
     title: 'Projects - Hospitality Furniture',
@@ -194,6 +209,12 @@
   }
   .color-title {
     color: #FFFFFF8A
+  }
+  .join-item:focus-visible {
+    outline: none;
+  }
+  .btn-outline {
+    border-color: transparent;
   }
   </style>
   

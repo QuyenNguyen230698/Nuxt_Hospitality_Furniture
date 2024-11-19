@@ -25,7 +25,7 @@
             <!-- list news -->
             <div class="carousel w-full h-full mt-10 overflow-hidden">
                 <!-- data 1 -->
-                <div v-if="currentSlide === 0" class="carousel-item w-full h-auto">
+                <div v-if="currentPagination === 0" class="carousel-item w-full h-auto">
                     <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center lg:container gap-5 overflow-hidden">
                         <div v-for="item in test?.data" :key="item.title" class="w-full h-full flex flex-col items-center justify-center">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <!-- data 2 -->
-                <div v-if="currentSlide === 1" class="carousel-item w-full h-auto">
+                <div v-if="currentPagination === 1" class="carousel-item w-full h-auto">
                     <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center lg:container gap-5 overflow-hidden">
                         <div v-for="item in test?.data2" :key="item.title" class="w-full h-full flex flex-col items-center justify-center">
                             <NuxtImg :src="item.src" alt="News image" aria-label="newsimage" class="w-full h-auto object-contain" loading="eager" quality="75"/>
@@ -51,11 +51,14 @@
                     </div>
                 </div>
             </div>
-            <div class="flex w-full justify-end gap-2 py-2 container">
-                <div class="join">
-                    <button class="join-item btn" @click="prevSlide">«</button>
-                    <button class="join-item btn">{{ $t("app.ritz.page") }} {{ currentSlide + 1 }}</button>
-                    <button class="join-item btn" @click="nextSlide">»</button>
+            <div class="flex w-full justify-end gap-2 py-2 container ">
+                <div class="join bg-white">
+                    <button class="join-item btn btn-sm btn-outline" @click="prevSlidePagination" aria-label="prevslidepagination" :disabled="currentPagination === 0">«</button>
+                    <select class="join-item btn btn-sm btn-outline" v-model="currentPagination" @change="scrollToTop" aria-label="pagination">
+                        <option :value="0">{{ $t("app.ritz.page") }} 1</option>
+                        <option :value="1">{{ $t("app.ritz.page") }} 2</option>
+                    </select>
+                    <button class="join-item btn btn-sm btn-outline" @click="nextSlidePagination" aria-label="nextslidepagination" :disabled="currentPagination === 1">»</button>
                 </div>
             </div>
         </div>
@@ -73,19 +76,33 @@
  }
  const test = computed(() => news?.value?.find(item => item.locale === locale.value));
 
- const currentSlide = ref(0);
+ //#region pagination
+ const currentPagination = ref(0);
 
- const nextSlide = () => {
-    currentSlide.value = (currentSlide.value + 1) % 2; // Assuming 2 slides
-};
+  const nextSlidePagination = () => {
+    currentPagination.value = (currentPagination.value + 1) % 2; // Assuming 2 slides
+    scrollToTop();
+  };
 
- const prevSlide = () => {
-    currentSlide.value = (currentSlide.value - 1 + 2) % 2; // Assuming 2 slides
-};
-
+  const prevSlidePagination = () => {
+    currentPagination.value = (currentPagination.value - 1 + 2) % 2; // Assuming 2 slides
+    scrollToTop();
+  };
+ //#endregion
+const isVisible = ref(false)
+ const checkScroll = () => {
+  isVisible.value = window.pageYOffset > 300
+ }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
  onMounted(() => {
     payload();
+    window.addEventListener('scroll', checkScroll)
  })
+ onUnmounted(() => {
+    window.removeEventListener('scroll', checkScroll)
+  });
  useSeoMeta({
     title: 'News - Hospitality Furniture',
     ogTitle: 'News - Hospitality Furniture',
@@ -111,4 +128,10 @@
 .text-title-news {
     color: #6D644B;
 }
+.join-item:focus-visible {
+    outline: none;
+  }
+  .btn-outline {
+    border-color: transparent;
+  }
 </style>
