@@ -106,7 +106,7 @@ const showVideo = ref(false);
   0% {
     transform: scale(1);
   }
-  98% {
+  50% {
     transform: scale(1.1);
   }
   100% {
@@ -114,6 +114,6 @@ const showVideo = ref(false);
   }
 }
 .scale-animation {
-    animation: scaleUp 3s infinite forwards; 
+    animation: scaleUp 6s infinite forwards; 
 }
 </style>
