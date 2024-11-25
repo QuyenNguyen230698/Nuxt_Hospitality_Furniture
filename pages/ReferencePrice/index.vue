@@ -258,10 +258,10 @@ const nightstand = [
     {src: '/image/ReferencePrice/NightStands/Detail/night4.jpg', alt: 'nightstand4',id:'night4'},
 ]
 const table = [
-    {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1',id:'table1'},
-    {src: '/image/ReferencePrice/Table/table2.jpg', alt: 'table2',id:'table2'},
-    {src: '/image/ReferencePrice/Table/table3.jpg', alt: 'table3',id:'table3'},
-    {src: '/image/ReferencePrice/Table/table4.jpg', alt: 'table4',id:'table4'},
+    {src: '/image/ReferencePrice/Table/table1.jpg', alt: 'table1',id:'desk1'},
+    {src: '/image/ReferencePrice/Table/table2.jpg', alt: 'table2',id:'table1'},
+    {src: '/image/ReferencePrice/Table/table3.jpg', alt: 'table3',id:'desk2'},
+    {src: '/image/ReferencePrice/Table/table4.jpg', alt: 'table4',id:'table2'},
 ]
 const sofas = [
     {src: '/image/ReferencePrice/Sofa/sofa1.jpg', alt: 'sofa1',id:'sofa1'},
@@ -270,10 +270,10 @@ const sofas = [
     {src: '/image/ReferencePrice/Sofa/sofa4.jpg', alt: 'sofa4',id:'sofa4'},
 ]
 const vanities = [
-    {src: '/image/ReferencePrice/Vanitis/vaniti1.jpg', alt: 'vanity1',id:'vanity1'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti2.jpg', alt: 'vanity2',id:'vanity2'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti3.jpg', alt: 'vanity3',id:'vanity3'},
-    {src: '/image/ReferencePrice/Vanitis/vaniti4.jpg', alt: 'vanity4',id:'vanity4'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti1.jpg', alt: 'vanitie1',id:'vanitie1'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti2.jpg', alt: 'vanitie2',id:'vanitie2'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti3.jpg', alt: 'vanitie3',id:'vanitie3'},
+    {src: '/image/ReferencePrice/Vanitis/vaniti4.jpg', alt: 'vanitie4',id:'vanitie4'},
 ]
 useSeoMeta({
     title: 'Reference Price - Hospitality Furniture',

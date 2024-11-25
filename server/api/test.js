@@ -781,9 +781,308 @@ export default defineEventHandler(async (event) => {
                     {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_7.jpg'}
                 ]
             },
-            {table: []},
-            {sofa: []},
-            {vanity: []}
+            {
+                alt: 'table1',
+                id: 'table1',
+                name: 'Bàn Console',
+                minPrice: 250,
+                maxPrice: 445,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_3.jpg'}
+                ]
+            },
+            {
+                alt: 'table2',
+                id: 'table2',
+                name: 'Bàn Tròn Bistro',
+                minPrice: 175,
+                maxPrice: 355,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_3.jpg'}
+                ]
+            },
+            {
+                alt: 'table3',
+                id: 'table3',
+                name: 'Bàn Oval',
+                minPrice: 225,
+                maxPrice: 435,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_4.jpg'}
+                ]
+            },
+            {
+                alt: 'table4',
+                id: 'table4',
+                name: 'Bàn Cà Phê',
+                minPrice: 235,
+                maxPrice: 455,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_4.jpg'}
+                ]
+            },
+            {
+                alt: 'table5',
+                id: 'table5',
+                name: 'Bàn Oval',
+                minPrice: 150,
+                maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_3.jpg'}
+                ]
+            },
+            {
+                alt: 'table6',
+                id: 'table6',
+                name: 'Bàn/ Bàn Làm Việc',
+                minPrice: 150,
+                maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_6.jpg'}
+                ]
+            },
+            {
+                alt: 'desk1',
+                id: 'desk1',
+                name: 'Bàn Làm Việc Có Kệ',
+                minPrice: 355,
+                maxPrice: 745,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_4.jpg'}
+                ]
+            },
+            {
+                alt: 'desk2',
+                id: 'desk2',
+                name: 'Bàn Làm Việc Có Mini Bar',
+                minPrice: 275,
+                maxPrice: 565,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_6.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_7.jpg'}
+                ]
+            },
+            {
+                alt: 'desk3',
+                id: 'desk3',
+                name: 'Bàn Làm Việc Có Kệ',
+                minPrice: 355,
+                maxPrice: 745,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_4.jpg'}
+                ]
+            },
+            {
+                alt: 'desk4',
+                id: 'desk4',
+                name: 'Bàn Làm Việc Có Tủ Kéo',
+                minPrice: 375,
+                maxPrice: 655,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_6.jpg'}
+                ]
+            },
+            {
+                alt: 'desk5',
+                id: 'desk5',
+                name: 'Bàn Làm Việc Có Hộc Tủ',
+                minPrice: 150,
+                maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_5.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa1',
+                id: 'sofa1',
+                name: 'Ghế Sofa Dài Khách Sạn - Hard Rock NYC',
+                minPrice: 205,
+                maxPrice: 385,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_4.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa2',
+                id: 'sofa2',
+                name: 'Ghế Sofa Ottoman Khách Sạn - C2 Hotel Orlando',
+                minPrice: 175,
+                maxPrice: 295,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_3.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa3',
+                id: 'sofa3',
+                name: 'Ghế Sofa Hoặc Ghế Kê Chân Khách Sạn',
+                minPrice: 245,
+                maxPrice: 425,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa3/sofa3_1.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa4',
+                id: 'sofa4',
+                name: 'Ghế Sofa Dài Có Giường Khách Sạn',
+                minPrice: 245,
+                maxPrice: 615,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_4.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_5.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa5',
+                id: 'sofa5',
+                name: 'Ghế Khách Sạn Hoặc Ghế Để Hành Lý',
+                minPrice: 115,
+                maxPrice: 325,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_4.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa6',
+                id: 'sofa6',
+                name: 'Ghế Cao Quầy Khách Sạn',
+                minPrice: 65,
+                maxPrice: 155,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_4.jpg'}
+                ]
+            },
+            {
+                alt: 'sofa7',
+                id: 'sofa7',
+                name: 'Ghế Đẩu Khách Sạn',
+                minPrice: 75,
+                maxPrice: 195,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_4.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_5.jpg'}
+                ]
+            },
+            {
+                alt: 'vanitie1',
+                id: 'vanitie1',
+                name: 'Bàn Trang Điểm Phòng Khách Sạn',
+                minPrice: 385,
+                maxPrice: 715,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_3.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_4.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_5.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_6.jpg'}
+                ]
+            },
+            {
+                alt: 'vanitie2',
+                id: 'vanitie2',
+                name: 'Bàn Trang Điểm Phòng Khách Sạn',
+                minPrice: 345,
+                maxPrice: 625,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_3.jpg'}
+                ]
+            },
+            {
+                alt: 'vanitie3',
+                id: 'vanitie3',
+                name: 'Bàn Trang Điểm Phòng Khách Sạn',
+                minPrice: 285,
+                maxPrice: 395,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_3.jpg'}
+                ]
+            },
+            {
+                alt: 'vanitie4',
+                id: 'vanitie4',
+                name: 'Bàn Trang Điểm Phòng Khách Sạn',
+                minPrice: 275,
+                maxPrice: 445,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_3.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_4.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_5.jpg'}
+                ]
+            },
+            {
+                alt: 'vanitie5',
+                id: 'vanitie5',
+                name: 'Bàn Trang Điểm Phòng Khách Sạn',
+                minPrice: 245,
+                maxPrice: 515,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_3.jpg'}
+                ]
+            }
         ]
         },
         {
@@ -1517,9 +1816,193 @@ export default defineEventHandler(async (event) => {
                     {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_7.jpg'}
                 ]
             },
-            {table:[]},
-            {sofa:[]},
-            {vanity:[]},
+            {alt: 'table1', id: 'table1', name: 'Console Table', minPrice: 250, maxPrice: 445,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table1/table1_3.jpg'}
+                ]
+            },
+            {alt: 'table2', id: 'table2', name: 'Bistro Round Table', minPrice: 175, maxPrice: 355,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table2/table2_3.jpg'}
+                ]
+            },
+            {alt: 'table3', id: 'table3', name: 'Oval Table', minPrice: 225, maxPrice: 435,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table3/table3_4.jpg'}
+                ]
+            },
+            {alt: 'table4', id: 'table4', name: 'Coffee Table', minPrice: 235, maxPrice: 455,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table4/table4_4.jpg'}
+                ]
+            },
+            {alt: 'table5', id: 'table5', name: 'Oval Table', minPrice: 150, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table5/table5_3.jpg'}
+                ]
+            },
+            {alt: 'table6', id: 'table6', name: 'Table / Desk', minPrice: 150, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/table6/table6_6.jpg'}
+                ]
+            },
+            {alt: 'desk1', id: 'desk1', name: 'Desk Credenza', minPrice: 355, maxPrice: 745,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk1/desk1_4.jpg'}
+                ]
+            },
+            {alt: 'desk2', id: 'desk2', name: 'Desk with Mini Bar', minPrice: 275, maxPrice: 565,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_6.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk2/desk2_7.jpg'}
+                ]
+            },
+            {alt: 'desk3', id: 'desk3', name: 'Desk Credenza', minPrice: 355, maxPrice: 745,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk3/desk3_4.jpg'}
+                ]
+            },
+            {alt: 'desk4', id: 'desk4', name: 'Desk with Dresser', minPrice: 375, maxPrice: 655,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_5.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk4/desk4_6.jpg'}
+                ]
+            },
+            {alt: 'desk5', id: 'desk5', name: 'Desk with Hutch', minPrice: 150, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_1.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_2.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_3.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_4.jpg'},
+                    {src: '/image/ReferencePrice/Table/Detail/desk5/desk5_5.jpg'}
+                ]
+            },
+            {alt: 'sofa1', id: 'sofa1', name: 'Hotel Banquette Sofa Chair - Hard Rock NYC', minPrice: 205, maxPrice: 385,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa1/sofa1_4.jpg'}
+                ]
+            },
+            {alt: 'sofa2', id: 'sofa2', name: 'Hotel Sofa Ottoman - C2 Hotel Orlando', minPrice: 175, maxPrice: 295,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa2/sofa2_3.jpg'}
+                ]
+            },
+            {alt: 'sofa3', id: 'sofa3', name: 'Hotel Sofa Chair or Bed Bench', minPrice: 245, maxPrice: 425,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa3/sofa3_1.jpg'}
+                ]
+            },
+            {alt: 'sofa4', id: 'sofa4', name: 'Hotel Sofa Chair Daybed', minPrice: 245, maxPrice: 615,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_4.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa4/sofa4_5.jpg'}
+                ]
+            },
+            {alt: 'sofa5', id: 'sofa5', name: 'Hotel Chair Luggage Bench', minPrice: 115, maxPrice: 325,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa5/sofa5_4.jpg'}
+                ]
+            },
+            {alt: 'sofa6', id: 'sofa6', name: 'Hotel Chair Counter Stool', minPrice: 65, maxPrice: 155,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa6/sofa6_4.jpg'}
+                ]
+            },
+            {alt: 'sofa7', id: 'sofa7', name: 'Hotel Chair Stool', minPrice: 75, maxPrice: 195,
+                img: [
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_1.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_2.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_3.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_4.jpg'},
+                    {src: '/image/ReferencePrice/Sofa/Detail/sofa7/sofa7_5.jpg'}
+                ]
+            },
+            {alt: 'vanitie1', id: 'vanitie1', name: 'Hotel Guest Room Vanity', minPrice: 385, maxPrice: 715,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_3.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_4.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_5.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie1/vanitie1_6.jpg'}
+                ]
+            },
+            {alt: 'vanitie2', id: 'vanitie2', name: 'Hotel Guest Room Vanity', minPrice: 345, maxPrice: 625,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie2/vanitie2_3.jpg'}
+                ]
+            },
+            {alt: 'vanitie3', id: 'vanitie3', name: 'Hotel Guest Room Vanity', minPrice: 285, maxPrice: 395,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie3/vanitie3_3.jpg'}
+                ]
+            },
+            {alt: 'vanitie4', id: 'vanitie4', name: 'Hotel Guest Room Vanity', minPrice: 275, maxPrice: 445,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_3.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_4.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie4/vanitie4_5.jpg'}
+                ]
+            },
+            {alt: 'vanitie5', id: 'vanitie5', name: 'Hotel Guest Room Vanity', minPrice: 245, maxPrice: 515,
+                img: [
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_1.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_2.jpg'},
+                    {src: '/image/ReferencePrice/Vanitis/Detail/vanitie5/vanitie5_3.jpg'}
+                ]
+            }
         ]
         }
     ]

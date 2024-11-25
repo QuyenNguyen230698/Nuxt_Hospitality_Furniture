@@ -42,7 +42,7 @@
               <p class="text-gray-400 text-xs md:text-sm lg:text-base font-thin">{{ $t('app.process.port') }}</p>
               <p class="text-gray-400 text-xs md:text-sm lg:text-base font-thin">{{ $t('app.process.moq') }}</p>
               <p class="text-white bg-process text-xs md:text-sm lg:text-base font-thin py-2">{{ $t('app.process.price') }} ${{ project?.minPrice }} - ${{ project?.maxPrice }}</p>
-              <nuxt-link to="/contact" aria-label="contact" class="text-white bg-orange-500 border border-orange-500 rounded hover:border-white text-sm md:text-base lg:text-lg px-5 py-2">
+              <nuxt-link to="/contact" aria-label="contact" class="text-white bg-orange-500 border border-orange-500 rounded hover:border-white hover:bg-orange-400 text-sm md:text-base lg:text-lg px-5 py-2">
                 <span><i aria-hidden="true" class="fas fa-briefcase text-white"></i></span>
                 {{ $t('app.process.quotation') }}
               </nuxt-link>
