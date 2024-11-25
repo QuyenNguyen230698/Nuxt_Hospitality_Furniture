@@ -238,6 +238,82 @@ export default defineEventHandler(async (event) => {
                     img:[{src:'/image/project/detailProducts/Hilton/product1.jpg'},
                         {src:'/image/project/detailProducts/Hilton/product2.jpg'},
                     ]},
+        ],
+        data4: [
+            {alt: 'king1', id: 'king1', name: 'Bộ giường khách sạn King Room', minPrice: 315, maxPrice: 545,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king2.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king3.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king4.jpg'}
+                ]
+            },
+            {alt: 'king2', id: 'king2', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 275, maxPrice: 495,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king2.jpg'}]
+            },
+            {alt: 'king3', id: 'king3', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 345, maxPrice: 575,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king3.jpg'}]
+            },
+            {alt: 'king4', id: 'king4', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 295, maxPrice: 615,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king4.jpg'}]
+            },
+            {alt: 'king5', id: 'king5', name: 'Đầu giường King - Khách sạn Hilton Myrtle Beach Resort', minPrice: 345, maxPrice: 525,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king5.jpg'}]
+            },
+            {alt: 'king6', id: 'king6', name: 'Đầu giường King - Suite cao cấp Hyatt Regency Morristown', minPrice: 445, maxPrice: 765,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king6.jpg'}]
+            },
+            {alt: 'king7', id: 'king7', name: 'Đầu giường King', minPrice: 275, maxPrice: 535,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king7.jpg'}]
+            },
+            {alt: 'king8', id: 'king8', name: 'Đầu giường King - Choctaw Durant', minPrice: 345, maxPrice: 625,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king8.jpg'}]
+            },
+            {alt: 'king9', id: 'king9', name: 'Đầu giường King', minPrice: 315, maxPrice: 555,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king10.jpg'}]
+            },
+            {alt: 'king11', id: 'king11', name: 'Đầu giường King', minPrice: 245, maxPrice: 550,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king11.jpg'}]
+            },
+            {alt: 'king12', id: 'king12', name: 'Đầu giường King - 54117', minPrice: 145, maxPrice: 425,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king12.jpg'}]
+            },
+            {alt: 'queen1', id: 'queen1', name: 'Đầu giường đôi Queen', minPrice: 345, maxPrice: 715,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg'}]
+            },
+            {alt: 'queen2', id: 'queen2', name: 'Đầu giường đôi Queen', minPrice: 365, maxPrice: 735,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg'}]
+            },
+            {alt: 'queen3', id: 'queen3', name: 'Đầu giường đôi Queen', minPrice: 345, maxPrice: 675,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg'}]
+            },
+            {alt: 'queen4', id: 'queen4', name: 'Đầu giường đôi Queen', minPrice: 365, maxPrice: 745,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg'}]
+            },
+            {alt: 'queen5', id: 'queen5', name: 'Đầu giường đôi Queen', minPrice: 335, maxPrice: 755,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg'}]
+            },
+            {alt: 'queen6', id: 'queen6', name: 'Đầu giường đôi Queen', minPrice: 375, maxPrice: 725,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg'}]
+            },
+            {alt: 'bed1', id: 'bed1', name: 'Bộ giường khách sạn', minPrice: 645, maxPrice: 955,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg'}]
+            },
+            {alt: 'bed2', id: 'bed2', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 635, maxPrice: 955,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg'}]
+            },
+            {alt: 'bed3', id: 'bed3', name: 'Bộ giường khách sạn - Đầu giường và phòng ngủ', minPrice: 625, maxPrice: 875,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg'}]
+            },
+            {alt: 'bed4', id: 'bed4', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 750, maxPrice: 1150,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg'}]
+            },
+            {cabinet: []},
+            {closet: []},
+            {tv: []},
+            {nightstand: []},
+            {table: []},
+            {sofa: []},
+            {vanity: []}
         ]
         },
         {
@@ -452,6 +528,82 @@ export default defineEventHandler(async (event) => {
                 img:[{src:'/image/project/detailProducts/Hilton/product1.jpg'},
                     {src:'/image/project/detailProducts/Hilton/product2.jpg'},
                 ]},
+        ],
+        data4:[
+            {alt: 'king1',id:'king1',name:'Hotel Guest Room Bed Set',minPrice:315, maxPrice:545,
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king2.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king3.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king4.jpg'}
+                ]
+             },
+            {alt: 'king2',id:'king2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:275, maxPrice:495,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king2.jpg'}]
+            },
+            {alt: 'king3',id:'king3',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:345, maxPrice:575,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king3.jpg'}]
+            },
+            {alt: 'king4',id:'king4',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:295, maxPrice:615,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king4.jpg'}]
+            },
+            {alt: 'king5',id:'king5',name:'King Headboard - Hilton Myrtle Beach Resort',minPrice:345, maxPrice:525,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king5.jpg'}]
+            },
+            {alt: 'king6',id:'king6',name:'King Headboard Premiere Suite - Hyatt Regency Morristown',minPrice:445, maxPrice:765,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king6.jpg'}]
+            },
+            {alt: 'king7',id:'king7',name:'King Headboard',minPrice:275, maxPrice:535,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king7.jpg'}]
+            },
+            {alt: 'king8',id:'king8',name:'King Headboard - Choctaw Durant',minPrice:345, maxPrice:625,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king8.jpg'}]
+            },
+            {alt: 'king9',id:'king9',name:'King Headboard',minPrice:315, maxPrice:555,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king10.jpg'}]
+            },
+            {alt: 'king11',id:'king11',name:'King Headboard',minPrice:245, maxPrice:550,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king11.jpg'}]
+            },
+            {alt: 'king12',id:'king12',name:'King Headboard - 54117',minPrice:145, maxPrice:425,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king12.jpg'}]
+            },
+            {alt: 'queen1',id:'queen1',name:'Double Queen Headboard',minPrice:345, maxPrice:715,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg'}]
+            },
+            {alt: 'queen2',id:'queen2',name:'Double Queen Headboard',minPrice:365, maxPrice:735,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg'}]
+            },
+            {alt: 'queen3',id:'queen3',name:'Double Queen Headboard',minPrice:345, maxPrice:675,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg'}]
+            },
+            {alt: 'queen4',id:'queen4',name:'Double Queen Headboard',minPrice:365, maxPrice:745,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg'}]
+            },
+            {alt: 'queen5',id:'queen5',name:'Double Queen Headboard',minPrice:335, maxPrice:755,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg'}]
+            },
+            {alt: 'queen6',id:'queen6',name:'Double Queen Headboard',minPrice:375, maxPrice:725,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg'}]
+            },
+            {alt: 'bed1',id:'bed1',name:'Hotel Guest Room Bed Set',minPrice:645, maxPrice:955,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg'}]
+            },
+            {alt: 'bed2',id:'bed2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:635, maxPrice:955,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg'}]
+            },
+            {alt: 'bed3',id:'bed3',name:'Hotel Guest Room Bed Set - Headboard & Bedroom',minPrice:625, maxPrice:875,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg'}]
+            },
+            {alt: 'bed4',id:'bed4',name:'Hotel Guest Room Bed Set - Headboard & Bedbase',minPrice:750, maxPrice:1150,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg'}]
+            },
+            {cabinet:[]},
+            {closet:[]},
+            {tv:[]},
+            {nightstand:[]},
+            {table:[]},
+            {sofa:[]},
+            {vanity:[]},
         ]
         }
     ]

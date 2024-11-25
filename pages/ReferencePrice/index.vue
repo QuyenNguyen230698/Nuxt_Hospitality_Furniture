@@ -228,10 +228,10 @@ const categories = [
     {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity', link: '/referenceprice/vanities'},
 ]
 const bedBase = [
-    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bedbase1',id:'king1'},
-    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bedbase2',id:'king2'},
-    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bedbase3',id:'king3'},
-    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bedbase4',id:'king4'},
+    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bed1',id:'bedBase1',name:'Hotel Guest Room Bed Set'},
+    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bed2',id:'bedBase2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase'},
+    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bed3',id:'bedBase3',name:'Hotel Guest Room Bed Set - Headboard & Bedroom'},
+    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bed4',id:'bedBase4',name:'Hotel Guest Room Bed Set - Headboard & Bedbase'},
 ]
 const cabinet = [
     {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1',id:'cabinet1'},
