@@ -241,76 +241,546 @@ export default defineEventHandler(async (event) => {
         ],
         data4: [
             {alt: 'king1', id: 'king1', name: 'Bộ giường khách sạn King Room', minPrice: 315, maxPrice: 545,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king2.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king3.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king4.jpg'}
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1_1.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_2.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_3.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_4.jpg'}
                 ]
             },
             {alt: 'king2', id: 'king2', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 275, maxPrice: 495,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king2.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king2/king2_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_4.jpg'}
+                ]
             },
             {alt: 'king3', id: 'king3', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 345, maxPrice: 575,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king3.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king3/king3_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_4.jpg'}
+                ]
             },
             {alt: 'king4', id: 'king4', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 295, maxPrice: 615,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king4.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king4/king4_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king4/king4_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king4/king4_3.jpg'}
+                ]
             },
             {alt: 'king5', id: 'king5', name: 'Đầu giường King - Khách sạn Hilton Myrtle Beach Resort', minPrice: 345, maxPrice: 525,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king5.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king5/king5_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_4.jpg'}
+                ]
             },
             {alt: 'king6', id: 'king6', name: 'Đầu giường King - Suite cao cấp Hyatt Regency Morristown', minPrice: 445, maxPrice: 765,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king6.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king6/king6_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king6/king6_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king6/king6_3.jpg'}
+                ]
             },
             {alt: 'king7', id: 'king7', name: 'Đầu giường King', minPrice: 275, maxPrice: 535,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king7.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king7/king7_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_5.jpg'}
+                ]
             },
             {alt: 'king8', id: 'king8', name: 'Đầu giường King - Choctaw Durant', minPrice: 345, maxPrice: 625,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king8.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king8/king8_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king8/king8_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king8/king8_3.jpg'}
+                ]
             },
             {alt: 'king9', id: 'king9', name: 'Đầu giường King', minPrice: 315, maxPrice: 555,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king10.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king9/king9_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king9/king9_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king9/king9_3.jpg'}
+                ]
+            },
+            {alt: 'king10',id:'king10',name:'Đầu giường King',minPrice:225, maxPrice:485,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king10/king10_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_4.jpg'}
+                ]
             },
             {alt: 'king11', id: 'king11', name: 'Đầu giường King', minPrice: 245, maxPrice: 550,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king11.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king11/king11_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king11/king11_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king11/king11_3.jpg'}
+                ]
             },
             {alt: 'king12', id: 'king12', name: 'Đầu giường King - 54117', minPrice: 145, maxPrice: 425,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king12.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king12/king12_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king12/king12_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/king12/king12_3.jpg'}
+                ]
             },
             {alt: 'queen1', id: 'queen1', name: 'Đầu giường đôi Queen', minPrice: 345, maxPrice: 715,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_4.jpg'}
+                ]
             },
             {alt: 'queen2', id: 'queen2', name: 'Đầu giường đôi Queen', minPrice: 365, maxPrice: 735,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_5.jpg'}
+                ]
             },
             {alt: 'queen3', id: 'queen3', name: 'Đầu giường đôi Queen', minPrice: 345, maxPrice: 675,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_3.jpg'}
+                ]
             },
             {alt: 'queen4', id: 'queen4', name: 'Đầu giường đôi Queen', minPrice: 365, maxPrice: 745,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_4.jpg'}
+                ]
             },
             {alt: 'queen5', id: 'queen5', name: 'Đầu giường đôi Queen', minPrice: 335, maxPrice: 755,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_4.jpg'}
+                ]
             },
             {alt: 'queen6', id: 'queen6', name: 'Đầu giường đôi Queen', minPrice: 375, maxPrice: 725,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_4.jpg'}
+                ]
             },
             {alt: 'bed1', id: 'bed1', name: 'Bộ giường khách sạn', minPrice: 645, maxPrice: 955,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_5.jpg'}
+                ]
             },
             {alt: 'bed2', id: 'bed2', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 635, maxPrice: 955,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_5.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_6.jpg'}
+                ]
             },
             {alt: 'bed3', id: 'bed3', name: 'Bộ giường khách sạn - Đầu giường và phòng ngủ', minPrice: 625, maxPrice: 875,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_4.jpg'}
+                ]
             },
             {alt: 'bed4', id: 'bed4', name: 'Bộ giường khách sạn - Đầu giường và chân giường', minPrice: 750, maxPrice: 1150,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_4.jpg'}
+                ]
             },
-            {cabinet: []},
-            {closet: []},
-            {tv: []},
-            {nightstand: []},
+            {
+                alt: 'cabinet1', id: 'cabinet1', name: 'Bệ Tivi và Tủ Dresser', minPrice: 400, maxPrice: 720,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_5.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet2', id: 'cabinet2', name: 'Tủ Dresser Suite', minPrice: 450, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_4.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet3', id: 'cabinet3', name: 'Tủ Lưu Trữ', minPrice: 350, maxPrice: 750,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_6.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet4', id: 'cabinet4', name: 'Tủ Credenza Phòng Khách', minPrice: 355, maxPrice: 745,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_4.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet5', id: 'cabinet5', name: 'Tủ Dresser Credenza & Mini Bar', minPrice: 365, maxPrice: 625,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_6.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet6', id: 'cabinet6', name: 'Tủ Dresser Tivi', minPrice: 335, maxPrice: 675,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_5.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet7', id: 'cabinet7', name: 'Tủ Dresser Low Bar Với Ngăn Kéo', minPrice: 350, maxPrice: 650,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_6.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_7.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet8', id: 'cabinet8', name: 'Tủ Giải Trí Phòng Ngủ', minPrice: 345, maxPrice: 635,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_4.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet9', id: 'cabinet9', name: 'Tủ Dresser Tủ Lạnh', minPrice: 275, maxPrice: 625,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_6.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet10', id: 'cabinet10', name: 'Tủ Dresser & Mini Bar - InterContinental Boston', minPrice: 375, maxPrice: 715,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_6.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet11', id: 'cabinet11', name: 'Tủ Dresser Tivi Kèm Ghế Dài', minPrice: 315, maxPrice: 685,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_6.jpg'}
+                ]
+            },
+            {
+                alt: 'cabinet12', id: 'cabinet12', name: 'Tủ Dresser Có Ngăn Kéo', minPrice: 350, maxPrice: 650,
+                img: [
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_5.jpg'}
+                ]
+            },
+            {alt: 'closet1', id: 'closet1', name: 'Tủ Quần Áo Hai Cánh', minPrice: 750, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_5.jpg'}
+                ]
+            },
+            {alt: 'closet2', id: 'closet2', name: 'Tủ Quần Áo Hai Cánh, Tấm Gỗ & Tủ Ngăn Kéo', minPrice: 700, maxPrice: 1000,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_6.jpg'}
+                ]
+            },
+            {alt: 'closet3', id: 'closet3', name: 'Tủ Quần Áo Hai Cánh, Tủ Bar, Tường TV & Tủ Đồ Giải Khát', minPrice: 750, maxPrice: 1050,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_5.jpg'}
+                ]
+            },
+            {alt: 'closet4', id: 'closet4', name: 'Tủ Quần Áo Hai Cánh', minPrice: 550, maxPrice: 800,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_6.jpg'}
+                ]
+            },
+            {alt: 'closet5', id: 'closet5', name: 'Tủ Quần Áo Hai Cánh hoặc Tủ Suite & Mini Bar', minPrice: 550, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_6.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_7.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_8.jpg'}
+                ]
+            },
+            {alt: 'closet6', id: 'closet6', name: 'Tủ Quần Áo Hai Cánh', minPrice: 550, maxPrice: 750,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_5.jpg'}
+                ]
+            },
+            {alt: 'closet7', id: 'closet7', name: 'Tủ Quần Áo Hai Cánh & Tủ Ngăn Kéo', minPrice: 750, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_5.jpg'}
+                ]
+            },
+            {alt: 'closet8', id: 'closet8', name: 'Tủ Quần Áo, Tủ Armoire & Tủ Bar Hai Cánh', minPrice: 650, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_5.jpg'}
+                ]
+            },
+            {alt: 'closet9', id: 'closet9', name: 'Tủ Quần Áo Hai Cánh', minPrice: 550, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_6.jpg'}
+                ]
+            },
+            {alt: 'tv1', id: 'tv1', name: 'Kệ TV tích hợp quầy bar mini', minPrice: 550, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_6.jpg'}
+                ]
+            },
+            {alt: 'tv2', id: 'tv2', name: 'Kệ TV với tủ ngăn kéo', minPrice: 550, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_4.jpg'}
+                ]
+            },
+            {alt: 'tv3', id: 'tv3', name: 'Kệ TV với tấm ốp tường F209 - 54607', minPrice: 465, maxPrice: 815,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_6.jpg'}
+                ]
+            },
+            {alt: 'tv4', id: 'tv4', name: 'Kệ TV với tủ ngăn kéo', minPrice: 395, maxPrice: 765,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_4.jpg'}
+                ]
+            },
+            {alt: 'tv5', id: 'tv5', name: 'Kệ TV kết hợp bàn làm việc', minPrice: 375, maxPrice: 725,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_5.jpg'}
+                ]
+            },
+            {alt: 'tv6', id: 'tv6', name: 'Kệ TV đặt sàn với bàn Halo', minPrice: 450, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_6.jpg'}
+                ]
+            },
+            {alt: 'night1', id: 'night1', name: 'Tủ đầu giường có ngăn kéo', minPrice: 150, maxPrice: 375,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_5.jpg'}
+                ]
+            },
+            {alt: 'night2', id: 'night2', name: 'Tủ đầu giường tròn có ngăn kéo', minPrice: 135, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_5.jpg'}
+                ]
+            },
+            {alt: 'night3', id: 'night3', name: 'Tủ đầu giường có ngăn kéo', minPrice: 85, maxPrice: 275,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_5.jpg'}
+                ]
+            },
+            {alt: 'night4', id: 'night4', name: 'Tủ đầu giường mặt đá', minPrice: 125, maxPrice: 345,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_3.jpg'}
+                ]
+            },
+            {alt: 'night5', id: 'night5', name: 'Tủ đầu giường có ngăn kéo', minPrice: 150, maxPrice: 300,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_5.jpg'}
+                ]
+            },
+            {alt: 'night6', id: 'night6', name: 'Tủ đầu giường có ngăn kéo', minPrice: 85, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_4.jpg'}
+                ]
+            },
+            {alt: 'night7', id: 'night7', name: 'Tủ đầu giường có ngăn kéo', minPrice: 100, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_5.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_6.jpg'}
+                ]
+            },
+            {alt: 'night8', id: 'night8', name: 'Tủ đầu giường có ngăn kéo', minPrice: 85, maxPrice: 225,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_5.jpg'}
+                ]
+            },
+            {alt: 'night9', id: 'night9', name: 'Tủ đầu giường mặt đá và ngăn kéo', minPrice: 125, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_5.jpg'}
+                ]
+            },
+            {alt: 'night10', id: 'night10', name: 'Tủ đầu giường', minPrice: 100, maxPrice: 285,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_4.jpg'}
+                ]
+            },
+            {alt: 'night11', id: 'night11', name: 'Tủ đầu giường tròn có ngăn kéo', minPrice: 100, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_5.jpg'}
+                ]
+            },
+            {alt: 'night12', id: 'night12', name: 'Tủ đầu giường có ngăn kéo', minPrice: 85, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_5.jpg'}
+                ]
+            },
+            {alt: 'night13', id: 'night13', name: 'Tủ đầu giường hoặc bàn cạnh', minPrice: 100, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_3.jpg'}
+                ]
+            },
+            {alt: 'night14', id: 'night14', name: 'Tủ đầu giường có ngăn kéo', minPrice: 200, maxPrice: 450,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_5.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_6.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_7.jpg'}
+                ]
+            },
             {table: []},
             {sofa: []},
             {vanity: []}
@@ -531,76 +1001,522 @@ export default defineEventHandler(async (event) => {
         ],
         data4:[
             {alt: 'king1',id:'king1',name:'Hotel Guest Room Bed Set',minPrice:315, maxPrice:545,
-                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king2.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king3.jpg'},
-                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king4.jpg'}
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/king1/king1_1.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_2.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_3.jpg'},
+                      {src: '/image/ReferencePrice/BedBase/Detail/king1/king1_4.jpg'}
                 ]
              },
             {alt: 'king2',id:'king2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:275, maxPrice:495,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king2.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king2/king2_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king2/king2_4.jpg'}
+                ]
             },
             {alt: 'king3',id:'king3',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:345, maxPrice:575,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king3.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king3/king3_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king3/king3_4.jpg'}
+                ]
             },
             {alt: 'king4',id:'king4',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:295, maxPrice:615,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king4.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king4/king4_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king4/king4_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king4/king4_3.jpg'}
+                ]
             },
             {alt: 'king5',id:'king5',name:'King Headboard - Hilton Myrtle Beach Resort',minPrice:345, maxPrice:525,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king5.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king5/king5_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king5/king5_4.jpg'}
+                ]
             },
             {alt: 'king6',id:'king6',name:'King Headboard Premiere Suite - Hyatt Regency Morristown',minPrice:445, maxPrice:765,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king6.jpg'}]
+                    img:[{src: '/image/ReferencePrice/BedBase/Detail/king6/king6_1.jpg'},
+                        {src: '/image/ReferencePrice/BedBase/Detail/king6/king6_2.jpg'},
+                        {src: '/image/ReferencePrice/BedBase/Detail/king6/king6_3.jpg'}
+                    ]
             },
             {alt: 'king7',id:'king7',name:'King Headboard',minPrice:275, maxPrice:535,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king7.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king7/king7_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_4.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king7/king7_5.jpg'}
+                ]
             },
             {alt: 'king8',id:'king8',name:'King Headboard - Choctaw Durant',minPrice:345, maxPrice:625,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king8.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king8/king8_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king8/king8_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king8/king8_3.jpg'}
+                ]
             },
             {alt: 'king9',id:'king9',name:'King Headboard',minPrice:315, maxPrice:555,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king10.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king9/king9_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king9/king9_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king9/king9_3.jpg'}
+                ]
+            },
+            {alt: 'king10',id:'king10',name:'King Headboard',minPrice:225, maxPrice:485,
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king10/king10_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_3.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king10/king10_4.jpg'}
+                ]
             },
             {alt: 'king11',id:'king11',name:'King Headboard',minPrice:245, maxPrice:550,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king11.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king11/king11_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king11/king11_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king11/king11_3.jpg'}
+                ]
             },
             {alt: 'king12',id:'king12',name:'King Headboard - 54117',minPrice:145, maxPrice:425,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/king12.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/king12/king12_1.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king12/king12_2.jpg'},
+                     {src: '/image/ReferencePrice/BedBase/Detail/king12/king12_3.jpg'}
+                ]
             },
             {alt: 'queen1',id:'queen1',name:'Double Queen Headboard',minPrice:345, maxPrice:715,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen1.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen1/queen1_4.jpg'}
+                ]
             },
             {alt: 'queen2',id:'queen2',name:'Double Queen Headboard',minPrice:365, maxPrice:735,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen2.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen2/queen2_5.jpg'}
+                ]
             },
             {alt: 'queen3',id:'queen3',name:'Double Queen Headboard',minPrice:345, maxPrice:675,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen3.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen3/queen3_3.jpg'}
+                ]
             },
             {alt: 'queen4',id:'queen4',name:'Double Queen Headboard',minPrice:365, maxPrice:745,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen4.jpg'}]
+                img: [{src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen4/queen4_4.jpg'}
+                ]
             },
             {alt: 'queen5',id:'queen5',name:'Double Queen Headboard',minPrice:335, maxPrice:755,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen5.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen5/queen5_4.jpg'}
+                ]
             },
             {alt: 'queen6',id:'queen6',name:'Double Queen Headboard',minPrice:375, maxPrice:725,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen6.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/queen6/queen6_4.jpg'}
+                ]
             },
             {alt: 'bed1',id:'bed1',name:'Hotel Guest Room Bed Set',minPrice:645, maxPrice:955,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed1.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed1/bed1_5.jpg'}
+                ]
             },
             {alt: 'bed2',id:'bed2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase',minPrice:635, maxPrice:955,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed2.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_4.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_5.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed2/bed2_6.jpg'}
+                ]
             },
             {alt: 'bed3',id:'bed3',name:'Hotel Guest Room Bed Set - Headboard & Bedroom',minPrice:625, maxPrice:875,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed3.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed3/bed3_4.jpg'}
+                ]
             },
             {alt: 'bed4',id:'bed4',name:'Hotel Guest Room Bed Set - Headboard & Bedbase',minPrice:750, maxPrice:1150,
-                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed4.jpg'}]
+                img:[{src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_1.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_2.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_3.jpg'},
+                    {src: '/image/ReferencePrice/BedBase/Detail/bed4/bed4_4.jpg'}
+                ]
             },
-            {cabinet:[]},
-            {closet:[]},
-            {tv:[]},
-            {nightstand:[]},
+            {alt: 'cabinet1',id:'cabinet1',name:'Dresser TV Console Base',minPrice:400, maxPrice:720,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet1/cabinet1_5.jpg'}
+                ]
+            },
+            {alt: 'cabinet2',id:'cabinet2',name:'Dresser Suite',minPrice:450, maxPrice:850,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet2/cabinet2_4.jpg'}
+                ]
+            },
+            {alt: 'cabinet3',id:'cabinet3',name:'Storage Cabinet',minPrice:350, maxPrice:750,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet3/cabinet3_6.jpg'}
+                ]
+            },
+            {alt: 'cabinet4',id:'cabinet4',name:'Credenza Guest Room',minPrice:355, maxPrice:745,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet4/cabinet4_4.jpg'}
+                ]
+            },
+            {alt: 'cabinet5',id:'cabinet5',name:'Dresser Credenza & Mini Bar',minPrice:365, maxPrice:625,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet5/cabinet5_6.jpg'}
+                ]
+            },
+            {alt: 'cabinet6',id:'cabinet6',name:'Dresser TV Unit',minPrice:335, maxPrice:675,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet6/cabinet6_5.jpg'}
+                ]
+            },
+            {alt: 'cabinet7',id:'cabinet7',name:'Dresser Low Bar Unit W or Drawers',minPrice:350, maxPrice:650,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_6.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet7/cabinet7_7.jpg'}
+                ]
+            },
+            {alt: 'cabinet8',id:'cabinet8',name:'Dresser Entertainment Unit Bedroom',minPrice:345, maxPrice:635,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet8/cabinet8_4.jpg'}
+                ]
+            },
+            {alt: 'cabinet9',id:'cabinet9',name:'Dresser Fridge Unit',minPrice:275, maxPrice:625,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet9/cabinet9_6.jpg'}
+                ]
+            },
+            {alt: 'cabinet10',id:'cabinet10',name:'Dresser & Minibar - InterContinental Boston',minPrice:375, maxPrice:715,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet10/cabinet10_6.jpg'}
+                ]
+            },
+            {alt: 'cabinet11',id:'cabinet11',name:'TV Dresser with Bench',minPrice:315, maxPrice:685,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_5.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet11/cabinet11_6.jpg'}
+                ]
+            },
+            {alt: 'cabinet12',id:'cabinet12',name:'Dresser with Drawers',minPrice:350, maxPrice:650,
+                img:[{src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_1.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_2.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_3.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_4.jpg'},
+                    {src: '/image/ReferencePrice/Cabinet/Detail/cabinet12/cabinet12_5.jpg'}
+                ]
+            },
+            {alt: 'closet1', id: 'closet1', name: 'Closet Double Doors', minPrice: 750, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet1/closet1_5.jpg'}
+                ]
+            },
+            {alt: 'closet2', id: 'closet2', name: 'Closet Double Doors, Wooden Panel & Dresser', minPrice: 700, maxPrice: 1000,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet2/closet2_6.jpg'}
+                ]
+            },
+            {alt: 'closet3', id: 'closet3', name: 'Closet Double Doors, Bar Cabinet, TV Wall with Refreshment Tower', minPrice: 750, maxPrice: 1050,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet3/closet3_5.jpg'}
+                ]
+            },
+            {alt: 'closet4', id: 'closet4', name: 'Closet Double Doors', minPrice: 550, maxPrice: 800,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet4/closet4_6.jpg'}
+                ]
+            },
+            {alt: 'closet5', id: 'closet5', name: 'Closet Double Doors or Wardrobe Suite & Mini Bar', minPrice: 550, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_6.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_7.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet5/closet5_8.jpg'}
+                ]
+            },
+            {alt: 'closet6', id: 'closet6', name: 'Closet Double Doors', minPrice: 550, maxPrice: 750,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet6/closet6_5.jpg'}
+                ]
+            },
+            {alt: 'closet7', id: 'closet7', name: 'Closet Double Doors & Dresser', minPrice: 750, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet7/closet7_5.jpg'}
+                ]
+            },
+            {alt: 'closet8', id: 'closet8', name: 'Closet, Armoire and Bar Cabinet Double Doors', minPrice: 650, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet8/closet8_5.jpg'}
+                ]
+            },
+            {alt: 'closet9', id: 'closet9', name: 'Closet Double Doors', minPrice: 550, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_1.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_2.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_3.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_4.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_5.jpg'},
+                    {src: '/image/ReferencePrice/Closets/Detail/closet9/closet9_6.jpg'}
+                ]
+            },
+            {alt: 'tv1', id: 'tv1', name: 'TV wall Unit & Mini Bar Suite', minPrice: 550, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv1/tv1_6.jpg'}
+                ]
+            },
+            {alt: 'tv2', id: 'tv2', name: 'TV Unit with Dresser', minPrice: 550, maxPrice: 950,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv2/tv2_4.jpg'}
+                ]
+            },
+            {alt: 'tv3', id: 'tv3', name: 'TV Unit with Wall Panel F209 - 54607', minPrice: 465, maxPrice: 815,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv3/tv3_6.jpg'}
+                ]
+            },
+            {alt: 'tv4', id: 'tv4', name: 'TV Unit with Dresser', minPrice: 395, maxPrice: 765,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv4/tv4_4.jpg'}
+                ]
+            },
+            {alt: 'tv5', id: 'tv5', name: 'TV Unit with Desk', minPrice: 375, maxPrice: 725,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv5/tv5_5.jpg'}
+                ]
+            },
+            {alt: 'tv6', id: 'tv6', name: 'Halo Desk TV Unit for Floor', minPrice: 450, maxPrice: 850,
+                img: [
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_1.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_2.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_3.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_4.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_5.jpg'},
+                    {src: '/image/ReferencePrice/TVunits/Detail/tv6/tv6_6.jpg'}
+                ]
+            },
+            {alt: 'night1', id: 'night1', name: 'Nightstand with Drawers', minPrice: 150, maxPrice: 375,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night1/night1_5.jpg'}
+                ]
+            },
+            {alt: 'night2', id: 'night2', name: 'Round Nightstand with Drawers', minPrice: 135, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night2/night2_5.jpg'}
+                ]
+            },
+            {alt: 'night3', id: 'night3', name: 'Nightstand with Drawer', minPrice: 85, maxPrice: 275,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night3/night3_5.jpg'}
+                ]
+            },
+            {alt: 'night4', id: 'night4', name: 'Nightstand with Mable', minPrice: 125, maxPrice: 345,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night4/night4_3.jpg'}
+                ]
+            },
+            {alt: 'night5', id: 'night5', name: 'Nightstand with Drawer', minPrice: 150, maxPrice: 300,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night5/night5_5.jpg'}
+                ]
+            },
+            {alt: 'night6', id: 'night6', name: 'Nightstand with Drawers', minPrice: 85, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night6/night6_4.jpg'}
+                ]
+            },
+            {alt: 'night7', id: 'night7', name: 'Nightstand with Drawers', minPrice: 100, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_5.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night7/night7_6.jpg'}
+                ]
+            },
+            {alt: 'night8', id: 'night8', name: 'Nightstand with Drawer', minPrice: 85, maxPrice: 225,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night8/night8_5.jpg'}
+                ]
+            },
+            {alt: 'night9', id: 'night9', name: 'Nightstand with Mable & Drawer', minPrice: 125, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night9/night9_5.jpg'}
+                ]
+            },
+            {alt: 'night10', id: 'night10', name: 'Nightstand', minPrice: 100, maxPrice: 285,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night10/night10_4.jpg'}
+                ]
+            },
+            {alt: 'night11', id: 'night11', name: 'Round Nightstand with Drawer', minPrice: 100, maxPrice: 350,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night11/night11_5.jpg'}
+                ]
+            },
+            {alt: 'night12', id: 'night12', name: 'Nightstand with Drawer', minPrice: 85, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night12/night12_5.jpg'}
+                ]
+            },
+            {alt: 'night13', id: 'night13', name: 'Nightstand or Side Table', minPrice: 100, maxPrice: 250,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night13/night13_3.jpg'}
+                ]
+            },
+            {alt: 'night14', id: 'night14', name: 'Nightstand with Drawers', minPrice: 200, maxPrice: 450,
+                img: [
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_1.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_2.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_3.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_4.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_5.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_6.jpg'},
+                    {src: '/image/ReferencePrice/NightStands/Detail/night14/night14_7.jpg'}
+                ]
+            },
             {table:[]},
             {sofa:[]},
             {vanity:[]},

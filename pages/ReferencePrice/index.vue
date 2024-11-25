@@ -228,10 +228,10 @@ const categories = [
     {src: '/image/ReferencePrice/Categories/cate8.jpg', alt: 'Vanity', link: '/referenceprice/vanities'},
 ]
 const bedBase = [
-    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bed1',id:'bedBase1',name:'Hotel Guest Room Bed Set'},
-    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bed2',id:'bedBase2',name:'Hotel Guestroom Bed Set - Headboard & Bedbase'},
-    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bed3',id:'bedBase3',name:'Hotel Guest Room Bed Set - Headboard & Bedroom'},
-    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bed4',id:'bedBase4',name:'Hotel Guest Room Bed Set - Headboard & Bedbase'},
+    {src: '/image/ReferencePrice/BedBase/bedBase1.jpg', alt: 'bed1',id:'bed1'},
+    {src: '/image/ReferencePrice/BedBase/bedBase2.jpg', alt: 'bed2',id:'bed2'},
+    {src: '/image/ReferencePrice/BedBase/bedBase3.jpg', alt: 'bed3',id:'bed3'},
+    {src: '/image/ReferencePrice/BedBase/bedBase4.jpg', alt: 'bed4',id:'bed4'},
 ]
 const cabinet = [
     {src: '/image/ReferencePrice/Cabinet/cabinet1.jpg', alt: 'cabinet1',id:'cabinet1'},
@@ -240,10 +240,10 @@ const cabinet = [
     {src: '/image/ReferencePrice/Cabinet/cabinet4.jpg', alt: 'cabinet4',id:'cabinet4'},
 ]
 const closet = [
-    {src: '/image/ReferencePrice/Closets/closet1.jpg', alt: 'closet1',id:'closet1'},
-    {src: '/image/ReferencePrice/Closets/closet2.jpg', alt: 'closet2',id:'closet2'},
-    {src: '/image/ReferencePrice/Closets/closet3.jpg', alt: 'closet3',id:'closet3'},
-    {src: '/image/ReferencePrice/Closets/closet4.jpg', alt: 'closet4',id:'closet4'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet1.jpg', alt: 'closet1',id:'closet1'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet2.jpg', alt: 'closet2',id:'closet2'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet3.jpg', alt: 'closet3',id:'closet3'},
+    {src: '/image/ReferencePrice/Closets/Detail/closet4.jpg', alt: 'closet4',id:'closet4'},
 ]
 const tv = [
     {src: '/image/ReferencePrice/TVunits/unit1.jpg', alt: 'tv1',id:'tv1'},
