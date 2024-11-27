@@ -79,8 +79,8 @@
                                     rows="4">
                           </textarea>
                         </div>
-                        <div  class="col-span-2 flex justify-center">
-                          <button @click="logFormData" type="button" class="w-full btn bg-white rounded-none border-none text-black py-1 md:py-2 hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">{{ $t('app.contact.sendMessage') }}</button>
+                        <div class="col-span-2 flex justify-center">
+                          <button :disabled="disabledBtnSubmit" @click="submitForm" type="button" class="w-full btn bg-white rounded-none border-none text-black py-1 md:py-2 hover:bg-gray-600 hover:text-white transition-colors duration-300 ease-in-out">{{ $t('app.contact.sendMessage') }}</button>
                         </div>
                       </div>
                     </div>
@@ -142,17 +142,48 @@ const phone = ref('');
 const companyName = ref('');
 const projectType = ref('');
 const message = ref('');
+const agreedToPolicy = ref(true);
 
-function logFormData() {
-  console.log({
+const resetForm = () => {
+  fullName.value = '';
+  email.value = '';
+  phone.value = '';
+  companyName.value = '';
+  projectType.value = '';
+  message.value = '';
+  agreedToPolicy.value = true;
+}
+
+const cleanData = () => {
+    const sanitizeInput = (input) => {
+        return input
+            .replace(/<script.*?>.*?<\/script>/gi, '') // Loại bỏ các thẻ <script>
+            .replace(/<.*?javascript:.*?>/gi, '') // Loại bỏ các thẻ có thuộc tính javascript
+            .replace(/<.*?on\w+=".*?"/gi, ''); // Loại bỏ các thuộc tính sự kiện như onclick, onmouseover, etc.
+    }
+    message.value = sanitizeInput(message.value.trim());
+    fullName.value = sanitizeInput(fullName.value.trim());
+    phone.value = sanitizeInput(phone.value.trim());
+    email.value = sanitizeInput(email.value.trim());
+    companyName.value = sanitizeInput(companyName.value.trim());
+    projectType.value = sanitizeInput(projectType.value.trim());
+};
+
+const submitForm = () => {
+  cleanData();
+  const formData = {
     fullName: fullName.value,
     email: email.value,
     phone: phone.value,
     companyName: companyName.value,
     projectType: projectType.value,
     message: message.value,
-  });
+    agreedToPolicy: agreedToPolicy.value,
+  }
+  console.log(formData);
+  resetForm();
 }
+
 useSeoMeta({
     title: 'Contact - Hospitality Furniture',
     ogTitle: 'Contact - Hospitality Furniture',

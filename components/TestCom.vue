@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center gap-5 w-full h-screen bg-black text-white">
+  <div class="flex items-center justify-center gap-2 w-full h-96 bg-black text-white">
     <h2 class="text-sm md:text-lg lg:text-2xl">No product information yet!</h2>
-    <NuxtLink to="/" class="text-orange-500 text-sm md:text-lg lg:text-2xl font-bold underline">Go home</NuxtLink>
+    <NuxtLink to="/" class="text-orange-500 text-sm md:text-lg lg:text-2xl font-bold underline">Go home...!</NuxtLink>
   </div>
   <!-- <Flipbook class="flipbook" 
    :pages="['https://upload.wikimedia.org/wikipedia/commons/9/95/Latin_G.png',
