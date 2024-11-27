@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center w-full h-screen">
+  <div class="flex items-center justify-center w-full h-screen bg-black text-white">
     <h2 class="text-sm md:text-lg lg:text-2xl">No product information yet!</h2>
     <NuxtLink to="/" class="text-orange-500 text-sm md:text-lg lg:text-2xl font-bold">Go home</NuxtLink>
   </div>
