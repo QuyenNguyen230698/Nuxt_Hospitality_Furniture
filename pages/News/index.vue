@@ -1,6 +1,6 @@
 <template>
     <div class="bg-black text-white">
-        <div class="flex flex-col items-center justify-center w-full h-full p-3">
+        <div class="flex flex-col items-center justify-center w-full h-full px-3">
             <div class="flex flex-col md:flex-row w-full h-full lg:container bg-news p-2 mt-10 gap-5">
                 <!-- news title -->
                 <div v-for="item in test?.data.slice(0, 1)" :key="item.title" class="flex flex-col w-full md:w-1/2 h-full gap-4">
@@ -51,7 +51,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex w-full justify-end gap-2 py-2 container ">
+            <!-- pagination -->
+            <div class="flex w-full justify-end gap-2 py-5 container ">
                 <div class="join bg-white">
                     <button class="join-item btn btn-sm btn-outline" @click="prevSlidePagination" aria-label="prevslidepagination" :disabled="currentPagination === 0">«</button>
                     <select class="join-item btn btn-sm btn-outline" v-model="currentPagination" @change="scrollToTop" aria-label="pagination">
