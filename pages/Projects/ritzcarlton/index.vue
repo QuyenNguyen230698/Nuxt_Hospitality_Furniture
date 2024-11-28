@@ -1,6 +1,7 @@
 <template>
     <div class="bg-black color-text">
-        <!-- Ritz project -->
+        <div v-show="!isLoading" class="flex flex-col w-full h-full">
+                    <!-- Ritz project -->
         <div class="bg-ritz p-4 lg:p-0 lg:py-16">
             <div class="flex flex-col lg:flex-row items-center justify-center gap-5 bg-solution w-full h-full">
                 <!-- Carousel -->
@@ -80,12 +81,19 @@
                 </div>
             </div>
          </div>
+        </div>
+        <div v-show="isLoading"
+            class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
+            <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
+            <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
+        </div>
     </div>
 </template>
 
 <script setup>
  import { ref, onMounted } from 'vue';
  const { locale } = useI18n();
+ const isLoading = ref(true);
 //#region QuyenNC ( gọi api )
 const news = ref(null);
  const payload = async() => {
@@ -121,6 +129,9 @@ let intervalId;
 
 onMounted(() => {
  payload();
+ setTimeout(() => {
+        isLoading.value = false;
+    }, 1200);
   intervalId = setInterval(nextSlide, slideInterval);
 });
 

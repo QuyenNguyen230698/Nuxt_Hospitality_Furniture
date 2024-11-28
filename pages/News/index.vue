@@ -1,6 +1,6 @@
 <template>
     <div class="bg-black text-white">
-        <div class="flex flex-col items-center justify-center w-full h-full px-3">
+        <div v-show="!isLoading" class="flex flex-col items-center justify-center w-full h-full px-3">
             <div class="flex flex-col md:flex-row w-full h-full lg:container bg-news p-2 mt-10 gap-5">
                 <!-- news title -->
                 <div v-for="item in test?.data.slice(0, 1)" :key="item.title" class="flex flex-col w-full md:w-1/2 h-full gap-4">
@@ -63,19 +63,27 @@
                 </div>
             </div>
         </div>
+        <div v-show="isLoading"
+            class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
+            <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
+            <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
+        </div>
     </div>
 </template>
 
 <script setup>
  import { ref, onMounted, computed } from 'vue';
  const { locale } = useI18n();
-
+ const isLoading = ref(true);
+ //#region QuyenNC ( goi api)
  const news = ref(null);
  const payload = async() => {
     const data = await $fetch("/api/test");
     news.value = data
  }
  const test = computed(() => news?.value?.find(item => item.locale === locale.value));
+ //#endregion
+
 
  //#region pagination
  const currentPagination = ref(0);
@@ -99,6 +107,9 @@ const isVisible = ref(false)
   }
  onMounted(() => {
     payload();
+    setTimeout(() => {
+        isLoading.value = false;
+    }, 1200);
     window.addEventListener('scroll', checkScroll)
  })
  onUnmounted(() => {

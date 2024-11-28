@@ -1,8 +1,7 @@
 <template>
   <div>
-    
     <!-- main -->
-    <div class="flex flex-col w-full h-full">
+    <div v-show="!isLoading" class="flex flex-col w-full h-full">
       <!-- SlideShow -->
       <SliceShow />
       <!-- Section -->
@@ -34,14 +33,22 @@
       <Projects />
       <!-- OverView -->
       <Overview />
-
     </div>
-   
+    <div v-show="isLoading"
+      class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
+      <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
+      <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
+    </div>
   </div>
 </template>
 
 <script setup>
-
+const isLoading = ref(true);
+onMounted(() => {
+  setTimeout(() => {
+        isLoading.value = false;
+    }, 1200);
+})
 </script>
 
 <style scoped>

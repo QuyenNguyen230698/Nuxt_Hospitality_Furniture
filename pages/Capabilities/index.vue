@@ -1,117 +1,124 @@
 <template>
     <div>
-        <SliceShowCapability/>
-        <div class="flex flex-col w-full h-full">
-            <!-- Wooden Furniture -->
-            <div class="flex flex-col md:flex-row h-full w-full bg-black">
-                <div class="w-full md:w-3/5">
-                    <NuxtImg quality="75" loading="eager" aria-label="capwooden" alt="capwooden" src="/image/capability/capWooden.jpg" class="w-full h-fit object-cover "></NuxtImg>
+        <div v-show="!isLoading" class="flex flex-col w-full h-full">
+            <SliceShowCapability/>
+            <div class="flex flex-col w-full h-full">
+                <!-- Wooden Furniture -->
+                <div class="flex flex-col md:flex-row h-full w-full bg-black">
+                    <div class="w-full md:w-3/5">
+                        <NuxtImg quality="75" loading="eager" aria-label="capwooden" alt="capwooden" src="/image/capability/capWooden.jpg" class="w-full h-fit object-cover "></NuxtImg>
+                    </div>
+                    <div class="w-full md:w-2/5 flex flex-col p-10">
+                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
+                            {{ $t("app.capability.wooden") }}
+                        </h2>
+                        <div
+                            class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
+                            style="height: 1px"
+                        ></div>
+                        <p class="text-base color-section text-justify">
+                            {{ $t("app.capability.23years") }}
+                        </p>
+                    </div>
                 </div>
-                <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.capability.wooden") }}
-                    </h2>
-                    <div
-                        class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
-                        style="height: 1px"
-                    ></div>
-                    <p class="text-base color-section text-justify">
-                        {{ $t("app.capability.23years") }}
-                    </p>
+                <!-- Metal Furniture -->
+                <div class="flex flex-col md:flex-row h-full w-full bg-metal">
+                    <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
+                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
+                            {{ $t("app.capability.metal") }}
+                        </h2>
+                        <div
+                            class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
+                            style="height: 1px"
+                        ></div>
+                        <p class="text-base color-section text-justify">
+                            {{ $t("app.capability.tranDucMetal") }}
+                        </p>
+                    </div>
+                    <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
+                        <NuxtImg quality="75" loading="eager" aria-label="capmetal" alt="capmetal" src="/image/capability/cap5.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    </div>
                 </div>
-            </div>
-            <!-- Metal Furniture -->
-            <div class="flex flex-col md:flex-row h-full w-full bg-metal">
-                <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.capability.metal") }}
-                    </h2>
-                    <div
-                        class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
-                        style="height: 1px"
-                    ></div>
-                    <p class="text-base color-section text-justify">
-                        {{ $t("app.capability.tranDucMetal") }}
-                    </p>
+                <!-- Ulpholstery -->
+                <div class="flex flex-col md:flex-row h-full w-full bg-black">
+                    <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
+                        <NuxtImg quality="75" loading="eager" aria-label="capupholstery" alt="capupholstery" src="/image/capability/capUlpho.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    </div>
+                    <div class="w-full md:w-2/5 flex flex-col p-10">
+                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
+                            {{ $t("app.capability.upholstery") }}
+                        </h2>
+                        <div
+                            class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
+                            style="height: 1px"
+                        ></div>
+                        <p class="text-base color-section text-justify">
+                            {{ $t("app.capability.tranDucUpholstery") }}
+                        </p>
+                    </div>
                 </div>
-                <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" aria-label="capmetal" alt="capmetal" src="/image/capability/cap5.jpg" class="w-full h-full object-cover "></NuxtImg>
+                <!-- Door -->
+                <div class="flex flex-col md:flex-row h-full w-full bg-metal">
+                    <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
+                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
+                            {{ $t("app.capability.door") }}
+                        </h2>
+                        <div
+                            class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
+                            style="height: 1px"
+                        ></div>
+                        <p class="text-base color-section text-justify">
+                            {{ $t("app.capability.tranDucDoor") }}
+                        </p>
+                    </div>
+                    <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
+                        <NuxtImg quality="75" loading="eager" aria-label="capdoor" alt="capdoor" src="/image/capability/capDoor.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    </div>
                 </div>
-            </div>
-            <!-- Ulpholstery -->
-            <div class="flex flex-col md:flex-row h-full w-full bg-black">
-                <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" aria-label="capupholstery" alt="capupholstery" src="/image/capability/capUlpho.jpg" class="w-full h-full object-cover "></NuxtImg>
+                <!-- Finishing -->
+                <div class="flex flex-col md:flex-row h-full w-full bg-black">
+                    <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
+                        <NuxtImg quality="75" loading="eager" aria-label="capfinishing" alt="capfinishing" src="/image/capability/capFinishing.jpg" class="w-full h-full object-cover "></NuxtImg>
+                    </div>
+                    <div class="w-full md:w-2/5 flex flex-col p-10">
+                        <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
+                            {{ $t("app.capability.finishing") }}
+                        </h2>
+                        <div
+                            class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
+                            style="height: 1px"
+                        ></div>
+                        <p class="text-base color-section text-justify">
+                            {{ $t("app.capability.tranDucFinishing") }}
+                        </p>
+                    </div>
                 </div>
-                <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.capability.upholstery") }}
-                    </h2>
-                    <div
-                        class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
-                        style="height: 1px"
-                    ></div>
-                    <p class="text-base color-section text-justify">
-                        {{ $t("app.capability.tranDucUpholstery") }}
-                    </p>
-                </div>
-            </div>
-            <!-- Door -->
-            <div class="flex flex-col md:flex-row h-full w-full bg-metal">
-                <div class="w-full md:w-2/5 flex flex-col p-10 order-2 lg:order-1">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.capability.door") }}
-                    </h2>
-                    <div
-                        class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
-                        style="height: 1px"
-                    ></div>
-                    <p class="text-base color-section text-justify">
-                        {{ $t("app.capability.tranDucDoor") }}
-                    </p>
-                </div>
-                <div class="w-full md:w-3/5 overflow-hidden order-1 lg:order-2" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" aria-label="capdoor" alt="capdoor" src="/image/capability/capDoor.jpg" class="w-full h-full object-cover "></NuxtImg>
-                </div>
-            </div>
-            <!-- Finishing -->
-            <div class="flex flex-col md:flex-row h-full w-full bg-black">
-                <div class="w-full md:w-3/5 overflow-hidden" style="height: 500px;">
-                    <NuxtImg quality="75" loading="eager" aria-label="capfinishing" alt="capfinishing" src="/image/capability/capFinishing.jpg" class="w-full h-full object-cover "></NuxtImg>
-                </div>
-                <div class="w-full md:w-2/5 flex flex-col p-10">
-                    <h2 class="text-center text-4xl lg:text-5xl font-bold p-6 text-white">
-                        {{ $t("app.capability.finishing") }}
-                    </h2>
-                    <div
-                        class="w-40 md:w-24 lg:w-20 bg-orange-500 text-center mx-auto mb-5"
-                        style="height: 1px"
-                    ></div>
-                    <p class="text-base color-section text-justify">
-                        {{ $t("app.capability.tranDucFinishing") }}
-                    </p>
-                </div>
-            </div>
-            <!-- technology & working & packing & loading & shipping -->
-            <div class="flex flex-col items-center justify-center p-5 md:p-10 bg-black">
-                <!-- Navigation Links -->
-                <div class="grid grid-cols-2 md:grid-cols-4 items-center justify-center text-2xl gap-4 mb-10 color-text">
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'technology' }"><NuxtLink @click="setImages('technology')" >{{ $t("app.capability.technology") }}</NuxtLink></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'working' }"><NuxtLink @click="setImages('working')" >{{ $t("app.capability.working") }}</NuxtLink></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'packing' }"><NuxtLink @click="setImages('packing')" >{{ $t("app.capability.packing") }}</NuxtLink></div>
-                    <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'loading' }"><NuxtLink @click="setImages('loading')" >{{ $t("app.capability.loading") }}</NuxtLink></div>
-                </div>
-                <!-- images -->
-                <div class="carousel grid grid-cols-2 md:grid-cols-4 gap-4 md:w-4/5 items-center justify-center">
-                    <div
-                        v-for="(image, index) in images"
-                        :key="index"
-                        class="carousel-item w-full transition-all duration-300 ease-in-out"
-                    >
-                        <NuxtImg quality="75" loading="eager" aria-label="capabilityimage" alt="capabilityimage" :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
+                <!-- technology & working & packing & loading & shipping -->
+                <div class="flex flex-col items-center justify-center p-5 md:p-10 bg-black">
+                    <!-- Navigation Links -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 items-center justify-center text-2xl gap-4 mb-10 color-text">
+                        <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'technology' }"><NuxtLink @click="setImages('technology')" >{{ $t("app.capability.technology") }}</NuxtLink></div>
+                        <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'working' }"><NuxtLink @click="setImages('working')" >{{ $t("app.capability.working") }}</NuxtLink></div>
+                        <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'packing' }"><NuxtLink @click="setImages('packing')" >{{ $t("app.capability.packing") }}</NuxtLink></div>
+                        <div class="cursor-pointer flex md:justify-center items-center py-2" :class="{ 'text-orange-500 border-b border-orange-500': currentCategory === 'loading' }"><NuxtLink @click="setImages('loading')" >{{ $t("app.capability.loading") }}</NuxtLink></div>
+                    </div>
+                    <!-- images -->
+                    <div class="carousel grid grid-cols-2 md:grid-cols-4 gap-4 md:w-4/5 items-center justify-center">
+                        <div
+                            v-for="(image, index) in images"
+                            :key="index"
+                            class="carousel-item w-full transition-all duration-300 ease-in-out"
+                        >
+                            <NuxtImg quality="75" loading="eager" aria-label="capabilityimage" alt="capabilityimage" :src="image.src" class="w-full max-h-44 min-h-44 object-cover" />
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div v-show="isLoading"
+            class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
+            <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
+            <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
         </div>
     </div>
 </template>
@@ -225,6 +232,12 @@ useSeoMeta({
     twitterDescription: 'Description',
     twitterImage: 'https://nuxt-hospitality-furniture.vercel.app/_vercel/image?url=%2Fimage%2Flogo%2FTranDuc-homes.png&w=1536&q=75',
     keywords: 'Capabilities, Hospitality Furniture',
+})
+const isLoading = ref(true);
+onMounted(() => {
+  setTimeout(() => {
+        isLoading.value = false;
+    }, 1200);
 })
 </script>
 

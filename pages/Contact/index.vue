@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="flex flex-col items-center justify-center w-full h-full text-white bg-black">
+        <div v-show="!isLoading" class="flex flex-col items-center justify-center w-full h-full text-white bg-black">
             <!-- map & form -->
             <div class="grid grid-cols-12 w-full h-full items-center justify-center gap-4 py-0 lg:py-4">
                 <!-- map -->
@@ -130,12 +130,18 @@
                 </div>
             </div>
         </div>
+        <div v-show="isLoading"
+            class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
+            <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
+            <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
+        </div>
     </section>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
+const isLoading = ref(true);
 const fullName = ref('');
 const email = ref('');
 const phone = ref('');
@@ -183,6 +189,12 @@ const submitForm = () => {
   console.log(formData);
   resetForm();
 }
+
+onMounted(() => {
+  setTimeout(() => {
+        isLoading.value = false;
+    }, 1200);
+})
 
 useSeoMeta({
     title: 'Contact - Hospitality Furniture',
