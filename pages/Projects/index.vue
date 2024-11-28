@@ -59,7 +59,7 @@
           </div>
           <!-- data 2 -->
           <div v-if="currentPagination === 1" class="carousel-item w-full">
-              <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 p-4 lg:container">
+              <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center w-full h-full gap-4 pt-4 px-4 lg:container">
                   <div class="col-span-1 relative w-full h-full group transition-all duration-500 ease-in-out rounded-lg overflow-hidden"
                   v-for="project in test?.data2" :key="project.title">
                   <div class="relative">
