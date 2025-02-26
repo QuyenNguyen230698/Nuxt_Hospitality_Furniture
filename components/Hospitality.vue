@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- main -->
-    <div v-show="!isLoading" class="flex flex-col w-full h-full">
+     <!-- v-show="!isLoading" -->
+    <div  class="flex flex-col w-full h-full">
       <!-- SlideShow -->
       <SliceShow />
       <!-- Section -->
@@ -34,11 +35,11 @@
       <!-- OverView -->
       <Overview />
     </div>
-    <div v-show="isLoading"
+    <!-- <div v-show="isLoading"
       class="w-full h-full flex flex-col justify-center items-center bg-black absolute inset-0 gap-4 z-50">
       <NuxtImg src="/image/logo/Tranduc-Furnishings-compress.png" loading="eager" class="w-56 h-fit bg-transparent" />
       <progress class="progress progress-warning w-56" style="height: 3px !important"></progress>
-    </div>
+    </div> -->
   </div>
 </template>
 
